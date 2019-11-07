@@ -6,7 +6,7 @@ description: "Samen met Sweet Mustard maakten onze studenten een office robot di
 year: 2MCT
 project: 2
 cover: officedog-cover.jpg
-video: Presentatievideo.mp4
+mp4: https://mctwebsite.blob.core.windows.net/video/officedog.mp4
 client: Sweet Mustard
 students:
 - Céline Abbeloos

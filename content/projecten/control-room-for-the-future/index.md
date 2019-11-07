@@ -5,15 +5,8 @@ date: 2018-03-09T21:40:40+01:00
 description: "Voor de biomassa centrales van Vyncke bouwden onze studenten een prototype met live data visualisatie vanuit Nederland in een Microsoft Hololens applicatie!"
 year: 2MCT
 project: 3
-featured: true
 cover: control-room-for-the-future.jpg
-video: 
 client: VYNCKE nv.
-# students:
-# - Rune Vandebuerie
-# - Aiko Van Ryssel
-# - Johannes Gouwy
-# - Markey Thibault
 ---
 
 **Live datavisualisatie** vanuit Nederland in een **Microsoft Hololens applicatie**! In vier weken tijd bouwden onze NMCT-studenten het prototype “Controlroom of the future” voor de biomassacentrales van <a href="https://www.vyncke.com/" target="_blank">VYNCKE nv</a>.
