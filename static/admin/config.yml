@@ -1,5 +1,5 @@
 locale: 'nl'
-media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+media_folder: "themes/mct/images" # Media files will be stored in the repo under images/uploads 
 # publish_mode: editorial_workflow
 # TODO: change to azure storage
 
@@ -21,7 +21,7 @@ collections:
       - {label: "Titel", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro", name: "description", widget: "text"}
-      - {label: "Featured Image", name: "cover", widget: "image"}
+      - {label: "Featured Image", name: "cover", widget: "image", allow_multiple: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
 

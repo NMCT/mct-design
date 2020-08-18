@@ -1,5 +1,15 @@
 {{ $cover := .Params.cover }}
 {{ $image := .Resources.GetMatch $cover }}
+
+{{ if not $image }}
+    {{ $fullPath := printf "%s/%s" "images" $cover }}
+    {{ $fullPath }}
+    {{ $image := $.resources.Get $fullPath }}
+    {{ $image }}
+{{ end }}
+
+{{ if $image }}
+
 {{ $scaledImage := $image.Resize "400x" }}
 
 <a class="c-media c-media--link" href="{{ .Permalink }}">
@@ -8,7 +18,7 @@
     </picture>
     <div class="c-media__body">
         <p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
-			{{ .Date.Format "02/01/2006" }}
+            {{ .Date.Format "02/01/2006" }}
         </p>
         <div class="c-media__content">
             <h2 class="c-media__title u-ms0 u-mb-gamma">
@@ -20,3 +30,6 @@
         </div>
     </div>
 </a>
+{{ else }}
+    Nothing
+{{ end }}
