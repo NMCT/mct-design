@@ -6,7 +6,7 @@ module.exports = {
 				'c-module--analysis',
 				'c-module--code',
 				'c-module--connect',
-				'c-module--create',
+				'c-module--design',
 				'c-module--integrate',
 				'c-module--link',
 				'h1',

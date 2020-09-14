@@ -25,7 +25,7 @@ Eén voor de begeleider/ouder om op basis van pictogrammen of foto's stappenplan
 Het blijft niet bij één project, op dit moment (4e semester) werkt Alexandra aan een prototype voor een app voor minder mobiele personen. 
 
 Waarom heeft Alexandra specifiek voor MCT gekozen en niet een andere IT opleiding?  
-__“MCT biedt een brede basis aan waarna uitgesplitst wordt in vier uitstroomprofielen. De brede basis omvat vier pijlers: Create, Code, Connect, Analysis. Ik wilde graag van alle vier een zekere basiskennis verwerven voor ik me zou specialiseren. Het is deze insteek, samen met de focus op projecten die me overtuigden om voor MCT te kiezen.“__
+__“MCT biedt een brede basis aan waarna uitgesplitst wordt in vier uitstroomprofielen. De brede basis omvat vier pijlers: Design, Code, Connect, Analysis. Ik wilde graag van alle vier een zekere basiskennis verwerven voor ik me zou specialiseren. Het is deze insteek, samen met de focus op projecten die me overtuigden om voor MCT te kiezen.“__
 
 Alexandra beschrijft haar MCT-ervaring als student zonder voorkennis:  
 __“In MCT staan de docenten altijd klaar om studenten te helpen bij vragen of problemen. Zeker als student zonder programmeerkennis was dit heel fijn.“__
@@ -46,4 +46,4 @@ Slimme applicaties ontwikkelen die de kwaliteit van het leven verbeteren. Alexan
 **Keuzetraject**: [Web App developer](/programma/web-app-developer/)  
 **Waarom MCT**: Omdat er veel mogelijkheden zijn om als een goede programmeur een bijdrage te kunnen leveren aan het leven van personen met een beperking.
 
-MCT biedt een brede basis aan waarna uitgesplitst wordt in vier uitstroomprofielen.  De brede basis omvat vier pijlers: Create, Code, Connect, Analysis. Ik wilde graag van alle vier een zekere basiskennis verwerven voor ik me zou specialiseren. Het is deze insteek, samen met de focus op projecten die me overtuigden om voor MCT te kiezen
+MCT biedt een brede basis aan waarna uitgesplitst wordt in vier uitstroomprofielen.  De brede basis omvat vier pijlers: Design, Code, Connect, Analysis. Ik wilde graag van alle vier een zekere basiskennis verwerven voor ik me zou specialiseren. Het is deze insteek, samen met de focus op projecten die me overtuigden om voor MCT te kiezen

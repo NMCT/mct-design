@@ -14,7 +14,7 @@ Ook moeten MCT-studenten tijdens hun eerste jaar hun eerste project afleveren. N
  
 __“Project 2 was voor mij één van de belangrijkste projecten waaraan ik gewerkt heb doorheen MCT. Het was het eerste project waarin we in groep moesten samenwerken, daarnaast was de technologie die we gebruikt hebben ook compleet nieuw. Door de samenwerking met sport en bewegen in Brugge was het ook geen project waarbij we de hele dag aan een bureau zaten. We moesten veel testen ter plaatse om deze opdracht tot een goed einde te brengen.”__
 
-Na zijn team project koos Stijn voor het traject IoT infrastructure engineer. De keuze was voor hem snel gemaakt gezien zijn voorkeurs vakken hands-on infrastructure vakken waren zoals prototyping en de create vakken hem minder interesseerden. Er zijn iets minder studenten die voor het afstudeertraject IoT infrastructure engineer kiezen. Hierdoor kunnen de docenten hun studenten soms eens extra in de watten leggen.
+Na zijn team project koos Stijn voor het traject IoT infrastructure engineer. De keuze was voor hem snel gemaakt gezien zijn voorkeurs vakken hands-on infrastructure vakken waren zoals prototyping en de design vakken hem minder interesseerden. Er zijn iets minder studenten die voor het afstudeertraject IoT infrastructure engineer kiezen. Hierdoor kunnen de docenten hun studenten soms eens extra in de watten leggen.
 
 > "IoT infrastructure engineers hebben als enige een eigen koffiezet in het lokaal!"
 

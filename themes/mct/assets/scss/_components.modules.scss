@@ -32,8 +32,8 @@
 		border-color: palette(color-connect);
 	}
 
-	&--create {
-		border-color: palette(color-create);
+	&--design {
+		border-color: palette(color-design);
 	}
 
 	&--analysis {
@@ -65,8 +65,8 @@
 		&.c-module--connect {
 			background-color: palette(color-connect);
 		}
-		&.c-module--create {
-			background-color: palette(color-create);
+		&.c-module--design {
+			background-color: palette(color-design);
 		}
 		&.c-module--project {
 			background-color: palette(color-project);

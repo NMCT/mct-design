@@ -3,7 +3,7 @@ title: Concept Visualisation
 semester: 4
 weight: 40
 tags: "#aftereffects #motion"
-pillar: create
+pillar: design
 tracks:
 - web-app
 ---
