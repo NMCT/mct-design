@@ -91,6 +91,11 @@
 	}
 }
 
+.c-row--intro ::selection {
+	color: palette(color-alpha);
+	background-color: palette(color-neutral, xxxxx-light);
+}
+
 .c-row--visual {
 	&::before {
 		content: '';

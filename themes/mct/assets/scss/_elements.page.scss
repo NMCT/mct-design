@@ -34,12 +34,6 @@ body {
 }
 
 @if $change-selection-color {
-	::-moz-selection {
-		background-color: $body-selection-background-color;
-		color: $body-selection-color;
-		text-shadow: $body-selection-text-shadow;
-	}
-
 	::selection {
 		background-color: $body-selection-background-color;
 		color: $body-selection-color;
