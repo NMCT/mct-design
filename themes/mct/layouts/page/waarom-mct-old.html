@@ -1,75 +1,75 @@
 {{ define "main" }}
 <main>
-	{{ $image := .Resources.Match "docent-web-app-development.jpg" }}
+    {{ $image := .Resources.Match "docent-next-web-developer-development.jpg" }}
 
-	<!-- section -->
-	<section class="c-row c-row--lg">
-		<div class="o-container">
-			<div class="o-grid o-grid--gutter-lg">
-				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
-					<div class="c-main-section-lg">
-						<!-- article -->
-						<div class="u-max-width-xl">
-							<h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
-								{{.Params.Subheader}}
-							</h1>
+    <!-- section -->
+    <section class="c-row c-row--lg">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section-lg">
+                        <!-- article -->
+                        <div class="u-max-width-xl">
+                            <h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
+                                {{.Params.Subheader}}
+                            </h1>
 
-							<p class="c-type-intro">
-								{{.Params.Intro | markdownify}}
-							</p>
-						</div>
-						<!-- /article -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- /section -->
+                            <p class="c-type-intro">
+                                {{.Params.Intro | markdownify}}
+                            </p>
+                        </div>
+                        <!-- /article -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /section -->
 
-	<section class="c-row c-row--xl">
-		<div class="o-container">
-			<div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
-				<div class="o-grid__item u-4-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<div class="o-grid o-grid--gutter-sm o-flex o-flex--wrap o-flex--align-end">
-						<div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
-							<p><img alt="Het verkeer in Kortrijk in betere banen dankzij AI &amp; Augmented Reality." data-src="./images/mixed-reality-opleiding.jpg"
-								 class="lozad"></p>
-							<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-								Het verkeer in Kortrijk in betere banen dankzij AI &amp; Augmented Reality.
-							</p>
-						</div>
+    <section class="c-row c-row--xl">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
+                <div class="o-grid__item u-4-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <div class="o-grid o-grid--gutter-sm o-flex o-flex--wrap o-flex--align-end">
+                        <div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
+                            <p><img alt="Het verkeer in Kortrijk in betere banen dankzij AI &amp; Augmented Reality." data-src="./images/mixed-reality-opleiding.jpg"
+                                 class="lozad"></p>
+                            <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                                Het verkeer in Kortrijk in betere banen dankzij AI &amp; Augmented Reality.
+                            </p>
+                        </div>
 
-						<div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
-							<p><img alt="Samen iets maken wat je alleen niet gelukt was." data-src="./images/scrum-agile-web-app-development.jpg"
-								 class="lozad"></p>
-							<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-								Samen iets maken wat je alleen niet gelukt was.
-							</p>
-						</div>
-					</div>
-				</div>
+                        <div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
+                            <p><img alt="Samen iets maken wat je alleen niet gelukt was." data-src="./images/scrum-agile-web-app-development.jpg"
+                                 class="lozad"></p>
+                            <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                                Samen iets maken wat je alleen niet gelukt was.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="o-grid__item u-6-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<h3 class="u-ms4-bp3 u-ms4-bp5">Ontwikkel de applicaties van het Internet van Morgen met cutting-edge-technologie</h3>
-					<p>Het huidige internet bestaat voornamelijk uit tekst en beeld. Je zou het een gigantische bibliotheek kunnen
-						noemen. Met steeds meer slimme devices en sensoren evolueert het internet echter naar een netwerk dat kan voelen,
-						horen, meten en zien. De volgende generatie internettoepassingen zal dus veel meer kunnen dan enkel informatie op
-						een website presenteren. Zij zullen het dagelijkse leven beter en eenvoudiger maken door snel in te spelen op
-						deze evolutie.</p>
-					<p>Focus je liever niet op Deep Learning maar op <strong>webdesign &amp; interfaces of connectiviteit</strong>?
-						Kan ook in MCT!</p>
-					<p>Om de datastromen van deze wereld in goed banen te leiden, volstaat de traditionele software niet meer. Ons
-						grote voorbeeld is hier Tesla's autopilot-software. Sinds oktober 2016 stuurt elke Tesla sensor- en cameradata
-						door naar het centrale datacenter. Daar leert een neuraal netwerk uit alle mogelijke situaties die de
-						Teslabestuurders meemaken. Het neuraal netwerk in de wagen wordt op die manier automatisch verbeterd, km per km.</p>
-					<p>De MCT'er gaat dus aan de slag met <strong>Deep Learning</strong> &amp; <strong>Machine Learning</strong> om
-						met beeld- en sensordata zijn / haar internetapplicatie constant te verbeteren. We gebruiken daarbij de modernste
-						interfaces: <strong>Augmented Reality</strong> is voor ons geen gadget, maar een manier om inzichten op een
-						visueel aantrekkelijke manier dicht bij de gebruiker te brengen.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div class="o-grid__item u-6-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <h3 class="u-ms4-bp3 u-ms4-bp5">Ontwikkel de applicaties van het Internet van Morgen met cutting-edge-technologie</h3>
+                    <p>Het huidige internet bestaat voornamelijk uit tekst en beeld. Je zou het een gigantische bibliotheek kunnen
+                        noemen. Met steeds meer slimme devices en sensoren evolueert het internet echter naar een netwerk dat kan voelen,
+                        horen, meten en zien. De volgende generatie internettoepassingen zal dus veel meer kunnen dan enkel informatie op
+                        een website presenteren. Zij zullen het dagelijkse leven beter en eenvoudiger maken door snel in te spelen op
+                        deze evolutie.</p>
+                    <p>Focus je liever niet op Deep Learning maar op <strong>webdesign &amp; interfaces of connectiviteit</strong>?
+                        Kan ook in MCT!</p>
+                    <p>Om de datastromen van deze wereld in goed banen te leiden, volstaat de traditionele software niet meer. Ons
+                        grote voorbeeld is hier Tesla's autopilot-software. Sinds oktober 2016 stuurt elke Tesla sensor- en cameradata
+                        door naar het centrale datacenter. Daar leert een neuraal netwerk uit alle mogelijke situaties die de
+                        Teslabestuurders meemaken. Het neuraal netwerk in de wagen wordt op die manier automatisch verbeterd, km per km.</p>
+                    <p>De MCT'er gaat dus aan de slag met <strong>Deep Learning</strong> &amp; <strong>Machine Learning</strong> om
+                        met beeld- en sensordata zijn / haar internetapplicatie constant te verbeteren. We gebruiken daarbij de modernste
+                        interfaces: <strong>Augmented Reality</strong> is voor ons geen gadget, maar een manier om inzichten op een
+                        visueel aantrekkelijke manier dicht bij de gebruiker te brengen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 	<section class="c-row u-bgcolor-neutral-xxxx-light">
 		<div class="o-container">
@@ -81,9 +81,9 @@
 						gaat, verdiep je jezelf vanaf het vierde semester (2de jaar - vanaf februari) als:
 					</p>
 					<ol>
-						<li><a href="/programma/#profile-web-app">Web App developer</a>: je focust op de interface en slimme
+						<li><a href="/programma/#profile-next-web-developer">Next Web Developer</a>: je focust op de interface en slimme
 							webtechnologie (bv. chatbots)</li>
-						<li><a href="/programma/#profile-smart-tech-ai">Smart Tech &amp; AI</a>: met data-analyse, machine learning en
+						<li><a href="/programma/#profile-smart-xr-developer">Smart XR Developer</a>: met data-analyse, machine learning en
 							deep learning maak je het nieuwe internet slimmer. </li>
 						<li><a href="/programma/#profile-infrastructure-engineer">IoT Infrastructure Engineer</a>: je bent in staat om zowel
 							slimme devices op een grid aan te sluiten als servers in the cloud automatisch te deployen.</li>
@@ -95,158 +95,158 @@
 		</div>
 	</section>
 
-	<section class="c-row c-row--xl">
-		<div class="o-container">
-			<div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<h3 class="u-ms4-bp3 u-ms4-bp5">Laat je talent schitteren in je projecten</h3>
-					<p>Deze technologieën beheersen, dat doe je niet enkel door naar onze gepassioneerde docenten te luisteren. Je
-						past de theorie (1-2u) toe in <strong>praktische opdrachten</strong> (3-4u) in labovorm. De lessen en examens
-						worden in ieder semester (behalve het eerste) ongeveer 4 tot 5 weken vroeger afgesloten. Daarna kan je tonen wat
-						je in je mars hebt en alles toepassen in een project: van slimme aquaria, een personal assistant robot tot een
-						applicatie die je kenmerken scant en kledingsadvies geeft dankzij AI. <strong>Het bedrijfsleven is zeer
-							enthousiast</strong>: zij laten MCT'ers experimentele technologie uitzoeken in tientallen cases die in de
-						praktijk toegepast zullen worden. MCT is een laboratorium voor de bedrijfswereld dankzij de studentenprojecten en
-						het <strong>MCT-researchlab Sizing Servers</strong> die cases uitvoerde voor onder andere: <strong>Facebook,
-							Intel, IBM, Picanol, Touring Mobilis en vele anderen</strong>.</p>
-				</div>
+    <section class="c-row c-row--xl">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <h3 class="u-ms4-bp3 u-ms4-bp5">Laat je talent schitteren in je projecten</h3>
+                    <p>Deze technologieën beheersen, dat doe je niet enkel door naar onze gepassioneerde docenten te luisteren. Je
+                        past de theorie (1-2u) toe in <strong>praktische opdrachten</strong> (3-4u) in labovorm. De lessen en examens
+                        worden in ieder semester (behalve het eerste) ongeveer 4 tot 5 weken vroeger afgesloten. Daarna kan je tonen wat
+                        je in je mars hebt en alles toepassen in een project: van slimme aquaria, een personal assistant robot tot een
+                        applicatie die je kenmerken scant en kledingsadvies geeft dankzij AI. <strong>Het bedrijfsleven is zeer
+                            enthousiast</strong>: zij laten MCT'ers experimentele technologie uitzoeken in tientallen cases die in de
+                        praktijk toegepast zullen worden. MCT is een laboratorium voor de bedrijfswereld dankzij de studentenprojecten en
+                        het <strong>MCT-researchlab Sizing Servers</strong> die cases uitvoerde voor onder andere: <strong>Facebook,
+                            Intel, IBM, Picanol, Touring Mobilis en vele anderen</strong>.</p>
+                </div>
 
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<p><img alt="Een project helpt om echt te snappen hoe iets werkt." data-src="./images/software-development-leren.jpg"
-						 class="lozad"></p>
-					<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-						Een project helpt om echt te snappen hoe iets werkt.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <p><img alt="Een project helpt om echt te snappen hoe iets werkt." data-src="./images/software-development-leren.jpg"
+                         class="lozad"></p>
+                    <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                        Een project helpt om echt te snappen hoe iets werkt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="c-row c-row--xl">
-		<div class="o-container">
-			<div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<p><img alt="We hebben echt goede IT docenten, die studenten zo goed mogelijk begeleiden om professionals te worden."
-						 data-src="./images/docent-web-app-development.jpg" class="lozad">
-					</p>
-					<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-						Ja, dit is een echte.
-					</p>
-				</div>
+    <section class="c-row c-row--xl">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <p><img alt="We hebben echt goede IT docenten, die studenten zo goed mogelijk begeleiden om professionals te worden."
+                         data-src="./images/docent-web-app-development.jpg" class="lozad">
+                    </p>
+                    <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                        Ja, dit is een echte.
+                    </p>
+                </div>
 
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<h3 class="u-ms4-bp3 u-ms4-bp5">Nabije docenten</h3>
-					<p>
-						MCT bestaat al 20 jaar en vanaf het prille begin was <strong>"dicht bij de studenten staan"</strong> een
-						belangrijke waarde voor alle docenten. Je docenten zijn aanspreekbaar, je hebt een mentor die je begeleidt, de
-						studentenparticipatie staat open voor iedereen én we maken er een erezaak van om na goed overleg <strong>bij te sturen op basis van je feedback</strong>.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <h3 class="u-ms4-bp3 u-ms4-bp5">Nabije docenten</h3>
+                    <p>
+                        MCT bestaat al 20 jaar en vanaf het prille begin was <strong>"dicht bij de studenten staan"</strong> een
+                        belangrijke waarde voor alle docenten. Je docenten zijn aanspreekbaar, je hebt een mentor die je begeleidt, de
+                        studentenparticipatie staat open voor iedereen én we maken er een erezaak van om na goed overleg <strong>bij te sturen op basis van je feedback</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="c-row u-bgcolor-neutral-xxx-light">
-		<div class="o-container">
-			<div class="o-grid o-grid--gutter-lg">
-				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
-					<h2 class="u-ms10-bp3 u-ms10-bp5">Go International!</h2>
-				</div>
-			</div>
-			<div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-center">
-					<h3 class="u-ms4-bp3 u-ms4-bp5">Internationale competenties</h3>
-					<p>Naast <strong>buitenlandse gastsprekers</strong> is er ook aandacht voor interculturele competenties en international classes en zijn er heel veel kansen voor MCT-studenten om hun vleugels uit te slaan. Behoorlijk wat studenten kiezen om hun stage in het buitenland (USA, Kazachstan, Spanje, Zuid-Africa, ...) bij partneruniversiteiten of gerenomeerde bedrijven te doen. Het is 						mogelijk om een korte of langere periode in het buitenland te studeren. We onderhouden de contacten met <strong>onze buitenlandse partners</strong> goed en MCT-studenten blijken uitstekende ambassadeurs!</p>
-				</div>
+    <section class="c-row u-bgcolor-neutral-xxx-light">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <h2 class="u-ms10-bp3 u-ms10-bp5">Go International!</h2>
+                </div>
+            </div>
+            <div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-center">
+                    <h3 class="u-ms4-bp3 u-ms4-bp5">Internationale competenties</h3>
+                    <p>Naast <strong>buitenlandse gastsprekers</strong> is er ook aandacht voor interculturele competenties en international classes en zijn er heel veel kansen voor MCT-studenten om hun vleugels uit te slaan. Behoorlijk wat studenten kiezen om hun stage in het buitenland (USA, Kazachstan, Spanje, Zuid-Africa, ...) bij partneruniversiteiten of gerenomeerde bedrijven te doen. Het is                        mogelijk om een korte of langere periode in het buitenland te studeren. We onderhouden de contacten met <strong>onze buitenlandse partners</strong> goed en MCT-studenten blijken uitstekende ambassadeurs!</p>
+                </div>
 
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-center">
-					<p><img alt="Veel kansen voor MCT-studenten om hun vleugels uit te slaan!" data-src="./images/studeren-in-usa-howest.jpg" class="lozad"></p>
-					<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-						Veel kansen voor MCT-studenten om hun vleugels uit te slaan!
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-center">
+                    <p><img alt="Veel kansen voor MCT-studenten om hun vleugels uit te slaan!" data-src="./images/studeren-in-usa-howest.jpg" class="lozad"></p>
+                    <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                        Veel kansen voor MCT-studenten om hun vleugels uit te slaan!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="c-row c-row--lg u-bgcolor-neutral-xxx-light">
-		<div class="o-container">
-			<div class="o-grid o-grid--gutter-sm o-flex o-flex--wrap o-flex--align-end">
-				<div class="o-grid__item u-4-of-12-bp3  o-flex o-flex--wrap o-flex--align-end">
-					<div class="c-media">
-						<p><img alt="Nieuwe opportuniteiten met studenten in het buitenland." class="lozad" data-src="./images/studeren-in-het-buitenland.jpg"></p>
-						<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-							Nieuwe opportuniteiten.
-						</p>
-					</div>
-				</div>
+    <section class="c-row c-row--lg u-bgcolor-neutral-xxx-light">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-sm o-flex o-flex--wrap o-flex--align-end">
+                <div class="o-grid__item u-4-of-12-bp3  o-flex o-flex--wrap o-flex--align-end">
+                    <div class="c-media">
+                        <p><img alt="Nieuwe opportuniteiten met studenten in het buitenland." class="lozad" data-src="./images/studeren-in-het-buitenland.jpg"></p>
+                        <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            Nieuwe opportuniteiten.
+                        </p>
+                    </div>
+                </div>
 
-				<div class="o-grid__item u-4-of-12-bp3 o-flex o-flex--wrap o-flex--align-end ">
-					<div class="c-media">
-						<p><img alt="Student toegepaste informatica MCT in Zuid Korea" class="lozad" data-src="./images/student-korea.jpg"></p>
-						<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-							Studente in Korea.
-						</p>
-					</div>
-				</div>
+                <div class="o-grid__item u-4-of-12-bp3 o-flex o-flex--wrap o-flex--align-end ">
+                    <div class="c-media">
+                        <p><img alt="Student toegepaste informatica MCT in Zuid Korea" class="lozad" data-src="./images/student-korea.jpg"></p>
+                        <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            Studente in Korea.
+                        </p>
+                    </div>
+                </div>
 
-				<div class="o-grid__item u-4-of-12-bp3 o-flex o-flex--wrap o-flex--align-end ">
-					<div class="c-media">
-						<p><img alt="Student in Zuid-Afrika." class="lozad" data-src="./images/student-in-afrika.jpg"></p>
-						<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-							Student in Zuid-Afrika.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div class="o-grid__item u-4-of-12-bp3 o-flex o-flex--wrap o-flex--align-end ">
+                    <div class="c-media">
+                        <p><img alt="Student in Zuid-Afrika." class="lozad" data-src="./images/student-in-afrika.jpg"></p>
+                        <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            Student in Zuid-Afrika.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="c-row u-bgcolor-neutral-xxx-light">
-		<div class="o-container">
-			<div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<p><img alt="Field trip to Silicon Valley" data-src="./images/studiereis-in-San-Francisco.jpg" class="lozad"></p>
-				</div>
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<h3 class="u-ms4-bp3 u-ms4-bp5">Field trip to Silicon Valley</h3>
-					<p>We houden de vinger aan de pols in Silicon Valley: sedert 2007 gaan we jaarlijks met MCT-studenten en alumni
-						richting <strong>San Francisco</strong> in de lentevakantie. Deze lange traditie houden we in ere want: 'we lost
-						our heart in San Francisco...'. Het is een jaarlijks blij weerzien <strong>met Cisco, Google, Facebook, ...</strong>
-						We bezoeken zowel gevestigde waarden als spannende start-ups. De HTML5-usergroup en onze vrienden van Adobe HQ
-						gaven de voorbije jaren MCT-talent de kans om te shinen voor meer dan 500 <strong>bedrijfsmensen uit de Bay area</strong>
-						en de makers van de software waar je dagelijks mee werkt...</p>
-					<p>Natuurlijk maken we ook tijd voor ontspanning: geniet van een NBA match of ga hiken in het prachtige Yosemite
-						National Park... Shop 'till you drop in the huge warehouses, Chinatown of Fisherman’s wharf of geniet in het
-						zonnetje onder de <strong>Golden Gate Bridge</strong> van een smakelijke BBQ!</p>
-				</div>
-			</div>
+    <section class="c-row u-bgcolor-neutral-xxx-light">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <p><img alt="Field trip to Silicon Valley" data-src="./images/studiereis-in-San-Francisco.jpg" class="lozad"></p>
+                </div>
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <h3 class="u-ms4-bp3 u-ms4-bp5">Field trip to Silicon Valley</h3>
+                    <p>We houden de vinger aan de pols in Silicon Valley: sedert 2007 gaan we jaarlijks met MCT-studenten en alumni
+                        richting <strong>San Francisco</strong> in de lentevakantie. Deze lange traditie houden we in ere want: 'we lost
+                        our heart in San Francisco...'. Het is een jaarlijks blij weerzien <strong>met Cisco, Google, Facebook, ...</strong>
+                        We bezoeken zowel gevestigde waarden als spannende start-ups. De HTML5-usergroup en onze vrienden van Adobe HQ
+                        gaven de voorbije jaren MCT-talent de kans om te shinen voor meer dan 500 <strong>bedrijfsmensen uit de Bay area</strong>
+                        en de makers van de software waar je dagelijks mee werkt...</p>
+                    <p>Natuurlijk maken we ook tijd voor ontspanning: geniet van een NBA match of ga hiken in het prachtige Yosemite
+                        National Park... Shop 'till you drop in the huge warehouses, Chinatown of Fisherman’s wharf of geniet in het
+                        zonnetje onder de <strong>Golden Gate Bridge</strong> van een smakelijke BBQ!</p>
+                </div>
+            </div>
 
-		</div>
-	</section>
+        </div>
+    </section>
 
-	<section class="c-row c-row--lg">
-		<div class="o-container">
-			<div class="o-grid o-grid--gutter-lg">
-				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
-					<h2 class="u-ms10-bp3 u-ms10-bp5">Stage</h2>
-				</div>
-			</div>
-			<div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<h3 class="u-ms4-bp3 u-ms4-bp5">Zoeken naar stage</h3>
-					<p>De start voor het vinden van een stageplaats is een <strong>één-op-één contact met bedrijven</strong> tijdens de stagemarkt. Studenten kunnen op voorhand drie favoriete stageprojecten aanduiden. Zo wisten de aanwezige stagebedrijven dat er zeker interesse was voor hun bedrijfsactiviteiten.</p>
-					<p>Het concept van 10 minuutjes babbelen – wie ben je, wat wil je, wat hebben we aan elkaar te bieden – is een prettige formule. Je kan immers met 5 tot 8 bedrijven op één namiddag praten. Zo vind je de stage die het best past bij je persoonlijkheid en technologische voorkeur.</p>
-					<p>
-						<a class="c-button c-button--alpha c-button--md" href="/stage/">Praktische info</a>
-					</p>
-				</div>
+    <section class="c-row c-row--lg">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <h2 class="u-ms10-bp3 u-ms10-bp5">Stage</h2>
+                </div>
+            </div>
+            <div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-center">
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <h3 class="u-ms4-bp3 u-ms4-bp5">Zoeken naar stage</h3>
+                    <p>De start voor het vinden van een stageplaats is een <strong>één-op-één contact met bedrijven</strong> tijdens de stagemarkt. Studenten kunnen op voorhand drie favoriete stageprojecten aanduiden. Zo wisten de aanwezige stagebedrijven dat er zeker interesse was voor hun bedrijfsactiviteiten.</p>
+                    <p>Het concept van 10 minuutjes babbelen – wie ben je, wat wil je, wat hebben we aan elkaar te bieden – is een prettige formule. Je kan immers met 5 tot 8 bedrijven op één namiddag praten. Zo vind je de stage die het best past bij je persoonlijkheid en technologische voorkeur.</p>
+                    <p>
+                        <a class="c-button c-button--alpha c-button--md" href="/stage/">Praktische info</a>
+                    </p>
+                </div>
 
-				<div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
-					<p><img alt="Goede stagiairs in de IT en informatica krijgen" class="lozad" data-src="./images/stagemarkt-howest.jpg"></p>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div class="o-grid__item u-5-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end">
+                    <p><img alt="Goede stagiairs in de IT en informatica krijgen" class="lozad" data-src="./images/stagemarkt-howest.jpg"></p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 {{ end }}

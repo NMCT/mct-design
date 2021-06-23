@@ -55,10 +55,10 @@
                                         {{ end }}
                                     {{ end }}
                                 {{ end }}
-                                {{ if in .Params.Track "smart-tech-ai" }}
+                                {{ if in .Params.Track "smart-xr-developer" }}
                                     {{ range (where .Site.Pages "Type" "programma") }}
                                         {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "smart-tech-ai" }}
+                                            {{ if in .Params.Tracks "smart-xr-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                                     <p class="c-module__tags">{{ .Params.Tags }}</p>
@@ -67,10 +67,10 @@
                                         {{ end }}
                                     {{ end }}
                                 {{ end }}
-                                {{ if in .Params.Track "web-app" }}
+                                {{ if in .Params.Track "next-web-developer" }}
                                     {{ range (where .Site.Pages "Type" "programma") }}
                                         {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "web-app" }}
+                                            {{ if in .Params.Tracks "next-web-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                                     <p class="c-module__tags">{{ .Params.Tags }}</p>
@@ -108,10 +108,10 @@
                                         {{ end }}
                                     {{ end }}
                                 {{ end }}
-                                {{ if in .Params.Track "smart-tech-ai" }}
+                                {{ if in .Params.Track "smart-xr-developer" }}
                                     {{ range (where .Site.Pages "Type" "programma") }}
                                         {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "smart-tech-ai" }}
+                                            {{ if in .Params.Tracks "smart-xr-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                                     <p class="c-module__tags">{{ .Params.Tags }}</p>
@@ -120,10 +120,10 @@
                                         {{ end }}
                                     {{ end }}
                                 {{ end }}
-                                {{ if in .Params.Track "web-app" }}
+                                {{ if in .Params.Track "next-web-developer" }}
                                     {{ range (where .Site.Pages "Type" "programma") }}
                                         {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "web-app" }}
+                                            {{ if in .Params.Tracks "next-web-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                                     <p class="c-module__tags">{{ .Params.Tags }}</p>
@@ -159,14 +159,14 @@
     {{ if in .Params.Track "ai-engineer" }}
     {{ partial "components/cta.html" (dict "title" "Kies jij AI Engineer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
     {{ end }}
-    {{ if in .Params.Track "smart-tech-ai" }}
-    {{ partial "components/cta.html" (dict "title" "Kies jij Smart Tech & AI Creator?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
+    {{ if in .Params.Track "smart-xr-developer" }}
+    {{ partial "components/cta.html" (dict "title" "Kies jij Smart XR Developer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
     {{ end }}
     {{ if in .Params.Track "infrastructure-engineer" }}
     {{ partial "components/cta.html" (dict "title" "Kies jij AI Engineer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
     {{ end }}
-    {{ if in .Params.Track "web-app" }}
-    {{ partial "components/cta.html" (dict "title" "Kies jij Web App Developer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
+    {{ if in .Params.Track "next-web-developer" }}
+    {{ partial "components/cta.html" (dict "title" "Kies jij Next Web Developer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
     {{ end }}
 </main>
 {{ end }}

@@ -5,7 +5,6 @@ weight: 30
 tags: "#neuralnetworks #ai #machinelearning"
 pillar: analysis
 tracks:
-- smart-tech-ai
 - ai-engineer
 ---
 

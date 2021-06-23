@@ -38,5 +38,5 @@ Nu haar afstuderen dichterbij komt is het duidelijk dat ze nog verder wil gaan. 
 **Ilse Lapere**  
 **Voorkennis**: Handel in het middelbaar & business management en entrepreneurship als 1ste bachelor  
 **Provincie**: West-Vlaanderen  
-**Keuzetraject**: [Web App developer](/programma/web-app-developer/)  
+**Keuzetraject**: [Next Web Developer](/programma/next-web-developer/)  
 **Waarom MCT**: MCT is een praktische richting, dus is het meer dingen uitproberen dan met je neus tussen de boeken zitten. De combinatie business en IT is eerder een uniek profiel op de arbeidsmarkt. Niet veel IT’ers kunnen meedenken wanneer een technische oplossing gezocht moet worden voor een bepaald probleem. Wanneer ik hierin kan meedenken, creëer ik een bonus voor het bedrijf. 

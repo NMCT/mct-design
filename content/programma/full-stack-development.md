@@ -1,12 +1,13 @@
 ---
-title: Full-stack Development
+title: Advanced Full Stack Development
 semester: 5
 weight: 20
-tags: "#API #backend #morePWA"
+tags: "#frontend #backend #GCP #firebase #morePWA #ai"
 pillar: code
 tracks:
-- web-app
+- next-web-developer
+aliases:
+- framework-patterns
 ---
-Met het **Entity Framework Core** en **Model First** bouw je een API volgens de **REST API level 3 standaard**. De **asynchrone**, professioneel **gedocumenteerde** en **beveiligde API** gebruikt een SQL of NoSQL **database** en wordt met **Docker gedistribueerd**.
 
-Door het gebruik van **caching** en **service workers** maak je een **API** toepassing zowel **online als offline beschikbaar**. In samenwerking met de Framework & Patterns module eindig je als full-stack developer met een volwaardige **Progressive Web Applicatie**, die notificaties accepteert voor een betere mobiele ervaring!
+In deze module werken we aan full stack projecten die we bouwen op verschillende PaaS-oplossingen. We kijken naar de beste koppeling tussen de frontend en de backend met alle tools die momenteel interessant zijn.

@@ -5,7 +5,6 @@ weight: 10
 tags: "#python #pandas #algorithm #maths"
 pillar: analysis
 tracks:
-- smart-tech-ai
 - ai-engineer
 ---
 

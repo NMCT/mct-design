@@ -11,7 +11,7 @@
 {{ $modal := resources.Get "js/modal.js" }}
 {{ $theCollective := resources.Get "js/the-collective.js" }}
 
-{{ $js := slice $carousel $curriculum $contact $sharing $dialog $modal $app $theCollective | resources.Concat "js/app.js" | resources.Minify }}
+{{ $js := slice $app $carousel $curriculum $contact $sharing $dialog $modal $theCollective $faq | resources.Concat "js/app.js" | resources.Minify }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
 
 <script src="https://cdn.jsdelivr.net/npm/lozad"></script>

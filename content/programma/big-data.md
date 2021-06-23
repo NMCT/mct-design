@@ -1,11 +1,12 @@
 ---
 title: Big Data
+aliases: 
+- artificial-intelligence-big-data
 semester: 4
 weight: 20
 tags: "#timeseries #nosql #textsearch #mapreduce #spark #stream #batch"
 pillar: analysis
 tracks: 
-- smart-tech-ai
 - ai-engineer
 ---
 

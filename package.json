@@ -1,25 +1,5 @@
 {
-  "name": "mct-design",
-  "version": "1.0.0",
-  "description": "Some helper functions for the website.",
-  "main": "postcss.config.js",
-  "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.2.0",
-    "autoprefixer": "^9.6.1",
-    "cssnano": "^4.1.10",
-    "postcss-cli": "^6.1.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NMCT/mct-design.git"
-  },
-  "author": "ML",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NMCT/mct-design/issues"
-  },
-  "homepage": "https://github.com/NMCT/mct-design#readme"
+  "devDependencies": {
+    "prettier-plugin-go-template": "^0.0.10"
+  }
 }

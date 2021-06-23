@@ -1,5 +1,5 @@
 ---
-title: Team project
+title: Team Project
 semester: 3
 weight: 50
 tags: "#agile #sprints #teamwork #projectmanagement"

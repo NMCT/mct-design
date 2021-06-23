@@ -1,5 +1,5 @@
 -
-  title: Smart Tech & AI
+  title: Smart XR Developer
   text: "
     Wil je sensordata verzamelen en met elkaar connecteren? Is het ontwerpen en programmeren van een artificieel brein echt iets voor jou? Lijkt het je wel iets om je voorspellingen visueel weer te geven in slimme, mixed reality applicaties? Dan is MCT uitstroomprofiel Smart Tech & AI waarschijnlijk iets voor jou! Programmeer en connecteer sensoren met Lora en Python. Analyseer datastromen met Machine Learning algoritmes en neurale netwerken.
   "
@@ -7,9 +7,9 @@
   # image: inspiratie.jpg
   weight: 10
 -
-  title: Web App Developer
+  title: Next Web Developer
   text: "
-    Wil je zowel de front-end als back-end van slimme applicaties bouwen? Is verhalen visueel weergeven echt iets voor jou? Kriebelt het om één van de eerste echte Mixed Reality Developers te worden? Dan is MCT uitstroom profiel Web App Developer waarschijnlijk iets voor jou! Ga aan de slag met HTML, Javascript en Xamarin. Voel je helemaal thuis in Android. Frameworks en patterns hebben geen geheimen voor jou!
+    Wil je zowel de frontend als backend van slimme applicaties bouwen? Is verhalen visueel weergeven echt iets voor jou? Kriebelt het om één van de eerste echte Mixed Reality Developers te worden? Dan is MCT uitstroom profiel Next Web Developer waarschijnlijk iets voor jou! Ga aan de slag met HTML, Javascript en Xamarin. Voel je helemaal thuis in Android. Frameworks en patterns hebben geen geheimen voor jou!
   "
   # image: forum.jpg
   toekomst: Frontend developer, backend developer, software engineer, iOS developer, Android developer, Xamarin developer, .NET developer, ...
@@ -17,7 +17,7 @@
 -
   title: AI Engineer
   text: "
-    De AI Engineer ontwikkelt AI software, gebruik makend van eenvoudige regressies tot complexe deep learning en/of state of the art reinforcement learning modellen. Maar deze scherpzinnige developer gaat verder dan dat: hij/zij ontwikkelt een volledige back-end & API om de kracht van AI om te zetten in een innovatieve oplossing.
+    De AI Engineer ontwikkelt AI software, gebruik makend van eenvoudige regressies tot complexe deep learning en/of state of the art reinforcement learning modellen. Maar deze scherpzinnige developer gaat verder dan dat: hij/zij ontwikkelt een volledige backend & API om de kracht van AI om te zetten in een innovatieve oplossing.
   "
   # image: gipgiphoera.jpg
   toekomst: Big Data Developer, AI Engineer, Backend developer, ...
