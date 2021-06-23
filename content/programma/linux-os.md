@@ -6,7 +6,6 @@ weight: 20
 tags: "#linux #debian #operatingsystem #internet"
 pillar: connect
 tracks:
-- smart-tech-ai
 - infrastructure-engineer
 tools: "Debian GNU/Linux, Apache httpd, haproxy, bash, ssh, ..."
 ---

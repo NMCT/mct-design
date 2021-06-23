@@ -15,7 +15,7 @@ Mijn studiekeuze in hoger onderwijs was ook toen niet in 1-2-3 beslist. Ik heb g
 
 > De kans om direct met cutting-edge technologie te werken in projecten, was doorslaggevend om te kiezen voor MCT.
 
-__"Toen ik mij inschreef, lag mijn mijn focus op [Web App developer](https://mct.be/programma/web-app-developer/). Het idee dat ik een Full stack developer kon worden vond ik super. "__
+__"Toen ik mij inschreef, lag mijn mijn focus op [Next Web Developer](https://mct.be/programma/next-web-developer/). Het idee dat ik een Full stack developer kon worden vond ik super. "__
 
 Maar toch besloot Niels een ander pad in te slaan en MCT [“AI Engineer”](https://mct.be/programma/ai-engineer/) te volgen. Wat gaf de doorslag?  
 __"Tijdens de lessen Data Science van Wouter Gevaert, die heel goed les geeft, had ik vernomen dat er een nieuwe specialisatie in de maak was, AI Engineer. Dat triggerde mijn passie voor cutting-edge technologie en mijn keuze was gemaakt. Natuurlijk is de passie voor web and app nog steeds niet weg en hou ik mezelf nog up-to-date door zelfstudie."__

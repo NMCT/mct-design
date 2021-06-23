@@ -27,7 +27,7 @@ ErrorDocument 404 /404.html
                                   "application/vnd.ms-fontobject" \
                                   "application/x-font-ttf" \
                                   "application/x-javascript" \
-                                  "application/x-web-app-manifest+json" \
+                                  "application/x-next-web-developer-manifest+json" \
                                   "application/xhtml+xml" \
                                   "application/xml" \
                                   "font/eot" \

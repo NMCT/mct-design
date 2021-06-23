@@ -45,7 +45,7 @@ Slimme applicaties ontwikkelen die de kwaliteit van het leven verbeteren. Alexan
 **Alexandra Christiaens**  
 **Voorkennis**: ASO Wetenschappen-Wiskunde, Master Pedagogische wetenschappen - Orthopedagogiek (KUL)  
 **Provincie**: West-Vlaanderen  
-**Keuzetraject**: [Web App developer](/programma/web-app-developer/)  
+**Keuzetraject**: [Next Web Developer](/programma/next-web-developer/)  
 **Waarom MCT**: Omdat er veel mogelijkheden zijn om als een goede programmeur een bijdrage te kunnen leveren aan het leven van personen met een beperking.
 
 MCT biedt een brede basis aan waarna uitgesplitst wordt in vier uitstroomprofielen.  De brede basis omvat vier pijlers: Create, Code, Connect, Analysis. Ik wilde graag van alle vier een zekere basiskennis verwerven voor ik me zou specialiseren. Het is deze insteek, samen met de focus op projecten die me overtuigden om voor MCT te kiezen

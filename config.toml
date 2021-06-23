@@ -1,11 +1,14 @@
-baseURL = "https://mct.be/"
+# baseURL = "https://mct.be/"
 # assetDir = "http://localhost:8888/mct-design/public/"
 title = "MCT"
 theme = "mct"
 languageCode = "nl"
+
 relativeURLS = true
 canonifyurls = true
 enableEmoji = true
+
+disableKinds = ["term", "taxonomy"]
 
 [menu]
   [[menu.main]]

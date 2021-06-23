@@ -6,7 +6,7 @@ tags: "#expo #reactNative #iOS #Android"
 pillar: code
 tools: "Expo, webpack, JS, ReactNative, Lottie"
 tracks:
-- web-app
+- next-web-developer
 ---
 
 **Smart App Development — Hoe maken we performante en mooie apps die een zo veel mogelijk gedeelde codebase hebben tussen iOS & Android?**
@@ -15,4 +15,4 @@ We bekijken hoe we met React Native een hybride mobile app kunnen maken met een 
 
 Ook komen animaties aan bod, basis microinteracties en het gestructureerd werken met Javascript.
 
-Deze module is ook een aanzet naar de web-based [JS-frameworks en patterns](/programma/framework-patterns/).
+Deze module is ook een aanzet naar de web-based [JS-frameworks en patterns](/programma/full-stack-development/).
