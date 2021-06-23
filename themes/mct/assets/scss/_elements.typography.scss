@@ -4,47 +4,54 @@
     Default markup for typographic elements
 */
 
-* {
-    font-feature-settings: "liga" 1, "zero" 1, "calt" 1, "ss01" 1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+    font-feature-settings: "liga", "zero", "calt", "ss01", "case", "cv05", "cv11";
 }
 
 h1 {
-    font-family: $h1-font-family;
+    // font-family: $h1-font-family;
     font-weight: $h1-font-weight;
+    letter-spacing: -.025em;
     @include ms6;
     @include margin-bottom($h1-margin-bottom);
 }
 
 h2 {
-    font-family: $h2-font-family;
+    // font-family: $h2-font-family;
     font-weight: $h2-font-weight;
     @include ms4;
     @include margin-bottom($h2-margin-bottom);
 }
 
 h3 {
-    font-family: $h3-font-family;
+    // font-family: $h3-font-family;
     font-weight: $h3-font-weight;
     @include ms1;
     @include margin-bottom($h3-margin-bottom);
 }
 
 h4 {
-    font-family: $h4-font-family;
+    // font-family: $h4-font-family;
     font-weight: $h4-font-weight;
     @include ms1;
     @include margin-bottom($h4-margin-bottom);
 }
 
 h5 {
-    font-family: $h5-font-family;
+    // font-family: $h5-font-family;
     font-weight: $h5-font-weight;
     @include ms0;
     @include margin-bottom($h5-margin-bottom);
 }
 
 h6 {
-    font-family: $h6-font-family;
+    // font-family: $h6-font-family;
     font-weight: $h6-font-weight;
     @include ms0;
     @include margin-bottom($h6-margin-bottom);
@@ -85,7 +92,7 @@ li {
 blockquote {
     font-style: $blockquote-font-style;
     font-weight: $delta-font-weight;
-    font-family: $gamma-font-family;
+    // font-family: $gamma-font-family;
     padding-left: 0;
     @include ms3;
     @include margin-bottom($blockquote-margin-bottom);

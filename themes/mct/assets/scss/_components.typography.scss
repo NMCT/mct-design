@@ -4,8 +4,18 @@
     Special typography classes
 */
 
+.c-type-intro,
+.c-type-intro-small,
+.c-type-lead,
+.c-type-title-sm,
+.c-type-title-md,
+.c-type-title-lg {
+    letter-spacing: -.025em;
+    font-feature-settings: "liga", "zero", "calt", "ss01", "case", "cv05", "cv11";
+}
+
 .c-type-lead {
-    font-weight: $delta-font-weight;
+    font-weight: $delta-font-weight;    
     @include ms2;
 }
 
@@ -17,7 +27,7 @@
 
 .c-type-intro {
     font-weight: $delta-font-weight;
-    font-family: $gamma-font-family;
+    // font-family: $gamma-font-family;
     @include ms4;
 
     a {
@@ -48,7 +58,7 @@
 
 .c-type-intro-small {
     font-weight: $delta-font-weight;
-    font-family: $gamma-font-family;
+    // font-family: $gamma-font-family;
     font-weight: $delta-font-weight;
 }
 
@@ -105,7 +115,8 @@
 
 
 .c-type-title-sm {
-    font-family: $gamma-font-family;
+    // font-family: $gamma-font-family;
+    font-weight: $delta-font-weight;
     @include ms2;
 
     @include mq(bp3) {
@@ -114,7 +125,8 @@
 }
     
 .c-type-title-md {
-    font-family: $gamma-font-family;
+    // font-family: $gamma-font-family;
+    font-weight: $delta-font-weight;
 
     @include mq(bp3) {
         @include ms6;
@@ -126,7 +138,8 @@
 }
 
 .c-type-title-lg {
-    font-family: $gamma-font-family;
+    // font-family: $gamma-font-family;
+    font-weight: $delta-font-weight;
 
     @include mq(bp3) {
         @include ms10;

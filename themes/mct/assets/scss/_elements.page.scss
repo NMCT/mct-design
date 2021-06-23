@@ -9,6 +9,7 @@ html {
 	-webkit-overflow-scrolling: touch;
 	background-color: $html-background-color;
 	scroll-behavior: smooth;
+	font-feature-settings: "liga", "zero", "calt", "ss01", "case", "cv05";
 
 	@if $html-responsive-font-size == true {
 		@include mq($html-responsive-font-breakpoint) {
@@ -23,7 +24,7 @@ html {
 
 body {
 	color: $body-color;
-	font-feature-settings: 'zero' 1, 'tnum' 1, 'calt' 1, 'ss01' 1, 'case' 1;
+	// font-feature-settings: 'zero' 1, 'tnum' 1, 'calt' 1, 'ss01' 1, 'case' 1;
 	overflow-x: hidden;
 	// @include margin-bottom(map-get($increments, beta));
 
