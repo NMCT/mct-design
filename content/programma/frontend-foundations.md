@@ -1,6 +1,7 @@
 ---
 title: Frontend Foundations
 semester: 1
+studycredits: 3
 weight: 45
 tags:
 - HTML

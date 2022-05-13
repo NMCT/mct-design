@@ -1,6 +1,7 @@
 ---
 title: AI Cloud
 semester: 4
+studycredits: 6
 weight: 20
 tags:
 - AI-Integration

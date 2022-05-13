@@ -1,6 +1,7 @@
 ---
 title: Research Project
 semester: 5
+studycredits: 6
 weight: 50
 tags:
 - advancedintegration

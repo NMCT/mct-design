@@ -1,6 +1,7 @@
 ---
 title: IoT Devices & Robotics
 semester: 5
+studycredits: 6
 weight: 20
 tags:
 - Lora

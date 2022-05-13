@@ -1,6 +1,7 @@
 ---
 title: Industry Project
 semester: 4
+studycredits: 6
 weight: 50
 tags:
 - agile

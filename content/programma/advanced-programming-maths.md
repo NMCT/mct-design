@@ -1,6 +1,7 @@
 ---
 title: Advanced Programming & Maths
 semester: 4
+studycredits: 6
 weight: 10
 tags:
 - python 

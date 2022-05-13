@@ -1,6 +1,7 @@
 ---
 title: Data Management
 semester: 2
+studycredits: 6
 weight: 30
 tags:
 - T-SQL

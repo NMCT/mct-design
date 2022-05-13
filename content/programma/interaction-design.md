@@ -1,6 +1,7 @@
 ---
 title: Interaction Design
 semester: 3
+studycredits: 6
 weight: 40
 tags: 
 - dashboards

@@ -1,6 +1,7 @@
 ---
 title: Deep Learning
 semester: 5
+studycredits: 6
 weight: 10
 tags:
 - dsp

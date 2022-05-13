@@ -1,6 +1,7 @@
 ---
 title: Augmented & Mixed Reality
 semester: 5
+studycredits: 6
 weight: 30
 tags:
 - AR

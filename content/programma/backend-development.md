@@ -1,6 +1,7 @@
 ---
 title: Backend Development
 semester: 4
+studycredits: 6
 weight: 30
 tags:
 - ASP 

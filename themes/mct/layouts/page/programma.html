@@ -34,32 +34,29 @@
                                 </svg>
                             </button>
                             <ul class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="smart-xr-developer" data-name="Smart XR Developer"
-                                 data-module="10">
-                                    <a href="#!" class="c-curriculum-choices__filter">
+                                <li class="c-curriculum-choices__item">
+                                    <a href="#profile-smart-xr-developer" class="c-curriculum-choices__filter">
                                         <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
                                             {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
                                         </svg> Smart XR Developer
                                     </a>
                                 </li>
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="next-web-developer" data-name="Next Web Developer"
-                                 data-module="9">
-                                    <a href="#!" class="c-curriculum-choices__filter">
+                                <li class="c-curriculum-choices__item">
+                                    <a href="#profile-next-web-developer" class="c-curriculum-choices__filter">
                                         <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
                                             {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
                                         </svg> Next Web Developer
                                     </a>
                                 </li>
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="ai-engineer" data-name="AI Engineer" data-module="14">
-                                    <a href="#!" class="c-curriculum-choices__filter">
+                                <li class="c-curriculum-choices__item">
+                                    <a href="#profile-ai-engineer" class="c-curriculum-choices__filter">
                                         <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
                                             {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
                                         </svg> AI Engineer
                                     </a>
                                 </li>
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="infrastructure-engineer" data-name="IoT Infrastructure Engineer"
-                                 data-module="11">
-                                    <a href="#!" class="c-curriculum-choices__filter">
+                                <li class="c-curriculum-choices__item">
+                                    <a href="#profile-infrastructure-engineer" class="c-curriculum-choices__filter">
                                         <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
                                             {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
                                         </svg> IoT Infrastructure Engineer
@@ -70,31 +67,44 @@
                     </div>
                 </div>
 
-                <div class="c-curriculum">
+                <div class="c-curriculum" data-placeholder="Waar word jij expert in?">
                     {{ range $i, $sequence := seq 6 }}
                         <h3 class="c-curriculum__semester-title">
                             Semester {{ $sequence }}
                         </h3>
 
                         {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
-                        {{ if in (slice 1 2 3 6) $sequence }}
-                            {{ range (where $.Site.Pages "Type" "programma") }}
-                                {{ if eq .Params.Semester $sequence }}
-                                    <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ .Params.Semester }} js-module-link">
-                                        <h4 class="c-module__title">{{ .Title }}</h4>
-                                        {{ if .Params.Tags }}
-                                            <p class="c-module__tags">
-                                                {{ range .Params.Tags }}
-                                                    #{{ . }}
-                                                {{ end }}
-                                            </p>
+                        {{ range (where $.Site.Pages "Type" "programma") }}
+                            {{ if eq .Params.Semester $sequence }}
+                                <a
+                                    href="{{ .Permalink }}"
+                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ .Params.Semester }} u-y-span-{{ .Params.StudyCredits }} js-module
+                                    {{ if in (slice 4 5) $sequence }}
+                                        c-module--dynamic js-module-dynamic
+                                        {{ range .Params.Tracks }}
+                                            js-track-{{ . }}
                                         {{ end }}
-                                    </a>
-                                {{ end }}
+                                    {{ end }}"
+                                >
+                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                    {{ if .Params.Tags }}
+                                        <p class="c-module__tags">
+                                            {{ range .Params.Tags }}
+                                                #{{ . }}
+                                            {{ end }}
+                                        </p>
+                                    {{ end }}
+                                </a>
                             {{ end }}
                         {{ end }}
                     {{ end }}
                 </div>
+
+                <!-- <div class="c-curriculum__call-to-action js-call-to-action">
+                    <p class="c-type-meta u-ms-2 u-mb-gamma u-opacity-gamma js-loading-message">
+                        Wat is jouw passie?
+                    </p>
+                </div> -->
 
                 
 
@@ -235,11 +245,6 @@
                                             {{ end }}
                                         {{ end }}
                                     {{ end }}
-                                </div>
-                                <div class="c-curriculum__call-to-action js-call-to-action">
-                                    <p class="c-type-meta u-ms-2 u-mb-gamma u-opacity-gamma js-loading-message">
-                                        Wat is jouw passie?
-                                    </p>
                                 </div>
                             </div>
                         </div>

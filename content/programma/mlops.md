@@ -3,6 +3,7 @@ title: MLOps
 aliases:
 - ai-cloud-services-devops
 semester: 5
+studycredits: 6
 weight: 10
 tags:
 - Kubernetes

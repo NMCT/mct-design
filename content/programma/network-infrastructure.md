@@ -1,6 +1,7 @@
 ---
 title: Network Infrastructure
 semester: 4
+studycredits: 6
 weight: 10
 tags:
 - CCNA1+2

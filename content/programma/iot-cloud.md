@@ -1,6 +1,7 @@
 ---
 title: IoT Cloud
 semester: 3
+studycredits: 6
 weight: 30
 tags:
 - azure

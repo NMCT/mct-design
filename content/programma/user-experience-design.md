@@ -1,6 +1,7 @@
 ---
 title: User Experience Design
 semester: 1
+studycredits: 3
 weight: 40
 tags:
 - ux

@@ -1,6 +1,7 @@
 ---
 title: Basic Programming
 semester: 1
+studycredits: 6
 weight: 10
 tags:
 - principles

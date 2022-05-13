@@ -1,14 +1,15 @@
 ---
 title: Future Technologies
 semester: 5
+studycredits: 3
 weight: 10
 description: "Aan de slag met nieuwe technologieën, onder onze begeleiding."
 tags:
 - guestLectures
-- project
 - sessions
 pillar: code
-tracks: next-web-developer
+tracks:
+- next-web-developer
 tools: ""
 ---
 

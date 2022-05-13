@@ -1,6 +1,7 @@
 ---
 title: Windows OS
 semester: 4
+studycredits: 6
 weight: 40
 tags:
 - mswindows

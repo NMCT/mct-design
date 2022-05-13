@@ -1,6 +1,7 @@
 ---
 title: Prototyping
 semester: 1
+studycredits: 6
 weight: 50
 tags:
 - arduino

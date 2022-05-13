@@ -1,6 +1,7 @@
 ---
 title: Project One
 semester: 2
+studycredits: 6
 weight: 50
 tags:
 - waterfall

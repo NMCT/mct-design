@@ -1,6 +1,7 @@
 ---
 title: Data Science
 semester: 1
+studycredits: 6
 weight: 30
 tags: 
 - informationextraction

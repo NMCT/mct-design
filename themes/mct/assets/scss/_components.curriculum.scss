@@ -145,14 +145,15 @@ $choice-column-border-style: solid;
 .c-curriculum {
 	// display: flex;
 	// flex-wrap: wrap;
-	// z-index: 10;
-	// @include padding-top($alpha-leading * 0.5);
-	// @include margin-lr($columns-gutter * -0.5);
-	// @include margin-bottom($alpha-leading / 2);
+	z-index: 10;
+	@include padding-top($alpha-leading * 0.5);
+	@include margin-lr($columns-gutter * -0.5);
+	@include margin-bottom($alpha-leading / 2);
 
-	// @include mq(bp5) {
-	// 	@include padding-top($alpha-leading + 1);
-	// }
+	@include mq(bp5) {
+		@include padding-top($alpha-leading + 1);
+	}
+
 	position: relative;
 	display: grid;
 	grid-template-rows: auto repeat(30, 1fr);
@@ -161,17 +162,23 @@ $choice-column-border-style: solid;
 	column-gap: 1.5rem;
 
 	&::before {
-			content: "";
-			display: block;
-			border: 1px solid #000;
-			grid-row: 1 / -1;
-			grid-column: 4 / span 2;
-			position: absolute;
-			top: 0;
-			bottom: .75rem;
-			left: -.75rem;
-			right: -.75rem;
-			pointer-events: none;
+		content: attr(data-placeholder);
+		display: block;
+		border: $choice-column-border-width $choice-column-border-style
+				$choice-column-border-color;
+		grid-row: 1 / -1;
+		grid-column: 4 / span 2;
+		position: absolute;
+		top: 0;
+		bottom: .75rem;
+		left: -.75rem;
+		right: -.75rem;
+		pointer-events: none;
+
+		// START Proof Of Concept
+		padding: 3rem;
+		text-align: center;
+		// END Proof Of Concept
 	}
 }
 
@@ -314,28 +321,4 @@ $choice-column-border-style: solid;
 	@include mq(bp5) {
 		width: calc(200% + 24px);
 	}
-}
-
-.u-grid-column-start-1 {
-	grid-column-start: 1;
-}
-
-.u-grid-column-start-2 {
-	grid-column-start: 2;
-}
-
-.u-grid-column-start-3 {
-	grid-column-start: 3;
-}
-
-.u-grid-column-start-4 {
-	grid-column-start: 4;
-}
-
-.u-grid-column-start-5 {
-	grid-column-start: 5;
-}
-
-.u-grid-column-start-6 {
-	grid-column-start: 6;
 }

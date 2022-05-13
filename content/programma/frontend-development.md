@@ -2,6 +2,7 @@
 title: Frontend
 Description: Hoe kunnen we een performante user interface maken in de browser? We bekijken de volledige flow van een goede test-driven development omgeving tot optimalisatie in de browser.
 semester: 4
+studycredits: 6
 weight: 10
 tags:
 - typescript

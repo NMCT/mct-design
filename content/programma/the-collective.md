@@ -1,6 +1,7 @@
 ---
 title: The Collective
 semester: 5
+studycredits: 6
 weight: 40
 tags:
 - international

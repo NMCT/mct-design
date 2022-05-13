@@ -49,9 +49,15 @@
 		border-color: palette(color-project);
 	}
 
-	// &--single {
-	// 	min-height: calc(100% - 33px);
-	// }
+	&--dynamic {
+		opacity: 0;
+		display: none;
+
+		&.is-visible {
+			opacity: 1;
+			display: flex;
+		}
+	}
 }
 
 .c-module--link {

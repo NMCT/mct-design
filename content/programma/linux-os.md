@@ -2,6 +2,7 @@
 title: Linux OS
 description: Waar kan een onderneming voordeel uithalen door het gebruik van Linux? We leren hoe alomtegenwoordig linux is waarvoor het best gebruikt kan worden, hoe je het opzet, beheert en optimaliseert.
 semester: 4
+studycredits: 6
 weight: 20
 tags:
 - linux

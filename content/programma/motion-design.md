@@ -1,6 +1,7 @@
 ---
 title: Motion Design
 semester: 4
+studycredits: 6
 weight: 40
 tags:
 - AfterEffects

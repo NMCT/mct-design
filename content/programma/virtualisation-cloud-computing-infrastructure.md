@@ -1,6 +1,7 @@
 ---
 title: Virtualisation & Cloud Computing Infrastructure
 semester: 4
+studycredits: 6
 weight: 30
 tags:
 - vmware

@@ -3,6 +3,7 @@ title: Big Data
 aliases: 
 - artificial-intelligence-big-data
 semester: 4
+studycredits: 6
 weight: 20
 tags:
 - timeseries 

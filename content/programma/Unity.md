@@ -1,6 +1,7 @@
 ---
 title: "Unity (DAE: Platform Development 2)"
 semester: 4
+studycredits: 6
 weight: 10
 tags:
 - Unity

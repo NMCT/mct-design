@@ -1,6 +1,7 @@
 ---
 title: Sensors & Interfacing
 semester: 2
+studycredits: 6
 weight: 20
 tags:
 - raspberrypi
