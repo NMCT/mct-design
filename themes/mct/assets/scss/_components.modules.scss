@@ -3,11 +3,27 @@
     ---
 */
 
+
+
 .c-module {
 	grid-row: span 6;
 	background-color: #eee;
 	margin-bottom: 1.5rem;
-	padding: 1rem;
+
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: $radius-md;
+	border-bottom: $alpha-leading * 0.25px solid transparent;
+	background: palette(color-neutral, xxxxx-light);
+	box-shadow: 0 0 0 1px rgba(palette(color-neutral, xxxx-dark), 0.05),
+		0 2px 4px rgba(palette(color-neutral, xxxx-dark), 0.1);
+
+	@include padding-lr($columns-gutter / 2, $columns-gutter / 2);
+	@include padding-tb($alpha-leading / 2, $alpha-leading / 2);
 
 	& + & {
 		@include margin-top($alpha-leading / 2);
