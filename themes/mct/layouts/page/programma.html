@@ -75,18 +75,22 @@
                         <h3 class="c-curriculum__semester-title">
                             Semester {{ $sequence }}
                         </h3>
-                        {{ range (where $.Site.Pages "Type" "programma") }}
-                            {{ if eq .Params.Semester $sequence }}
-                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ .Params.Semester }} js-module-link">
-                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                    {{ if .Params.Tags }}
-                                        <p class="c-module__tags">
-                                            {{ range .Params.Tags }}
-                                                #{{ . }}
-                                            {{ end }}
-                                        </p>
-                                    {{ end }}
-                                </a>
+
+                        {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
+                        {{ if in (slice 1 2 3 6) $sequence }}
+                            {{ range (where $.Site.Pages "Type" "programma") }}
+                                {{ if eq .Params.Semester $sequence }}
+                                    <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ .Params.Semester }} js-module-link">
+                                        <h4 class="c-module__title">{{ .Title }}</h4>
+                                        {{ if .Params.Tags }}
+                                            <p class="c-module__tags">
+                                                {{ range .Params.Tags }}
+                                                    #{{ . }}
+                                                {{ end }}
+                                            </p>
+                                        {{ end }}
+                                    </a>
+                                {{ end }}
                             {{ end }}
                         {{ end }}
                     {{ end }}
