@@ -69,7 +69,32 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="c-curriculum">
+                    {{ range $i, $sequence := seq 6 }}
+                        <h3 class="c-curriculum__semester-title">
+                            Semester {{ $sequence }}
+                        </h3>
+                        {{ range (where $.Site.Pages "Type" "programma") }}
+                            {{ if eq .Params.Semester $sequence }}
+                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ .Params.Semester }} js-module-link">
+                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                    {{ if .Params.Tags }}
+                                        <p class="c-module__tags">
+                                            {{ range .Params.Tags }}
+                                                #{{ . }}
+                                            {{ end }}
+                                        </p>
+                                    {{ end }}
+                                </a>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+
+                
+
+                <!-- <div class="c-curriculum">
                     <section class="c-curriculum__year">
                         <div class="c-curriculum__semester">
                             <h3 class="c-curriculum__semester-title">
@@ -313,14 +338,9 @@
                                     </a>
                                 {{ end }}
                             {{ end }}
-                            <!-- <a href="/module/stage-bachelorproef/" class="c-module c-module--project c-module--full c-module--link js-module-link">
-                                <h4 class="c-module__title">Stage + Bachelorproef</h4>
-                                <p class="c-module__tags">#communicatie #teamwork #entrepreneur #projectmanagement #device #network #ux #embeddedsoftware #front-end
-                                #data-management</p>
-                            </a> -->
                         </div>
                     </section>
-                </div>
+                </div> -->
                 <ul class="o-list c-curriculum-legend">
                     <li class="c-curriculum-legend__item">
                         <span class="c-curriculum-legend__swatch u-bgcolor-analysis-base"></span>

@@ -34,7 +34,7 @@ $choice-column-border-style: solid;
 .c-curriculum-choice {
 	position: sticky;
 	position: -webkit-sticky; // Safari needs this prefix. Otherwise z-index doesn't work ;-) (because there is no positioning).
-	top: 24px;
+	// top: 24px;
 	z-index: 20;
 
 	@include mq(bp5) {
@@ -143,15 +143,35 @@ $choice-column-border-style: solid;
 }
 
 .c-curriculum {
-	display: flex;
-	flex-wrap: wrap;
-	z-index: 10;
-	@include padding-top($alpha-leading * 0.5);
-	@include margin-lr($columns-gutter * -0.5);
-	@include margin-bottom($alpha-leading / 2);
+	// display: flex;
+	// flex-wrap: wrap;
+	// z-index: 10;
+	// @include padding-top($alpha-leading * 0.5);
+	// @include margin-lr($columns-gutter * -0.5);
+	// @include margin-bottom($alpha-leading / 2);
 
-	@include mq(bp5) {
-		@include padding-top($alpha-leading + 1);
+	// @include mq(bp5) {
+	// 	@include padding-top($alpha-leading + 1);
+	// }
+	position: relative;
+	display: grid;
+	grid-template-rows: auto repeat(30, 1fr);
+	grid-template-columns: repeat(6, 1fr);
+	grid-auto-flow: dense;
+	column-gap: 1.5rem;
+
+	&::before {
+			content: "";
+			display: block;
+			border: 1px solid #000;
+			grid-row: 1 / -1;
+			grid-column: 4 / span 2;
+			position: absolute;
+			top: 0;
+			bottom: .75rem;
+			left: -.75rem;
+			right: -.75rem;
+			pointer-events: none;
 	}
 }
 
@@ -200,6 +220,7 @@ $choice-column-border-style: solid;
 	// display: flex;
 	// flex-wrap: wrap;
 	// flex-direction: column;
+
 	@include padding-bottom($alpha-leading / 2);
 	@include padding-lr($columns-gutter / 2, $columns-gutter / 2);
 
@@ -293,4 +314,28 @@ $choice-column-border-style: solid;
 	@include mq(bp5) {
 		width: calc(200% + 24px);
 	}
+}
+
+.u-grid-column-start-1 {
+	grid-column-start: 1;
+}
+
+.u-grid-column-start-2 {
+	grid-column-start: 2;
+}
+
+.u-grid-column-start-3 {
+	grid-column-start: 3;
+}
+
+.u-grid-column-start-4 {
+	grid-column-start: 4;
+}
+
+.u-grid-column-start-5 {
+	grid-column-start: 5;
+}
+
+.u-grid-column-start-6 {
+	grid-column-start: 6;
 }

@@ -5,7 +5,6 @@ weight: 40
 tags:
 - AfterEffects
 - XD
-- ImmersiveInterfaces
 - VisualStorytelling
 pillar: design
 tracks:
