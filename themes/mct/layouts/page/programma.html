@@ -33,36 +33,28 @@
                                     {{ partial "atoms/symbol" (dict "value" "keyboard-arrow-down" "class" "c-curriculum-choice__icon-down") }}
                                 </svg>
                             </button>
-                            <ul class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
-                                <li class="c-curriculum-choices__item">
-                                    <a href="#profile-smart-xr-developer" class="c-curriculum-choices__filter">
-                                        <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
-                                            {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> Smart XR Developer
-                                    </a>
-                                </li>
-                                <li class="c-curriculum-choices__item">
-                                    <a href="#profile-next-web-developer" class="c-curriculum-choices__filter">
-                                        <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
-                                            {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> Next Web Developer
-                                    </a>
-                                </li>
-                                <li class="c-curriculum-choices__item">
-                                    <a href="#profile-ai-engineer" class="c-curriculum-choices__filter">
-                                        <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
-                                            {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> AI Engineer
-                                    </a>
-                                </li>
-                                <li class="c-curriculum-choices__item">
-                                    <a href="#profile-infrastructure-engineer" class="c-curriculum-choices__filter">
-                                        <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
-                                            {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> IoT Infrastructure Engineer
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
+                                <label class="c-curriculum-choices__item">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-smart-xr-developer" value="profile-smart-xr-developer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">Smart XR Developer</span>
+                                </label>
+
+                                <label class="c-curriculum-choices__item">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-next-web-developer" value="profile-next-web-developer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">Next Web Developer</span>
+                                </label>
+
+                                <label class="c-curriculum-choices__item">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-ai-engineer" value="profile-ai-engineer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">AI Engineer</span>
+                                </label>
+
+                                <label class="c-curriculum-choices__item">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-infrastructure-engineer" value="profile-infrastructure-engineer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">IoT Infrastructure Engineer</span>
+                                </label>
+
+                            </div>
                         </div>
                     </div>
                 </div>

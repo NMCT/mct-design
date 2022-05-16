@@ -76,6 +76,71 @@ $choice-column-border-style: solid;
 	}
 }
 
+.c-curriculum-choices__item {
+	display: grid;
+	grid-template-columns: 1em auto;
+	gap: 1rem;
+	align-items: center;
+
+	font-weight: $delta-font-weight;
+	color: palette(color-neutral, light);
+	@include ms-1;
+	@include padding-lr($columns-gutter * 0.75, $columns-gutter * 0.5);
+	@include padding-tb($alpha-leading * 0.45, $alpha-leading * 0.55);
+
+	&:focus-within {
+		color: palette(color-neutral, x-dark);
+	}
+}
+
+.c-curriculum-choices__radio {
+	/* Add if not using autoprefixer */
+	-webkit-appearance: none;
+	/* Remove most all native input styles */
+	appearance: none;
+	/* For iOS < 15 */
+	background-color: palette(color-neutral, xxxxx-light);
+	/* Not removed via appearance */
+	margin: 0;
+
+	font: inherit;
+	color: currentColor;
+	width: 1.15em;
+	height: 1.15em;
+	border: 0.15em solid palette(color-neutral, xxx-light);
+	border-radius: 50%;
+	transform: translateY(-0.075em);
+
+	display: grid;
+	place-content: center;
+
+	&::before {
+		content: "";
+		width: 0.65em;
+		height: 0.65em;
+		border-radius: 50%;
+		transform: scale(0);
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 1em 1em palette(color-alpha);
+		/* Windows High Contrast Mode */
+		background-color: CanvasText;
+	}
+
+	&:checked {
+		&::before {
+			transform: scale(1);
+		}
+
+		& + .c-curriculum-choices__text {
+			color: palette(color-alpha);
+		}
+	}
+
+	&:focus-visible {
+		outline: .15rem solid transparentize(palette(color-alpha), .6);
+	}
+}
+
 .c-curriculum-choice__button {
 	margin-bottom: 0;
 	width: 100%;
@@ -89,6 +154,11 @@ $choice-column-border-style: solid;
 	@include ms-1;
 	@include padding-lr($columns-gutter * 0.75, $columns-gutter * 0.5);
 	@include padding-tb($alpha-leading * 0.45, $alpha-leading * 0.55);
+
+	&:focus-visible {
+		
+		outline: .2rem solid transparentize(palette(color-alpha), .3);
+	}
 }
 
 .c-curriculum-choice__icon-down {
@@ -127,20 +197,20 @@ $choice-column-border-style: solid;
 	}
 }
 
-.c-curriculum-choices__symbol {
-	fill: palette(color-neutral, xx-light);
-	transition: fill $animation-duration-alpha $animation-easing-alpha;
-	@include margin-right($columns-gutter / 4);
+// .c-curriculum-choices__symbol {
+// 	fill: palette(color-neutral, xx-light);
+// 	transition: fill $animation-duration-alpha $animation-easing-alpha;
+// 	@include margin-right($columns-gutter / 4);
 
-	.c-curriculum-choices__filter:hover & {
-		fill: palette(color-neutral);
-	}
+// 	.c-curriculum-choices__filter:hover & {
+// 		fill: palette(color-neutral);
+// 	}
 
-	.is-selected &,
-	.is-selected .c-curriculum-choices__filter:hover & {
-		fill: palette(color-alpha);
-	}
-}
+// 	.is-selected &,
+// 	.is-selected .c-curriculum-choices__filter:hover & {
+// 		fill: palette(color-alpha);
+// 	}
+// }
 
 .c-curriculum {
 	// display: flex;

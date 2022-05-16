@@ -3,8 +3,6 @@
     ---
 */
 
-
-
 .c-module {
 	grid-row: span 6;
 	background-color: #eee;
@@ -26,7 +24,7 @@
 	@include padding-tb($alpha-leading / 2, $alpha-leading / 2);
 
 	& + & {
-		@include margin-top($alpha-leading / 2);
+		@include margin-top($alpha-leading / 8);
 	}
 
 	&--code {

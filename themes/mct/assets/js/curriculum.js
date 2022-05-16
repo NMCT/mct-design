@@ -191,12 +191,16 @@
             document.addEventListener('keydown', _addEscFunction, true);
         });
 
-        trackList.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-                console.dir(this);
-                history.pushState(undefined, undefined, this.hash);
-                _toggleModules(this.hash.substring(9, this.hash.length));
+        trackList.querySelectorAll('.js-track-radio').forEach((radio) => {
+            radio.addEventListener('change', function () {
+                history.pushState(undefined, undefined, `#${this.id}`);
+                _toggleModules(this.id.substring(8, this.id.length));
+                dropdown.querySelector('span').innerHTML =
+                    this.nextElementSibling.innerText;
+            });
+
+            radio.addEventListener('click', function () {
+                trackList.classList.add('is-hidden');
             });
         });
         // The dropdown changes the hash
