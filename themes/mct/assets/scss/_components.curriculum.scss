@@ -86,7 +86,7 @@ $choice-column-border-style: solid;
 	color: palette(color-neutral, light);
 	@include ms-1;
 	@include padding-lr($columns-gutter * 0.75, $columns-gutter * 0.5);
-	@include padding-tb($alpha-leading * 0.45, $alpha-leading * 0.55);
+	@include padding-tb($alpha-leading * 0.45, 0);
 
 	&:focus-within {
 		color: palette(color-neutral, x-dark);
@@ -234,8 +234,7 @@ $choice-column-border-style: solid;
 	&::before {
 		content: attr(data-placeholder);
 		display: block;
-		border: $choice-column-border-width $choice-column-border-style
-				$choice-column-border-color;
+		border: $choice-column-border-width $choice-column-border-style $choice-column-border-color;
 		grid-row: 1 / -1;
 		grid-column: 4 / span 2;
 		position: absolute;

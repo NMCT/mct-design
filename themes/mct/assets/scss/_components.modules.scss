@@ -42,6 +42,7 @@
 	&--analysis {
 		border-color: palette(color-analysis);
 	}
+	
 
 	&--project {
 		border-color: palette(color-project);
@@ -71,15 +72,19 @@
 		&.c-module--code {
 			background-color: palette(color-code);
 		}
+
 		&.c-module--connect {
 			background-color: palette(color-connect);
 		}
+
 		&.c-module--design {
 			background-color: palette(color-design);
 		}
+
 		&.c-module--project {
 			background-color: palette(color-project);
 		}
+
 		&.c-module--analysis {
 			background-color: palette(color-analysis);
 		}
@@ -115,6 +120,6 @@
 	color: palette(color-neutral);
 	font-family: $beta-font-family;
 	text-transform: uppercase;
-	@include padding-top($alpha-leading * 0.5);
+	@include padding-top($alpha-leading * 0.25);
 	@include ms-3;
 }

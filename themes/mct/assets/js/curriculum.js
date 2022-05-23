@@ -151,7 +151,7 @@
 // });
 
 (function () {
-    let modules, dynamicModules, dropdown, trackList;
+    let curriculum, modules, dynamicModules, dropdown, trackList;
 
     const _addEscFunction = (e) => {
         e = e || window.event;
@@ -179,12 +179,6 @@
         }
     };
 
-    const enablePopupModules = () => {
-        // Listen to click event and disable the default
-        // Show the popup
-        // Enable escape, etc.
-    };
-
     const enableTrackDropDown = () => {
         dropdown.addEventListener('click', function () {
             trackList.classList.toggle('is-hidden');
@@ -193,6 +187,8 @@
 
         trackList.querySelectorAll('.js-track-radio').forEach((radio) => {
             radio.addEventListener('change', function () {
+                console.dir(curriculum);
+                curriculum.dataset.placeholder = '';
                 history.pushState(undefined, undefined, `#${this.id}`);
                 _toggleModules(this.id.substring(8, this.id.length));
                 dropdown.querySelector('span').innerHTML =
@@ -211,6 +207,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         // GET SOME DOM
         if (document.querySelector('.c-curriculum-overview')) {
+            curriculum = document.querySelector('.js-curriculum');
             dropdown = document.querySelector('.js-curriculum-button');
             modules = document.querySelectorAll('.js-module');
             dynamicModules = Array.from(modules).filter((module) =>
@@ -220,7 +217,6 @@
         }
 
         // BASIC FEATURES
-        enablePopupModules();
         enableTrackDropDown();
 
         // DOM LISTENERS
