@@ -1,7 +1,7 @@
 ---
 title: "Unity (DAE: Platform Development 2)"
 semester: 4
-weight: 10
+weight: 5
 tags:
 - Unity
 - 3DProgramming

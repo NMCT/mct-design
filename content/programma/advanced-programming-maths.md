@@ -10,6 +10,7 @@ tags:
 pillar: analysis
 tracks:
 - ai-engineer
+- smart-xr-developer
 ---
 
 Deze module ondersteunt rechtstreeks de modules <a class="js-module-link" href="/programma/machine-learning/">Machine learning</a> en <a class="js-module-link" href="/programma/deep-learning/">Deep learning</a> binnen Smart Tech & AI. Beide modules zijn immers gebouwd op de programmering van afleidende logica-systemen en systemen voor kansberekening en statistiek. ‘Intelligente’ algoritmes zijn in staat om van enorme hoeveelheden input te leren – en dit om te zetten naar praktische output, al dan niet naar aanleiding van een nieuwe specifieke dataset die verbonden moet worden aan een bepaalde output. Dergelijke algoritmes kunnen zo uiteindelijk voorspellingen doen of beslissingen nemen, gebaseerd op de verzamelde data en de analyse hiervan.
