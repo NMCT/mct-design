@@ -187,10 +187,12 @@
 
         trackList.querySelectorAll('.js-track-radio').forEach((radio) => {
             radio.addEventListener('change', function () {
-                console.dir(curriculum);
                 curriculum.dataset.placeholder = '';
+
                 history.pushState(undefined, undefined, `#${this.id}`);
+
                 _toggleModules(this.id.substring(8, this.id.length));
+
                 dropdown.querySelector('span').innerHTML =
                     this.nextElementSibling.innerText;
             });
@@ -209,15 +211,20 @@
         if (document.querySelector('.c-curriculum-overview')) {
             curriculum = document.querySelector('.js-curriculum');
             dropdown = document.querySelector('.js-curriculum-button');
-            modules = document.querySelectorAll('.js-module');
+
+            trackList = document.querySelector('.js-curriculum-choices');
+
+            // BASIC FEATURES
+            enableTrackDropDown();
+        }
+
+        modules = document.querySelectorAll('.js-module');
+
+        if (modules) {
             dynamicModules = Array.from(modules).filter((module) =>
                 module.classList.contains('js-module-dynamic')
             );
-            trackList = document.querySelector('.js-curriculum-choices');
         }
-
-        // BASIC FEATURES
-        enableTrackDropDown();
 
         // DOM LISTENERS
         window.addEventListener('hashchange', function () {
@@ -225,6 +232,7 @@
                 9,
                 window.location.hash.length
             );
+
             console.log(
                 'Prepped hash is',
                 moduleSlug,
