@@ -22,7 +22,7 @@
         <meta name="robots" content="noindex" /> 
     {{ end }}
 
-    <title>{{ block "title" . }}{{ .Params.Title }} | {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ .Params.Title }} ∙ {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>
 
     <!-- Stylesheets -->
     {{ $style := resources.Get "scss/screen.scss" | toCSS | postCSS | minify | fingerprint }}

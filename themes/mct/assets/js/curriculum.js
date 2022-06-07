@@ -233,13 +233,6 @@
                 window.location.hash.length
             );
 
-            console.log(
-                'Prepped hash is',
-                moduleSlug,
-                ' from ',
-                window.location
-            );
-
             if (window.location.hash.substring(0, 9) == '#profile-') {
                 // getModules(moduleSlug);
                 // selectAndDeselectOptions(tracks[moduleSlug], o, l, s);
