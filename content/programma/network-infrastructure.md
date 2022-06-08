@@ -10,7 +10,7 @@ tags:
 - cabling
 pillar: connect
 tracks:
-- infrastructure-engineer
+- iot-infrastructure-engineer
 ---
 
 Je hebt gekozen voor het afstudeerprofiel 'Infrastructure Engineer'. Hier zetten we bedrijfsnetwerken op in het klein, ondersteund met algemene theorie:  

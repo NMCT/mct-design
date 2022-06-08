@@ -11,7 +11,7 @@ tags:
 - EdgeAI
 pillar: analysis
 tracks:
-- infrastructure-engineer
+- iot-infrastructure-engineer
 - smart-xr-developer
 ---
 Robots bestaan al lang: zware industriële robots werden reeds geproduceerd sinds 1956(*). Sinds een paar jaar zijn huishoudelijke robots zoals een grasmaairobot en stofzuigerbot gemeengoed aan het worden.
