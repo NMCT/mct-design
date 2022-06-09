@@ -19,43 +19,36 @@
                             <button class="c-video-play-button">
                                 {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol")}}
                             </button>
-                            <video class="c-video-player__video" poster="/img/jpg/ai-at-home-poster.jpg">
-                                <source src="https://mctwebsite.blob.core.windows.net/video/AI-at-home-leren.webm" type="video/webm">
-                                <source src="https://mctwebsite.blob.core.windows.net/video/AI-at-home-leren.mp4" type="video/mp4">
+                            <video class="c-video-player__video" poster="{{ .Params.Poster }}">
+                                {{ range .Params.video }}
+                                    {{ $ext := index (last 1 (split . ".")) 0 }}
+                                    <source src="{{ . }}" type="video/{{ $ext }}">
+                                {{ end }}
                                 Your browser does not support HTML5 video.
                             </video>
                         </div>
                         <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
-                            Een voorproefje van wat je kan verwachten.
+                            {{ .Params.caption }}
                         </p>
                     </div>
                     <div class="c-main-section-lg">
                         <div class="c-main-section">
                             <div class="s-content u-max-width-lg">
                                 <h2 class="c-type-title-lg">
-									"Software ate the world, AI will eat software"
+									{{ .Params.quote }}
                                 </h2>
                             </div>
                         </div>
                         <div class="c-main-section">
                             <div class="o-grid o-grid--gutter-lg">
-                                <div class="o-grid__item u-1-of-2-bp4">
+                                {{ $length := len .Params.introText }}
+                                {{ range $i, $text := .Params.introText }}
+                                <div class="o-grid__item u-1-of-{{ $length }}-bp4">
                                     <div class="s-content u-max-width-optimal">
-                                        <p>Artificial Intelligence (AI) is niet meer voorbehouden voor academici. <a href="/programma/machine-learning">Machine Learning</a> en <a href="/programma/deep-learning">Deep Learning</a> zijn dankzij
-										krachtige frameworks en cloud services binnen het bereik van iedere IT'er. Uit data inzichten puren, voorspellingen
-										doen of automatisch patronen herkennen en classificeren, Machine Learning en Deep Learning geven een enorme boost aan
-										je mogelijkheden als ontwikkelaar. “Software ate the world, AI will eat software”</p>
+                                        {{ $text | markdownify}}
                                     </div>
                                 </div>
-                                <div class="o-grid__item u-1-of-2-bp4">
-                                    <div class="s-content u-max-width-optimal">
-                                        <p>Deze @home opleiding staat open voor iedereen die minimum 21 jaar is en/of werkstudent. Je kiest zelf wanneer je wilt
-										studeren en ons team begeleidt jou via het internet. Er zijn ook enkele contactmomenten op de campus voorzien.
-										Afstandsonderwijs wordt hoofdzakelijk via onze krachtige LMS (Learning management system) gegeven. Je krijgt
-										Nederlandstalige video opnames van goede kwaliteit van het dagonderwijs, en een heleboel practica ter beschikking om op
-										je eigen tempo je de leerstof eigen te maken.</p>
-                                    </div>
-                                </div>
+                                {{ end }}
                             </div>
                         </div>
                     </div>
@@ -69,20 +62,55 @@
                 <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp5 u-push-1-of-12-bp5 u-2-of-4-bp6 u-push-1-of-4-bp6">
                     <div class="c-main-section">
                         <div class="s-content u-max-width-optimal">
-                            <h3>Hoe werkt het?</h3>
-                            <p>Deze @home opleiding staat open voor iedereen die minimum 21 jaar is en/of werkstudent. <strong>Je kiest zelf wanneer je wilt studeren</strong> en ons team begeleidt jou via het internet. Er zijn ook enkele contactmomenten op de campus voorzien.</p>
-							<p>Afstandsonderwijs wordt hoofdzakelijk via ons krachtige LMS (Learning management system) gegeven. Je krijgt <strong>nederlandstalige video-opnames</strong> van goede kwaliteit van het dagonderwijs, en een heleboel practica om&nbsp;<strong>op je eigen tempo</strong>&nbsp;de leerstof eigen te maken.</p>
-							<p>Er is per module:
-								<ul>
-									<li>Een introductie les voorzien in kortrijk - niet verplicht, zal ook als video beschikbaar zijn.</li>
-									<li>Een examen moment voorzien - verplicht. Voorlopig werken we zo tot wanneer we zeker zijn dat onze Leer Systeem (LMS Canvas, internationale LMS software) voldoende garanties biedt voor een eerlijk examen.</li>
-									<li>Alle lessen worden ingericht als afstandsonderwijs, met het nodige materiaal (video + practica) op ons leerplatform. Het betreft een cursus van 2 maal 6 studiepunten.</li>
-								</ul>
-							<p>De opleiding is gespreid over <strong>2 semesters (1 jaar)</strong> om werk en studie te kunnen combineren. Je examens vinden plaats in <strong>Graaf Karel De Goedelaan 5, 8500 Kortrijk</strong>.</p>
-							<p>Je kan <strong>inschrijven tot 4 oktober 2021</strong>.</p>
+                            {{ .Content }}
                         </div>
                     </div>
                     <div class="c-main-section">
+                        <h3>
+                            Specifieke microdegrees voor MCT @ Home
+                        </h3>
+                        <div class="c-curriculum c-curriculum--single c-curriculum--at-home js-curriculum">
+                            {{ $AtHomeTracks := slice "ai-at-home" "deploying-ai-at-home" "ai-at-home-pro" }}
+                            {{ $AtHomeTracksHuman := slice "AI @ Home" "Deploying AI @ Home" "AI @ Home Pro" }}
+                            {{ range $i, $sequence := seq 3 }}
+                                <h3 class="c-curriculum__semester-title">
+                                    {{ index $AtHomeTracksHuman $i }}
+                                </h3>
+        
+                                {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
+                                    {{ range (where $.Site.Pages "Type" "programma") }}
+                                    {{ if (isset .Params "home") }}
+                                        {{ if in .Params.Tracks (index $AtHomeTracks $i) }}
+                                            <a
+                                                href="{{ .Permalink }}"
+                                                class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ add $i 1 }} u-y-span-{{ .Params.StudyCredits }} js-module"
+                                            >
+                                                <h4 class="c-module__title">{{ .Title }}</h4>
+                                                {{ if .Params.Tags }}
+                                                    <p class="c-module__tags">
+                                                        {{ range .Params.Tags }}
+                                                            #{{ . }}
+                                                        {{ end }}
+                                                    </p>
+                                                {{ end }}
+                                            </a>
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                        <ul class="o-list c-curriculum-legend">
+                            <li class="c-curriculum-legend__item">
+                                <span class="c-curriculum-legend__swatch u-bgcolor-analysis-base"></span>
+                                Analysis
+                            </li>
+                            <li class="c-curriculum-legend__item">
+                                <span class="c-curriculum-legend__swatch u-bgcolor-code-base"></span>
+                                Code
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="c-main-section">
                         <div class="c-curriculum u-pt-alpha">
                             <div class="c-curriculum__semester u-pt-alpha">
                                 <h3 class="c-curriculum__semester-title">
@@ -104,18 +132,13 @@
                             </div>
                         </div>
                         <p class="u-ms-1 u-color-neutral-base">Een (N)MCT student die reeds voor machine learning is geslaagd krijgt vrijstelling voor deze module.</p>
-                    </div>
+                    </div> -->
                     <div class="c-main-section">
                         <div class="s-content u-max-width-optimal">
-                            <h3>Voorwaarde</h3>
-                            <p>De student kent de <strong>programmeertaal Python</strong> voldoende om zelf programma’s te schrijven of te interpreteren.</p>
-                            <h3>Kostprijs</h3>
-                            <p>
-                                Een niet-beursstudent betaalt <strong>382 Euro</strong> <br>
-                                Beursstudenten informeren best bij het studentensecretariaat: 056 24 12 25
-                            </p>
-                            <h3>Vragen?</h3>
-                            <p>Contacteer <a href="https://mct.be/contact/">Johan De Gelas</a> of kom langs tijdens één van onze infodagen op onze campus in Kortrijk.</p>
+                            {{ range .Params.questions }}
+                                <h3>{{ .title }}</h3>
+                                <p>{{ .text | markdownify }}</p>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
@@ -151,61 +174,6 @@
 			</div>
 		</div>
 	</div>
-    {{ partial "components/cta.html" (dict "title" "Klaar om AI op afstand te leren?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
+    {{ partial "components/cta.html" (dict "title" "Klaar om AI op afstand te leren?" "paragraph" "Hou je kennis op peil dankzij deze microdegrees!" "hyperlink" "https://www.howest.be/nl/opleidingen/bachelor/multimedia-en-communicatietechnologie/artificial-intelligence-at-home") }}
 </main>
-<dialog class="c-modal js-dialog">
-	<div class="c-modal__body u-max-width-optimal">
-		<button class="c-modal__close js-dialog-close" aria-label="Close dialog">
-			{{ partial "atoms/symbol" (dict "value" "close" "class" "c-nav-main-trigger__symbol")}}
-		</button>
-		<div class="c-main-section-lg">
-			<div class="c-main-section">
-				<ul class="o-list c-curriculum-legend u-mb-gamma">
-					<li class="c-curriculum-legend__item">
-						<span class="c-curriculum-legend__swatch js-swatch u-bgcolor-code-base"></span>
-						<span class="js-legend"></span>
-					</li>
-				</ul>
-				<h1 class="c-type-intro u-mb-gamma js-title">
-					Full Stack Web Development
-				</h1>
-				<p class="c-type-meta u-ms-1 u-color-neutral-base js-tags">
-					#PYTHON #FLASK #JAVASCRIPT #JINJA
-				</p>
-			</div>
-			<div class="c-main-section">
-				<div class="u-max-width-optimal">
-					<div class="c-main-section">
-						<p class="c-type-intro-small js-description">
-							In deze module kan je leren hoe je een volledig API-driven website kan maken en van A tot Z coderen. Omdat je als bachelor MCT kan kiezen voor de specialisatie App Web developer moet je in staat zijn om volledige (full stack) websites te bouwen.
-						</p>
-					</div>
-
-					<!--
-					<div class="c-main-section">
-						<h3 class="u-mb-alpha u-color-alpha-light">
-							Tools: <span class="u-color-neutral-base"></span>
-						</h3>
-						<p class="u-color-neutral-base">
-							{{ .Params.Tools }}
-						</p>
-					</div>
-					-->
-
-					<div class="c-main-section">
-						<div class="s-content js-content">
-							<p>In deze module maken wij vanaf het begin een duidelijke splitsing tussen de kant van de website die voor de gebruiker bestemd is (de frontend) en de kant waar de gegevens opgehaald en verwerkt worden (de backend).</p>
-
-							<p>Om deze beide zijdes te kunnen programmeren of te scripten maken we gebruik van twee programmeertalen: Javascript voor de frontend ontwikkeling en Python voor de backend ontwikkeling.</p>
-
-							<p>Het uitzicht van de website bepalen en ontwikkelen enerzijds en hoe je databanken manipuleert anderzijds zal je aanleren in de modules <a href="../../programma/user-interface-design/">User Interface Design</a> en <a href="../../programma/data-management/">Datamanagement</a>.</p>
-
-							<p>Het ultieme doel van deze module is ervoor zorgen dat er een real-time tweewegs-communicatie ontstaat tussen sensoren en actuatoren op je Raspberry Pi en je zelfgemaakte website.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</dialog>
 {{ end }}

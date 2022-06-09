@@ -251,6 +251,12 @@ $choice-column-border-style: solid;
 			// END Proof Of Concept
 		}
 	}
+
+	&.c-curriculum--at-home {
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: auto repeat(12,1fr);
+		column-gap: 4rem;
+	}
 }
 
 .c-curriculum__year {

@@ -1,0 +1,20 @@
+---
+title: Applied AI @ Home
+semester: 2
+studycredits: 6
+tags:
+- AI-Integration
+- CognitiveServices
+- Cloud
+pillar: analysis
+tracks:
+- ai-at-home-pro
+home: true
+---
+**Onder voorbehoud**
+
+Artificiële intelligentie (AI) is en blijft een hot topic. Ook als Smart XR Developer ben je in staat om een applicatie te verrijken met AI.
+Jouw extended reality apps zijn geconnecteerd aan cloud omgevingen, en maken gebruik van de nieuwste AI oplossingen op de markt.
+Denk maar aan gezichtsherkenning, object detectie en spraaktechnologieën.
+
+In de module AI Cloud leer je om AI toepassingen te verweven als deel van jouw applicatie. We maken gebruik van Google Vertex, Azure Cognitive Services en IBM Watson om de beste tools te benutten.

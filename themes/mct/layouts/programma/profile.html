@@ -88,7 +88,7 @@
                             Integrate
                         </li>
                     </ul>
-                  </div>
+                </div>
             </div>
 			<div class="c-main-section-lg">
 				<p>
@@ -98,6 +98,6 @@
         </div>
     </div>
     {{ $text := print "Kies jij " .Title "?" }}
-    {{ partial "components/cta.html" (dict "title" $text "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
+    {{ partial "components/cta.html" (dict "title" $text "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in." "hyperlink" "https://www.howest.be/nl/studeren/inschrijven-en-info") }}
 </main>
 {{ end }}
