@@ -66,24 +66,25 @@
                         </div>
                     </div>
                     <div class="c-main-section">
+                        {{ $AtHomeTracks := slice "ai-at-home" "deploying-ai-at-home" "ai-at-home-pro" }}
+                        {{ $AtHomeTracksHuman := slice "AI @ Home" "Deploying AI @ Home" "AI @ Home Pro" }}
+                        {{ range $i, $track := seq 3 }}
                         <h3>
-                            Specifieke microdegrees voor MCT @ Home
+                            Modules voor {{ index $AtHomeTracksHuman $i }}
                         </h3>
-                        <div class="c-curriculum c-curriculum--single c-curriculum--at-home js-curriculum">
-                            {{ $AtHomeTracks := slice "ai-at-home" "deploying-ai-at-home" "ai-at-home-pro" }}
-                            {{ $AtHomeTracksHuman := slice "AI @ Home" "Deploying AI @ Home" "AI @ Home Pro" }}
-                            {{ range $i, $sequence := seq 3 }}
+                        <div class="c-curriculum c-curriculum--single c-curriculum--at-home c-curriculum--alternate-columns js-curriculum">
+                            {{ range $j, $semester := seq 2 }}
                                 <h3 class="c-curriculum__semester-title">
-                                    {{ index $AtHomeTracksHuman $i }}
+                                    Semester {{ $semester }}
                                 </h3>
         
                                 {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
                                     {{ range (where $.Site.Pages "Type" "programma") }}
                                     {{ if (isset .Params "home") }}
-                                        {{ if in .Params.Tracks (index $AtHomeTracks $i) }}
+                                        {{ if and (eq .Params.Semester $semester) (in .Params.Tracks (index $AtHomeTracks $i)) }}
                                             <a
                                                 href="{{ .Permalink }}"
-                                                class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ add $i 1 }} u-y-span-{{ .Params.StudyCredits }} js-module"
+                                                class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ add $j 1 }} u-y-span-{{ .Params.StudyCredits }} js-module"
                                             >
                                                 <h4 class="c-module__title">{{ .Title }}</h4>
                                                 {{ if .Params.Tags }}
@@ -99,6 +100,8 @@
                                 {{ end }}
                             {{ end }}
                         </div>
+                        {{ end }}
+
                         <ul class="o-list c-curriculum-legend">
                             <li class="c-curriculum-legend__item">
                                 <span class="c-curriculum-legend__swatch u-bgcolor-analysis-base"></span>

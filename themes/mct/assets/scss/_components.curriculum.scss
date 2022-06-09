@@ -253,8 +253,8 @@ $choice-column-border-style: solid;
 	}
 
 	&.c-curriculum--at-home {
-		grid-template-columns: repeat(3,1fr);
-		grid-template-rows: auto repeat(12,1fr);
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: auto repeat(6,1fr);
 		column-gap: 4rem;
 	}
 }
