@@ -110,29 +110,6 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <div class="c-main-section">
-                        <div class="c-curriculum u-pt-alpha">
-                            <div class="c-curriculum__semester u-pt-alpha">
-                                <h3 class="c-curriculum__semester-title">
-                                    Oktober {{ now.Year }}
-                                </h3>
-                                <a href="{{ ref . "/programma/machine-learning" }}" class="c-module c-module--analysis c-module--link js-module-link">
-                                    <h4 class="c-module__title">Machine Learning</h4>
-                                    <p class="c-module__tags">6 studiepunten</p>
-                                </a>
-                            </div>
-                            <div class="c-curriculum__semester u-pt-alpha">
-                                <h3 class="c-curriculum__semester-title">
-                                    Q1 {{ add (int now.Year) 1 }}
-                                </h3>
-                                <a href="{{ ref . "/programma/deep-learning" }}" class="c-module c-module--analysis c-module--link js-module-link">
-                                    <h4 class="c-module__title">Deep Learning</h4>
-                                    <p class="c-module__tags">6 studiepunten</p>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="u-ms-1 u-color-neutral-base">Een (N)MCT student die reeds voor machine learning is geslaagd krijgt vrijstelling voor deze module.</p>
-                    </div> -->
                     <div class="c-main-section">
                         <div class="s-content u-max-width-optimal">
                             {{ range .Params.questions }}
@@ -152,6 +129,15 @@
 					<div class="c-main-section">
 						<h2>Veelgestelde vragen:</h2>
 
+                        {{ with .Site.GetPage "/at-home/questions" }}
+
+                        {{ range .Params.questions }}
+                            <h3>{{ .question }}</h3>
+                            <p>{{ .answer | markdownify }}</p>
+                        {{ end }}
+
+                        {{ end }}
+<!-- 
 						<h3>Het betreft een cursus van 2 maal 6 SP. Klopt het dat één studiepunt overeenkomt met een duur van 25 tot 30 uur?</h3>
 						<p>In theorie, klopt dat. We vermoeden dat professionals ongeveer 4 tot 8 uur per week zullen nodig hebben, 12-15 weken per module (grof geschat op basis van ons dagonderwijs).</p>
 
@@ -168,7 +154,7 @@
 						<p>Het is afstandsonderwijs. Er is - per module - één optioneel intromoment voorzien en er is één verplicht examenmoment 's avonds in Kortrijk.</p>
 
 						<h3>Toelatingsvoorwaarden?</h3>
-						<p>We raden een IT bachelor diploma aan - maar de voornaamste voorwaarden zijn programmeer skills en het bereid zijn om Python te leren. Kijk even naar volgende twee voorbeelden: <a href="https://mctwebsite.blob.core.windows.net/docs/Boston_housing.pdf" rel="noopener">Boston housing demo</a> en <a href="https://mctwebsite.blob.core.windows.net/docs/MNIST_PCA.pdf" rel="noopener">MNIST_PCA</a> om te zien welk niveau wij verwachten. Met de huidige vele goede gratis cursussen python willen wij de tijd &amp; de kost voor onze professionele studenten beperken door intro tot Python niet op te nemen.</p>
+						<p>We raden een IT bachelor diploma aan - maar de voornaamste voorwaarden zijn programmeer skills en het bereid zijn om Python te leren. Kijk even naar volgende twee voorbeelden: <a href="https://mctwebsite.blob.core.windows.net/docs/Boston_housing.pdf" rel="noopener">Boston housing demo</a> en <a href="https://mctwebsite.blob.core.windows.net/docs/MNIST_PCA.pdf" rel="noopener">MNIST_PCA</a> om te zien welk niveau wij verwachten. Met de huidige vele goede gratis cursussen python willen wij de tijd &amp; de kost voor onze professionele studenten beperken door intro tot Python niet op te nemen.</p> -->
 					</div>
 				</div>
 			</div>
