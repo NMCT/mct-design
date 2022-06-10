@@ -5,8 +5,10 @@ studycredits: 6
 weight: 40
 tags:
 - AfterEffects
-- XD
-- VisualStorytelling
+- OnBoarding
+- Animation
+- Lottie
+- Screencast
 pillar: design
 tracks:
 - next-web-developer

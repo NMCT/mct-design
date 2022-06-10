@@ -14,15 +14,17 @@ tags:
 - ccna
 - cisco
 pillar: connect
-tools: "Windows 10, Debian Linux, Raspberry Pi, Soho router, Hyper-V virtualisatie"
+tools: "Windows 10/11, Debian Linux, Raspberry Pi, SOHO router, VMware virtualisatie"
 ---
 
-Een computer is vandaag de dag verbonden met de wereld, het Internet heb je aan je vingers op je smartphone. Maar hoe komt dat eigenlijk? Hoe hangt alles aan elkaar?
+Tegenwoordig is elke computer verbonden met de wereld. Het internet heb je aan je vingers op je smartphone. Maar hoe komt dat eigenlijk? Hoe hangt alles aan elkaar?
 
-In deze module lopen we stap voor stap door het netwerk om inzicht te krijgen in de opbouw,  werking en beveiliging ervan. Je hoeft geen expert te zijn, want de basiskennis wordt stapsgewijs uitgelegd in praktische labo’s, ondersteund met wat theorie.
+In Computer Networks lopen we stap voor stap door een **Small Office / Home Office (SOHO)** netwerk om inzicht te krijgen in de **opbouw**, **werking** en **beveiliging** ervan. Je hoeft geen expert te zijn, want de basiskennis wordt stapsgewijs uitgelegd in praktische labo’s, ondersteund met de nodige theorie.
+ 
+We beginnen bij de client met **besturingssysteem Windows 10/11** en vervolgens **Linux**, zowel **Debian** als **Raspberry Pi OS** op jouw persoonlijke Raspberry Pi. We bekijken een aantal basis- en beheerscommando’s om een basis server op te bouwen, uiteraard met de nodige achtergrondkennis.
+Om je klaar te stomen voor de andere modules zal je op je Raspberry Pi een volledig geconfigureerde **webserver** en **database** kunnen opstarten.
 
-We beginnen bij de client met besturingssysteem Windows 10 en vervolgens Linux, zowel Debian als Raspbian op jouw persoonlijke Raspberry Pi. We bekijken een aantal basiscommando's en beheerscommando's om een basisserver op te bouwen, uiteraard met de nodige achtergrondkennis. Uiteindelijk krijgen we op onze Raspberry Pi een volledig geconfigureerde webserver en databaseserver want in andere modules heb je dit opnieuw van doen.
-
-Daarna gaan we deze toestellen integreren in een netwerk en gaan zo over de bekabeling naar centrale netwerkcomponenten zoals switches, draadloze access points, routers en firewalls. De kennis ervan gebruiken we om verschillende netwerken op te bouwen en te configureren om uiteindelijk een compleet netwerk vanaf nul op te bouwen, zowel bekabeld als draadloos. Hier speelt de integratie van alle theoretische kennis én de praktische kennis een belangrijke rol. Je installeert, configureert én beveiligt een netwerk vanaf de grond af, waarna je de servers en clients ermee koppelt.
-
-Een goeie basis van IP subnetting en routing komt hier ook aan bod. Als Cisco Networking Academy gebruiken we de module ‘Introduction to Networking’ als ondersteunend materiaal. In latere modules pakken we dan de andere delen van de Cisco opleiding aan.
+Daarna gaan we deze toestellen integreren in een netwerk en gaan zo over de bekabeling naar centrale netwerkcomponenten zoals **switches**, **draadloze access points**, **routers** en **firewalls**.
+De kennis over deze componenten gebruiken we om verschillende netwerken op te bouwen en te configureren om uiteindelijk een compleet netwerk vanaf nul op te zetten, zowel bekabeld als draadloos. Hier speelt de integratie van alle theoretische én de praktische kennis een belangrijke rol. Je installeert, configureert én beveiligt een netwerk vanaf de grond op, waarna je de servers en clients ermee koppelt.
+ 
+Een goeie basis van **IP subnetting** en **routing** komt hier ook aan bod. Als **Cisco Networking Academy** gebruiken we de module 'Introduction to Networking' als ondersteunend materiaal. In latere modules komen de andere delen van de Cisco opleiding aan bod.
