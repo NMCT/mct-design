@@ -2,7 +2,7 @@
 title: Machine Learning @ Home
 semester: 1
 studycredits: 6
-weight: 30
+weight: 10
 tags:
 - neuralnetworks
 - ai

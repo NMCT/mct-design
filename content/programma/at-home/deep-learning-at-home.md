@@ -1,8 +1,8 @@
 ---
-title: Deep Learning @ Home
+title: Deep Learning @ Home (keuze)
 semester: 2
 studycredits: 6
-weight: 30
+weight: 20
 tags:
 - neuralnetworks
 - ai
@@ -12,6 +12,10 @@ tracks:
 - ai-at-home
 home: true
 ---
+
+
+JE KAN OOK OPTEREN VOOR AI FOR HEALTHCARE
+
 
 De module deep learning gaat verder waar de module <a class="js-module-link" href="/programma/machine-learning/">machine learning</a> is gestopt, namelijk bij de neurale netwerken.</p>
 <ul>
