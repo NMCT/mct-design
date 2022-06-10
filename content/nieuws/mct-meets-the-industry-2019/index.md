@@ -13,11 +13,8 @@ Kom dan onze opleiding en studentenprojecten ontdekken op **dinsdag 25 juni 2019
 U wordt onthaald met een hapje en drankje om vervolgens een korte introductie bij te wonen over onze projectwerking. Hier gaan ook enkele bedrijven hun ervaring met MCT delen.
 Maak kennis met de studenten en hun projecten en overtuig uzelf dat een project met MCT-studenten echt een meerwaarde kan betekenen voor uw bedrijf!
 
-Deelname is gratis maar gelieve uw deelname of [de deelname van uw bedrijf te bevestigen](https://docs.google.com/forms/d/e/1FAIpQLSevq6Y_NdoVfR93JM6_fyB07Tfqi2hGhFA7QILJ43feUvXjPw/viewform).
-
 Locatie:
 Howest campus Graaf Karel De Goedelaan
-Graaf Karel De Goedelaan 5
 8500 Kortrijk
 
 mct@howest.be
