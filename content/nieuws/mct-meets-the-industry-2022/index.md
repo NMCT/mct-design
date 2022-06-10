@@ -1,5 +1,8 @@
 --- 
-title: "MCT Meets the Industry" 
+title: "MCT Meets the Industry"
+aliases:
+    - /nieuws/mct-meets-the-industry-2019
+    - /nieuws/mct-meets-the-industry-your-project
 date: 2022-06-10T13:00:00+01:00 
 description: "Howest MCT organiseert op vrijdag 24 juni 2022 vanaf 16u voor onze alumni en professionals van bedrijven verbonden aan onze opleidingen." 
 cover: "NMCT_meets_Industry-60.jpg" 
