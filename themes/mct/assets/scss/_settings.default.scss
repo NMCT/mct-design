@@ -56,6 +56,7 @@ $color-connect: #ef3696;
 $color-design: #fb9d3c;
 $color-analysis: #a46b50;
 $color-project: #7b9641;
+$color-international: #dc3d2c;
 
 // Palettes
 $palettes: (
@@ -174,6 +175,9 @@ $palettes: (
 	),
 	color-project: (
 		base: $color-project,
+	),
+	color-international: (
+		base: $color-international,
 	)
 ) !default;
 

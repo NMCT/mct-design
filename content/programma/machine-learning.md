@@ -2,7 +2,7 @@
 title: Machine Learning
 semester: 4
 studycredits: 6
-weight: 30
+weight: 40
 tags:
 - neuralnetworks
 - ai

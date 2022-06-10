@@ -257,6 +257,10 @@ $choice-column-border-style: solid;
 		grid-template-rows: auto repeat(12,1fr);
 		column-gap: 4rem;
 	}
+	&.c-curriculum--english {
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: auto repeat(36,1fr);
+	}
 }
 
 .c-curriculum__year {

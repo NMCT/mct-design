@@ -45,3 +45,26 @@
 .u-y-span-24 {
 	grid-row: span 24;
 }
+
+// Span a certain amount of rows or columns
+.u-x-span-1 {
+	grid-column: span 1;
+}
+.u-x-span-2 {
+	grid-column: span 2;
+}
+.u-x-span-3 {
+	grid-column: span 3;
+}
+
+.u-x-span-6 {
+	grid-column: span 6;
+}
+
+.u-x-span-9 {
+	grid-column: span 9;
+}
+
+.u-x-span-24 {
+	grid-column: span 24;
+}

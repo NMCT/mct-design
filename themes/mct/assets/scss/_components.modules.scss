@@ -48,6 +48,10 @@
 		border-color: palette(color-project);
 	}
 
+	&--international {
+		border-color: palette(color-international);
+	}
+
 	&--dynamic {
 		opacity: 0;
 		display: none;
