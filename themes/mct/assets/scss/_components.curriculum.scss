@@ -53,7 +53,7 @@ $choice-column-border-style: solid;
 
 	@include mq(bp5) {
 		left: 50%;
-		width: 33.3333%;
+		width: calc(33.3333% + #{$alpha-leading / 3}px);
 		background-color: $choice-column-bgcolor;
 		@include padding-bottom($alpha-leading / 2);
 	}
