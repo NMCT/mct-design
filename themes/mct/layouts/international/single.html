@@ -1,0 +1,95 @@
+{{ define "main" }}
+{{ $cover := .Params.Cover }}
+{{ $image := .Resources.GetMatch $cover }}
+{{ $scaledImage := $image.Fill "896x502 Center" }}
+    <section class="c-row c-row--lg">
+        <div class="o-container u-max-width-optimal">
+            <section class="c-main-section-lg">
+                <section class="c-main-section">
+                    <div class="u-max-width-xl">
+                        <h1 class="u-ms10-bp3">
+                            {{ .Title }}
+                        </h1>
+                    </div>
+                </section>
+                <section class="c-main-section">
+                    {{ if or .Params.mp4 .Params.webm }}
+                    <div class="c-video-player">
+                        <button class="c-video-play-button">
+                            {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
+                        </button>
+                        <video class="c-video-player__video" poster="{{ $scaledImage.Permalink }}">
+                            {{ if .Params.webm }}
+                            <source src="{{ .Params.webm }}" type="video/webm">
+                            {{ end }}
+                            {{ if .Params.mp4 }}
+                            <source src="{{ .Params.mp4 }}" type="video/mp4">
+                            {{ end }}
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                    {{ else }}
+                    <p class="c-media">
+                        <picture class="c-media__picture c-media__picture--fixed-ratio">
+                            <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="{{ .Title }} afbeelding">
+                        </picture>
+                    </p>
+                    {{ end }}
+                </section>
+                <section class="c-main-section">
+                    <div class="u-max-width-optimal">
+                        <div class="s-content">
+                            <p>
+                                {{ .Description }}
+                            </p>
+                            {{ .Content }}
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="c-main-section-lg">
+                <div class="c-carousel__items-holder">
+                    <div class="c-carousel__items js-carousel-items is-released" style="--n:4; --i:0; --tx:0px; --f:0.5">
+                        {{ range $i, $img := .Params.images }}
+                            {{ $cover := $img.cover }}
+                            {{ if $cover }}
+                                {{ $image := $.Resources.GetMatch $cover }}
+                                {{ $scaledImage := $image.Fill "896x502 Center" }}
+                                <div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
+                                    <p><img alt="{{ $img.caption }}" src="{{ $scaledImage.Permalink }}"></p>
+                                    <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                                        {{ $img.caption }}
+                                    </p>
+                                </div>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="c-carousel js-carousel">
+                    <div class="c-carousel-nav" aria-hidden="true">
+                        <ol class="o-list c-carousel-nav-list js-nav-list">
+                            {{ range $i, $sequence :=  .Params.images }}
+                                <li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
+                                    {{ add $i 1 }}
+                                </li>
+                            {{ end }}
+                        </ol>
+                    </div>
+            
+                    <button class="c-carousel__arrow c-carousel__arrow--left js-button-prev">
+                        {{ partial "atoms/symbol" (dict "value" "arrow-left" "class" "c-carousel__arrow-symbol") }}
+                    </button>
+            
+                    <button class="c-carousel__arrow c-carousel__arrow--right js-button-next">
+                        {{ partial "atoms/symbol" (dict "value" "arrow-right" "class" "c-carousel__arrow-symbol") }}
+                    </button>
+                </div>
+            </section>
+            <section class="c-main-section-lg">
+                <p>
+                    <a class="c-link-more" href="{{ ref . "/international" }}">< Terug naar de International pagina</a>
+                </p>
+            </section>
+        </div>
+    </section>
+{{ end }}

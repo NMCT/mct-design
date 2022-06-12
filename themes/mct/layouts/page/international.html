@@ -167,7 +167,7 @@
         </div>
     </div>    
     <!-- Other International Opportunities -->
-	<div class="c-row c-row--lg c-row--divide">
+	<section class="c-row c-row--lg c-row--divide">
 		<div class="o-container">
 			<div class="o-grid o-grid--gutter-lg">
 				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
@@ -188,7 +188,7 @@
                                                 {{ $image := .Resources.GetMatch $cover }}
                                                 {{ $scaledImage := $image.Resize "200x" }}
                                                 <div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
-                                                    <p><img alt="{{ .Title }}" src="{{ $cover }}"></p>
+                                                    <p><img alt="{{ $opportunity_element.title }}" src="{{ $cover }}"></p>
                                                     <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
                                                         {{ $opportunity_element.title }}
                                                     </p>
@@ -205,7 +205,28 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+    <section class="c-row c-row--lg u-bgcolor-neutral-xxxxx-light">
+        <div class="o-container">
+            <div class="c-news">
+                <!-- <h2 class="c-type-svg c-type-svg--news">
+                    <img class="c-type-svg__svg" src="/img/svg/word-news.svg" alt="Nieuws">
+                </h2> -->
+                <div class="c-news__body">
+                    <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+                        {{ range .Pages  }}
+                            {{ if eq .Params.type "international"}}
+                            <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
+                                {{ partial "atoms/international" .}}
+                            </article>
+                            
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     {{ partial "components/cta.html" .Params.cta }}
 </main>
 {{ end }}
