@@ -7,6 +7,8 @@ cover: "international-day.jpg"
 draft: false
 type: "international"
 
+international: article
+
 images:
 - caption: 2021 virtuele international week
   cover: "2021.png"

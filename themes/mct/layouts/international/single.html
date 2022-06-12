@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ if eq .Params.international "article" }}
+
 {{ $cover := .Params.Cover }}
 {{ $image := .Resources.GetMatch $cover }}
 {{ $scaledImage := $image.Fill "896x502 Center" }}
@@ -92,4 +94,6 @@
             </section>
         </div>
     </section>
+{{ end }}
+
 {{ end }}
