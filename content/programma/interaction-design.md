@@ -5,7 +5,7 @@ studycredits: 6
 weight: 40
 tags: 
 - dashboards
-- datavisualisatie
+- datavisualisation
 pillar: design
 tools: "Adobe"
 ---

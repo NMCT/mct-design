@@ -5,7 +5,7 @@ studycredits: 6
 weight: 50
 tags:
 - arduino
-- sensoren
+- sensors
 - microcontroller
 - prototyping
 pillar: project

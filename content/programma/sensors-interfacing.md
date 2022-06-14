@@ -6,9 +6,9 @@ weight: 20
 tags:
 - raspberrypi
 - microcontrollers
-- sensoren
+- sensors
 - protocol
-- bitoperaties
+- bitoperations
 pillar: connect
 tools: "Arduino, ESP32, Raspberry Pi, I2C, SPI Bus, One-Wire"
 ---

@@ -5,7 +5,9 @@ studycredits: 6
 weight: 10
 tags:
 - dsp
-- neural_networks
+- neural-networks
+- predictions
+- classifications
 pillar: analysis
 tracks:
 - ai-engineer
