@@ -1,6 +1,6 @@
 ---
-title: Pieter-Jan De Cock
 type: International Testimonial
+title: Pieter-Jan De Cock
 image: "cape-of-good-hope.jpg"
 weight: 10
 

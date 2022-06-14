@@ -259,7 +259,7 @@ $choice-column-border-style: solid;
 	}
 	&.c-curriculum--english {
 		grid-template-columns: repeat(3,1fr);
-		grid-template-rows: auto repeat(36,1fr);
+		grid-template-rows: auto repeat(30,1fr);
 	}
 }
 

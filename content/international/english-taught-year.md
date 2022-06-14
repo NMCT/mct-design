@@ -1,6 +1,6 @@
 ---
 title: Bachelor in Creative Technologies & AI
-description: Learn about the English Taught Bachelor in Creative Technologies & AI 
+description: Already a Bachelor's Degree? Top up with a one-year AI Engineering degree!
 
 explanation: An English-taught semester is a coherent package of course units which a Howest Bachelor programme offers in English, as an option for semester exchange , to incoming students from its partner universities abroad, and as a study abroad option to other international students.
 hyperlinks:

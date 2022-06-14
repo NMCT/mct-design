@@ -30,7 +30,7 @@ countries:
   images:
     - src: https://www.flickr.com/photos/clokortrijk/49718737353/in/album-72157713695945206
       type: Flickr
-      caption: Pics by Jeroen Dellaert at Yummygum – Next Wev Developer (2018)
+      caption: Pics by Jeroen Dellaert at Yummygum – Next Web Developer (2018)
 
     - src: https://www.flickr.com/photos/clokortrijk/49482845637/in/album-72157712954781112
       type: Flickr
@@ -44,9 +44,18 @@ countries:
       type: Flickr
       caption: 2016 -- MCT deelt expertise bij Tilburg Universiteit
 
-- name: Sweden
-  place: 
-    - Skovde
+- name: HIS
+  country: Sweden
+  place: Skovde
+  reasons: 
+    - Internship
+    - Study
+  semesters: 
+    - 6
+    - 5
+  tracks:
+    - iot-infrastructure-engineer
+    - ai-engineer
   images:
     - src: https://www.flickr.com/photos/clokortrijk/23985639917/in/album-72157661291145037
       type: Flickr
