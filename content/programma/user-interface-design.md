@@ -17,5 +17,5 @@ Je leert werken met **Adobe XD** om interfaces te ontwerpen. **Photoshop** gebru
 
 User Interface design is niet enkel in een grafische tool schermen uitwerken. Voor het web zijn er tal van design beslissingen die je veel beter kan nemen rechtstreeks in de natuurlijke omgeving van het web: de browser. Responsive webdesign, hover effecten, kleine animaties&hellip; allemaal zaken die je het best kan doen met **CSS**. Daarom leren we in deze module al snel hoe je de principes van visual design kan toepassen met CSS. Je leert werken met de handige text editor **Atom**.
 
-Op het einde zien we hoe we **Javascript en CSS** kunnen combineren om kleine interacties zoals een mobiele navigatie mogelijk te maken. Javascript leer je in <a class="js-module-link" href="/programma/device-programming-1/">Device Programming 1</a>.
+Op het einde zien we hoe we **Javascript en CSS** kunnen combineren om kleine interacties zoals een mobiele navigatie mogelijk te maken. Javascript leer je in [Full Stack Web Development](/programma/full-stack-web-development).
 
