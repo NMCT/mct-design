@@ -20,4 +20,4 @@ We bekijken hoe we met React Native een hybride mobile app kunnen maken met een 
 
 Ook komen animaties aan bod, basis microinteracties en het gestructureerd werken met Javascript.
 
-Deze module is ook een aanzet naar de web-based [JS-frameworks en patterns](/programma/full-stack-development/).
+Deze module is ook een aanzet naar de web-based [JS-frameworks en patterns](/programma/advanced-full-stack-development/).

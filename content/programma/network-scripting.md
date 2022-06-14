@@ -15,6 +15,7 @@ tags:
 pillar: connect
 tracks:
 - iot-infrastructure-engineer
+tools: "Powershell, Bash, Terraform, Ansible, Git, VMware"
 ---
 
 Om administratieve taken binnen een (netwerk)infrastructuur **snel, geautomatiseerd en efficiënt** te realiseren, kan je niet zonder **scripting**.

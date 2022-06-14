@@ -6,13 +6,15 @@ weight: 10
 tags:
 - csharp
 - xamarinforms
+- .NET-MAUI
 - oop
 - android
 pillar: code
+tools: "Xamarin.Forms, .NET MAUI, Visual Studio"
 ---
 
 Het doel van deze module is om **C#.NET** te leren en de concepten van **object georiënteerd programmeren** verder uit te diepen. Deze kennis wordt ingezet om mobiele Xamarin.Forms/.NET MAUI applicaties te ontwikkelen die data manipuleren van bestaande **bronnen in de cloud**. Hoewel Xamarin.Forms/.NET MAUI toelaat op verschillende platformen te draaien, ligt de focus van het testen voornamelijk op Android.
-Deze module bouwt verder op de kennis die opgedaan werd in User Experience Design, Basic Programming en Device Programming I, en **loopt parallel met <a class="js-module-link" href="/programma/iot-cloud/">de module IoT Cloud</a>**. Naast het verder uitdiepen van programmeerprincipes die toegepast kunnen worden in alle specialisaties, bereidt het tevens voor op meer specifieke modules zoals **Smart App Development**, **Backend Development** en **Mixed Reality**
+Deze module bouwt verder op de kennis die opgedaan werd in [User Experience Design](/programma/user-experience-design), [Basic Programming](/programma/basic-programming) en [Full Stack Web Development](/programma/full-stack-web-development), en **loopt parallel met de module [IoT Cloud](/programma/iot-cloud/)**. Naast het verder uitdiepen van programmeerprincipes die toegepast kunnen worden in alle specialisaties, bereidt het tevens voor op meer specifieke modules zoals **[Smart App Development](/programma/smart-app-development)**, **[Backend Development](/programma/backend-development)** en **[Mixed Reality](/programma/mixed-reality)**
 
 Algemene doelen voor deze module:
 
