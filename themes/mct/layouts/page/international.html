@@ -58,114 +58,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- English Taught Year explanation -->
-    {{ with .Site.GetPage "/international/english-taught-year" }}
-    <div class="c-row c-row--lg u-bgcolor-neutral-xxxx-light">
-        <div class="o-container">
-            <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-center">
-                <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp5 u-push-1-of-12-bp5 u-6-of-8-bp6">
-                    <div class="c-main-section-lg">
-                        <div class="u-max-width">
-                            <h1 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
-								{{.Params.title}}
-                            </h1>
-                            <p class="c-type-intro">
-								{{.Params.description | markdownify}}
-                            </p>
-                        </div>
-                        <div >
-                            {{ .Content }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{ end }}
-    <!-- Programme -->
-    <div class="c-row c-row--lg u-pt-clear u-bgcolor-neutral-xxxx-light">
-        <div class="o-container">
-            <h2 class="c-type-svg c-type-svg--programm c-curriculum-title">
-                <img class="c-type-svg__svg" src="/img/svg/word-programm.svg" alt="Programma">
-            </h2>
-            <div class="c-curriculum-overview">
-                <p>In your Fall semester, you have a few choices of modules to follow:</p>
-                <ul>
-                    <li>MLOps <strong>OR</strong> Basic Dutch & Meeting Flanders Today</li>
-                    <li>Deep Learning <strong>OR</strong> AI For Healthcare</li>
-                </ul>
-                <p><strong>The Spring Semester is only available to the students who also applied for the AI Engineer Fall Semester. Cannot be followed separately.</strong></p>
-                <div class="c-curriculum c-curriculum--single c-curriculum--english js-curriculum">
-                    {{ $AtHomeTracks := slice "ai-english" }}
-                    {{ $AtHomeTracksHuman := slice "AI Engineer (English)" }}
-                    {{ range $i, $semester := seq 2 }}
-                        {{ if eq $i 0 }}
-                        <h3 class="c-curriculum__semester-title u-x-span-2 u-grid-column-start-1">
-                            Fall Semester
-                        </h3>
-                            {{ else }}
-                        <h3 class="c-curriculum__semester-title u-grid-column-start-3">
-                            Spring Semester
-                        </h3>
-                            {{ end }}
-
-                        {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
-                        {{ range (where $.Site.Pages "Type" "programma") }}
-                            {{ if and (eq .Params.Semester $semester) (isset .Params "english-only") (not (isset .Params "hide")) }}
-                            {{ $colspan := add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice) }}
-                            <!-- Semester (1) + (Semester - 1) + 0 ==> 1 -->
-                            <!-- Semester (1) + (Semester - 1) + 1 ==> 2 -->
-                            <!-- Semester (2) + (Semester - 1) + 0 ==> 3 -->
-                            <!-- Semester (2) + (Semester - 1) + 1 ==> 4 -->
-                                <a
-                                    href="{{ .Permalink }}"
-                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ $colspan }} u-y-span-{{ .Params.StudyCredits }} js-module"
-                                >
-                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                    {{ if .Params.Tags }}
-                                        <p class="c-module__tags">
-                                            {{ range .Params.Tags }}
-                                                #{{ . }}
-                                            {{ end }}
-                                        </p>
-                                    {{ end }}
-                                </a>
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-                </div>
-
-                <!-- Curriculum legend -->
-                <ul class="o-list c-curriculum-legend">
-                    <li class="c-curriculum-legend__item">
-                        <span class="c-curriculum-legend__swatch u-bgcolor-analysis-base"></span>
-                        Analysis
-                    </li>
-                    <li class="c-curriculum-legend__item">
-                        <span class="c-curriculum-legend__swatch u-bgcolor-code-base"></span>
-                        Code
-                    </li>
-                    <li class="c-curriculum-legend__item">
-                        <span class="c-curriculum-legend__swatch u-bgcolor-connect-base"></span>
-                        Connect
-                    </li>
-                    <li class="c-curriculum-legend__item">
-                        <span class="c-curriculum-legend__swatch u-bgcolor-design-base"></span>
-                        Design
-                    </li>
-                    <li class="c-curriculum-legend__item">
-                        <span class="c-curriculum-legend__swatch u-bgcolor-project-base"></span>
-                        Integrate
-                    </li>
-                    <li class="c-curriculum-legend__item">
-                        <span class="c-curriculum-legend__swatch u-bgcolor-international-base"></span>
-                        International
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>    
+    </div>  
     <!-- Other International Opportunities -->
 	<section class="c-row c-row--lg c-row--divide">
 		<div class="o-container">
@@ -173,6 +66,10 @@
 				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
 					<div class="c-main-section">
                         {{ with .Site.GetPage "/international/opportunities" }}
+
+                        <p class="c-type-intro">
+                            Wat zijn de mogelijkheden als MCT student?
+                        </p>
 
                         {{ range $opportunity_index, $opportunity_element := .Params.opportunities }}
                             <section class="o-grid__item u-max-width c-row">
