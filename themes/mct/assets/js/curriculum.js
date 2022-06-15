@@ -206,6 +206,24 @@
         // Check initial hash
     };
 
+    const checkForQueryString = () => {
+        if (window.location.hash.substring(0, 9) === '#profile-') {
+            const track = window.location.hash.substring(
+                9,
+                window.location.hash.length
+            );
+
+            const selectedRadio = document.querySelector(window.location.hash);
+            selectedRadio.checked = true;
+
+            dropdown.querySelector('span').innerHTML =
+                selectedRadio.nextElementSibling.innerText;
+
+            curriculum.dataset.placeholder = '';
+            _toggleModules(track);
+        }
+    };
+
     document.addEventListener('DOMContentLoaded', () => {
         // GET SOME DOM
         if (document.querySelector('.c-curriculum-overview')) {
@@ -214,29 +232,30 @@
 
             trackList = document.querySelector('.js-curriculum-choices');
 
+            modules = document.querySelectorAll('.js-module');
+
+            if (modules) {
+                dynamicModules = Array.from(modules).filter((module) =>
+                    module.classList.contains('js-module-dynamic')
+                );
+            }
+
             // BASIC FEATURES
             enableTrackDropDown();
-        }
-
-        modules = document.querySelectorAll('.js-module');
-
-        if (modules) {
-            dynamicModules = Array.from(modules).filter((module) =>
-                module.classList.contains('js-module-dynamic')
-            );
+            checkForQueryString();
         }
 
         // DOM LISTENERS
-        window.addEventListener('hashchange', function () {
-            const moduleSlug = window.location.hash.substring(
-                9,
-                window.location.hash.length
-            );
+        // window.addEventListener('hashchange', function () {
+        //     const moduleSlug = window.location.hash.substring(
+        //         9,
+        //         window.location.hash.length
+        //     );
 
-            if (window.location.hash.substring(0, 9) == '#profile-') {
-                // getModules(moduleSlug);
-                // selectAndDeselectOptions(tracks[moduleSlug], o, l, s);
-            }
-        });
+        //     if (window.location.hash.substring(0, 9) == '#profile-') {
+        //         // getModules(moduleSlug);
+        //         // selectAndDeselectOptions(tracks[moduleSlug], o, l, s);
+        //     }
+        // });
     });
 })();
