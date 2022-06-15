@@ -46,6 +46,7 @@ $choice-column-border-style: solid;
 	}
 
 	&:not(.c-curriculum--single) {
+
 		&::before {
 			display: block;
 			border: $choice-column-border-width $choice-column-border-style $choice-column-border-color;
@@ -67,6 +68,27 @@ $choice-column-border-style: solid;
 				content: attr(data-placeholder);
 			}
 		}
+	}
+	&-divider {
+		$divider-column: 0;
+		&--1 {
+			@include divider-line(1)
+		}
+		&--2 {
+			@include divider-line(2)
+		}
+		&--3 {
+			@include divider-line(3)
+		}
+	}
+
+	&.c-curriculum--at-home {
+		grid-template-rows: auto repeat(6,1fr);
+		column-gap: 4rem;
+	}
+	&.c-curriculum--english {
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: auto repeat(30,1fr);
 	}
 }
 
