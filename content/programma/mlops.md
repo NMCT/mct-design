@@ -3,6 +3,7 @@ title: MLOps
 aliases:
 - ai-cloud-services-devops
 semester: 5
+studycredits: 6
 weight: 10
 tags:
 - Kubernetes
@@ -12,8 +13,9 @@ tags:
 pillar: code
 tracks:
 - ai-engineer
+tools: "Azure ML, Vertex AI, GitHub Actions, Kubernetes, Kubeflow"
 ---
-In de module MLOps leren we AI modellen, ontwikkeld in <a class="js-module-link" href="/programma/deep-learning/">deep learning</a> en <a class="js-module-link" href="/programma/advanced-ai/">advanced AI</a>, in productie te brengen.
+In de module MLOps leren we AI modellen, ontwikkeld in [Deep Learning](/programma/deep-learning/) en [Advanced AI](/programma/advanced-ai/), in productie te brengen.
 Getrainde AI modellen moeten namelijk uit de ontwikkelingsfase richting een productie omgeving komen.
 Ze worden in een applicatie geintegreerd op allerlei manieren. Wij leren de best practices rond deployment.
 Hiervoor werken we met de laatste nieuwe technologieen op vlak van Web API's, Docker en Kubernetes, op cloud en lokale servers.

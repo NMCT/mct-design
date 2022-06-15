@@ -33,294 +33,65 @@
                                     {{ partial "atoms/symbol" (dict "value" "keyboard-arrow-down" "class" "c-curriculum-choice__icon-down") }}
                                 </svg>
                             </button>
-                            <ul class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="smart-xr-developer" data-name="Smart XR Developer"
-                                 data-module="10">
-                                    <a href="#!" class="c-curriculum-choices__filter">
-                                        <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
-                                            {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> Smart XR Developer
-                                    </a>
-                                </li>
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="next-web-developer" data-name="Next Web Developer"
-                                 data-module="9">
-                                    <a href="#!" class="c-curriculum-choices__filter">
-                                        <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
-                                            {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> Next Web Developer
-                                    </a>
-                                </li>
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="ai-engineer" data-name="AI Engineer" data-module="14">
-                                    <a href="#!" class="c-curriculum-choices__filter">
-                                        <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
-                                            {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> AI Engineer
-                                    </a>
-                                </li>
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="infrastructure-engineer" data-name="IoT Infrastructure Engineer"
-                                 data-module="11">
-                                    <a href="#!" class="c-curriculum-choices__filter">
-                                        <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
-                                            {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> IoT Infrastructure Engineer
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
+                                <label class="c-curriculum-choices__item">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-smart-xr-developer" value="profile-smart-xr-developer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">Smart XR Developer</span>
+                                </label>
+
+                                <label class="c-curriculum-choices__item">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-next-web-developer" value="profile-next-web-developer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">Next Web Developer</span>
+                                </label>
+
+                                <label class="c-curriculum-choices__item">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-ai-engineer" value="profile-ai-engineer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">AI Engineer</span>
+                                </label>
+
+                                <label class="c-curriculum-choices__item">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-iot-infrastructure-engineer" value="profile-iot-infrastructure-engineer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">IoT Infrastructure Engineer</span>
+                                </label>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="c-curriculum">
-                    <section class="c-curriculum__year">
-                        <div class="c-curriculum__semester">
-                            <h3 class="c-curriculum__semester-title">
-                                Semester 1
-                            </h3>
-                            {{ range (where .Site.Pages "Type" "programma") }}
-                                {{ if eq .Params.Semester 1 }}
-                                    <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                        <h4 class="c-module__title">{{ .Title }}</h4>
-                                        {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                    </a>
-                                {{ end }}
-                            {{ end }}
-                        </div>
-                        <div class="c-curriculum__semester">
-                            <h3 class="c-curriculum__semester-title">
-                                Semester 2
-                            </h3>
-                            {{ range (where .Site.Pages "Type" "programma") }}
-                                {{ if eq .Params.Semester 2 }}
-                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
+
+                <div class="c-curriculum js-curriculum" data-placeholder="Waar word jij expert in?">
+                    {{ range $i, $sequence := seq 6 }}
+                        <h3 class="c-curriculum__semester-title">
+                            Semester {{ $sequence }}
+                        </h3>
+
+                        {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
+                        {{ range (where $.Site.Pages "Type" "programma") }}
+                            {{ if eq .Params.Semester $sequence }}
+                                <a
+                                    href="{{ .Permalink }}"
+                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ .Params.Semester }} u-y-span-{{ .Params.StudyCredits }} js-module
+                                    {{ if in (slice 4 5) $sequence }}
+                                        c-module--dynamic js-module-dynamic
+                                        {{ range .Params.Tracks }}
+                                            js-track-{{ . }}
+                                        {{ end }}
+                                    {{ end }}"
+                                >
                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                     {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
+                                        <p class="c-module__tags">
+                                            {{ range .Params.Tags }}
+                                                #{{ . }}
+                                            {{ end }}
+                                        </p>
+                                    {{ end }}
                                 </a>
-                                {{ end }}
                             {{ end }}
-                        </div>
-                    </section>
-                    <section class="c-curriculum__year">
-                        <div class="c-curriculum__semester">
-                            <h3 class="c-curriculum__semester-title">
-                                Semester 3
-                            </h3>
-                            {{ range (where .Site.Pages "Type" "programma") }}
-                                {{ if eq .Params.Semester 3 }}
-                                    <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                        <h4 class="c-module__title">{{ .Title }}</h4>
-                                        {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                    </a>
-                                {{ end }}
-                            {{ end }}
-                        </div>
-                        <div class="c-curriculum__semester c-curriculum__semester--choice c-curriculum__semester--choice-4">
-                            <h3 class="c-curriculum__semester-title">
-                                Semester 4
-                            </h3>
-                            <div class="c-curriculum__semester-holder--dynamic js-semester-4">
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-xr-developer-track">
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "smart-xr-developer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                </div>
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-next-web-developer-track">
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "next-web-developer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                </div>
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-ai-engineer-track">
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "ai-engineer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                </div>
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-infrastructure-engineer-track">
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "infrastructure-engineer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                </div>
-                                <div class="c-curriculum__call-to-action js-call-to-action">
-                                    <p class="c-type-meta u-ms-2 u-mb-gamma u-opacity-gamma js-loading-message">
-                                        Wat is jouw passie?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="c-curriculum__year">
-                        <div class="c-curriculum__semester c-curriculum__semester--choice c-curriculum__semester--choice-5">
-                            <h3 class="c-curriculum__semester-title">
-                                Semester 5
-                            </h3>
-                            <div class="c-curriculum__semester-holder--dynamic js-semester-5">
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-xr-developer-track">
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "smart-xr-developer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                </div>
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-next-web-developer-track">
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "next-web-developer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                </div>
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-ai-engineer-track">
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "ai-engineer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                </div>
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-infrastructure-engineer-track">
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "infrastructure-engineer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                </div>
-                            </div>
-                        </div>
-                        <div class="c-curriculum__semester">
-                            <h3 class="c-curriculum__semester-title">
-                                Semester 6
-                            </h3>
-                            {{ range (where .Site.Pages "Type" "programma") }}
-                                {{ if eq .Params.Semester 6 }}
-                                    <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--single c-module--link js-module-link">
-                                        <h4 class="c-module__title">{{ .Title }}</h4>
-                                        {{ if .Params.Tags }}
-                                                        <p class="c-module__tags">
-                                                            {{ range .Params.Tags }}
-                                                                #{{ . }}
-                                                            {{ end }}
-                                                        </p>
-                                                    {{ end }}
-                                    </a>
-                                {{ end }}
-                            {{ end }}
-                            <!-- <a href="/module/stage-bachelorproef/" class="c-module c-module--project c-module--full c-module--link js-module-link">
-                                <h4 class="c-module__title">Stage + Bachelorproef</h4>
-                                <p class="c-module__tags">#communicatie #teamwork #entrepreneur #projectmanagement #device #network #ux #embeddedsoftware #front-end
-                                #data-management</p>
-                            </a> -->
-                        </div>
-                    </section>
+                        {{ end }}
+                    {{ end }}
                 </div>
+
                 <ul class="o-list c-curriculum-legend">
                     <li class="c-curriculum-legend__item">
                         <span class="c-curriculum-legend__swatch u-bgcolor-analysis-base"></span>
@@ -348,8 +119,9 @@
     </div>    
     {{ partial "components/cta.html" (dict "title" "Inschrijven?" "paragraph" "lijkt deze opleiding wat voor jou? kom dan zeker eens langs op een van onze infodagen.") }}
 </main>
+
 <dialog class="c-modal js-dialog">
-    <!-- <div class="c-modal__body c-modal__body--module c-modal__body--module-connect js-dialog-body">
+    <div class="c-modal__body c-modal__body--module c-modal__body--module-connect js-dialog-body">
         <button class="c-modal__close js-dialog-close" aria-label="Close dialog">
             {{ partial "atoms/symbol" (dict "value" "close" "class" "c-nav-main-trigger__symbol")}}
         </button>
@@ -380,6 +152,6 @@
             </p>
         </div>
 
-    </div> -->
+    </div>
 </dialog>
 {{ end }}

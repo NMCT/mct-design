@@ -1,6 +1,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
+    <meta lang="nl" />
     <meta http-equiv="cleartype" content="on">
 
     <!-- Mobile header colors -->
@@ -17,11 +18,11 @@
     <!-- About this document -->
     <meta name="author" content="mct">
     <meta name="description" content="{{ .Params.Description }}">
-    {{ if getenv "NO_FOLLOW" }}
+    {{ if getenv "HUGO_NO_FOLLOW" }}
         <meta name="robots" content="noindex" /> 
     {{ end }}
 
-    <title>{{ block "title" . }}{{ .Params.Title }} | {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ .Params.Title }} ∙ {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>
 
     <!-- Stylesheets -->
     {{ $style := resources.Get "scss/screen.scss" | toCSS | postCSS | minify | fingerprint }}

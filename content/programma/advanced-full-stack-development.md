@@ -1,6 +1,7 @@
 ---
 title: Advanced Full Stack Development
 semester: 5
+studycredits: 9
 weight: 20
 tags:
 - frontend

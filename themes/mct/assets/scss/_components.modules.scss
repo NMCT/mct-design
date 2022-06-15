@@ -4,10 +4,12 @@
 */
 
 .c-module {
+	background-color: #eee;
+	margin-bottom: 1.5rem;
+
 	position: relative;
 	width: 100%;
 	display: flex;
-	flex-grow: 1;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
@@ -21,7 +23,7 @@
 	@include padding-tb($alpha-leading / 2, $alpha-leading / 2);
 
 	& + & {
-		@include margin-top($alpha-leading / 2);
+		@include margin-top($alpha-leading / 8);
 	}
 
 	&--code {
@@ -39,14 +41,25 @@
 	&--analysis {
 		border-color: palette(color-analysis);
 	}
+	
 
 	&--project {
 		border-color: palette(color-project);
 	}
 
-	// &--single {
-	// 	min-height: calc(100% - 33px);
-	// }
+	&--dynamic {
+		opacity: 0;
+		display: none;
+
+		&.is-visible {
+			opacity: 1;
+			display: flex;
+		}
+	}
+
+	@include mq(bp5) {
+		grid-row: span 6;
+	}
 }
 
 .c-module--link {
@@ -62,15 +75,19 @@
 		&.c-module--code {
 			background-color: palette(color-code);
 		}
+
 		&.c-module--connect {
 			background-color: palette(color-connect);
 		}
+
 		&.c-module--design {
 			background-color: palette(color-design);
 		}
+
 		&.c-module--project {
 			background-color: palette(color-project);
 		}
+
 		&.c-module--analysis {
 			background-color: palette(color-analysis);
 		}
@@ -96,7 +113,6 @@
 	width: 100%;
 	margin-bottom: 0;
 	color: $body-color;
-	color: palette;
 	// font-family: $beta-font-family;
 	@include ms-2;
 }
@@ -107,6 +123,6 @@
 	color: palette(color-neutral);
 	font-family: $beta-font-family;
 	text-transform: uppercase;
-	@include padding-top($alpha-leading * 0.5);
-	@include ms-2;
+	@include padding-top($alpha-leading * 0.25);
+	@include ms-3;
 }

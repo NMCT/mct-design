@@ -1,6 +1,7 @@
 ---
 title: The Collective
 semester: 5
+studycredits: 6
 weight: 40
 tags:
 - international
@@ -12,16 +13,17 @@ tracks:
 - smart-xr-developer
 - next-web-developer
 - ai-engineer
-- infrastructure-engineer
+- iot-infrastructure-engineer
+tools: "Business Value Canvas, Business Plan"
 ---
 
 **The Collective is a module that requires international and / or interdisciplinary teamwork: you get the chance to work together with Energy Management or Industrial Product Design students.**
 
 You start in a motivated team of young entrepreneurs with a great idea for a product or a service and at the end you deliver a prototype or business case and a business plan.
 
-You have already a ton of project work experience but it is a whole different ball game if you team up with people with another background. For the first time more aspects than the mere technical aspects deserve your attention: finance, marketing, sales,&nbsp;... Sometimes these aspects will need you to kill your darling ideas(s) and move forward. Agile working will lead to success.
+You have already a ton of project work experience but it is a whole different ball game if you team up with people with another background. For the first time more aspects than the mere technical aspects deserve your attention: finance, marketing, sales, ... Sometimes these aspects will need you to kill your darling ideas(s) and move forward. Agile working will lead to success.
 
-As a technical expert (infrastructure Engineer, Newt Web Developer, AI Engineer or Smart tech & AI) you need to do research and work out of your comfort zone and seek for help. Luckily a multitude of people are ready to help you if you can explain what you are doing and in what manner you need their help.
+As a technical expert (IoT Infrastructure Engineer, Next Web Developer, AI Engineer or Smart XR Developer) you need to do research and work out of your comfort zone and seek for help. Luckily a multitude of people are ready to help you if you can explain what you are doing and in what manner you need their help.
 
 You and your team are everything but alone in this endeavour: preppers, experts, teacher-coaches and dreamcoaches help you all the way.
 

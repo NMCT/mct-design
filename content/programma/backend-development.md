@@ -1,18 +1,18 @@
 ---
 title: Backend Development
 semester: 4
+studycredits: 6
 weight: 30
 tags:
-- ASP 
 - netcore 
 - crossplatform 
-- AI-Architectuur
+- GraphQL
 - Docker
 pillar: code
 tracks:
 - next-web-developer
 - ai-engineer
-tools: "Visual studio code, ASP.NET Core, Docker, Azure, ..."
+tools: "Visual Studio Code, .NET Core, MongoDB, Docker, Azure"
 ---
 
 Hoe bouw je een API die je host in een public cloud plaform zoals Azure, AWS of GCP en dit met behulp van ASP.NET Core Web API

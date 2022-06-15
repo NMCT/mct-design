@@ -1,6 +1,7 @@
 ---
 title: User Experience Design
 semester: 1
+studycredits: 3
 weight: 40
 tags:
 - ux
@@ -15,6 +16,6 @@ In deze module leren we **designen voor de eindgebruiker**. We bekijken **versch
 Uiteindelijk **testen** we of alles op een logische plaats staat, of gebruikers onze app of website goed kunnen gebruiken en hoe we de **eerste stappen naar** een **afgewerkt design** kunnen zetten.
 In deze eerste design module ga je ook zorgen dat je je basisbouwstenen voor webdevelopment beheerst: **HTML** en **CSS** leer je zelfstandig met behulp van blended learning.
  
-Patterns, usability heuristics, design thinking en Gestalt theorie komen aan bod in de uitlegsessies. Elke editie nodigen we professionals uit om hun expertise op het gebied van User Experience te delen. Zo kwamen vb. al knappe casussen van Skinn Branding Agency uitgebreid aan bod.
+Patterns, usability heuristics, design thinking en Gestalt theorie komen aan bod in de uitlegsessies. Elke editie nodigen we professionals uit om hun expertise op het gebied van User Experience te delen. Zo kwamen bijvoorbeeld al knappe casussen van Skinn Branding Agency uitgebreid aan bod.
 
 In de werkcolleges oefenen we de verschillende aspecten van de workflow. De verschillende challenges maken het uitdagend om je te verdiepen in User Experience.
