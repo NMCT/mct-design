@@ -97,10 +97,11 @@ $choice-column-border-style: solid;
 	position: -webkit-sticky; // Safari needs this prefix. Otherwise z-index doesn't work ;-) (because there is no positioning).
 	// top: 24px;
 	z-index: 20;
+	
+	@include margin-lr($columns-gutter * -0.5);
 
 	@include mq(bp5) {
 		position: relative;
-		@include margin-lr($columns-gutter * -0.5);
 
 		.has-scrolled & {
 			position: relative;
