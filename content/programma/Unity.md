@@ -9,9 +9,8 @@ tags:
 pillar: code
 tracks:
 - smart-xr-developer
+tools: "Unity"
 ---
-
-**Onder voorbehoud**
 
 Een Extended Reality applicatie bouwen begint bij het ontwikkelen van een programma.
 Met behulp van Unity, een 3D engine, maken we krachtige applicaties die in staat zijn om 3D assets en animaties weer te geven.

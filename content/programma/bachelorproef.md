@@ -8,8 +8,6 @@ tags:
 - research
 - field
 pillar: project
-aliases:
-- stage-bachelorproef
 ---
 
 De opleiding MCT wordt afgesloten met een stage in het werkveld én een individuele bachelorproef. De bachelorproef is de ideale gelegenheid voor de toekomstige bachelor om zich te verdiepen in een aantal essentiële technische competenties. Daarnaast is de bachelorproef ook de manier om heel wat algemene competenties verder te ontwikkelen. Zo dient een student

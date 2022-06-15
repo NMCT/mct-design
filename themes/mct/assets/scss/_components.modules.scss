@@ -4,7 +4,6 @@
 */
 
 .c-module {
-	grid-row: span 6;
 	background-color: #eee;
 	margin-bottom: 1.5rem;
 
@@ -60,6 +59,10 @@
 			opacity: 1;
 			display: flex;
 		}
+	}
+
+	@include mq(bp5) {
+		grid-row: span 6;
 	}
 }
 

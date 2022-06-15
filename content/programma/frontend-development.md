@@ -1,6 +1,6 @@
 ---
 title: Frontend
-Description: Hoe kunnen we een performante user interface maken in de browser? We bekijken de volledige flow van een goede test-driven development omgeving tot optimalisatie in de browser.
+# Description: Hoe kunnen we een performante user interface maken in de browser? We bekijken de volledige flow van een goede test-driven development omgeving tot optimalisatie in de browser.
 semester: 4
 studycredits: 6
 weight: 10
@@ -24,4 +24,4 @@ Een manier om dit proces te verbeteren in het gebruik van SCSS. We leren hoe we 
 
 Uiteindelijk maken we een React-project om alle onderdelen te combineren. We kijken ook naar de kracht van Next.js.
 
-Doorheen de module is er veel tijd om deze onderdelen begeleid zelf in te oefenen. Dat is ook nodig want deze module legt de basis voor de module Frameworks & Patterns.
+Doorheen de module is er veel tijd om deze onderdelen begeleid zelf in te oefenen. Dat is ook nodig want deze module legt de basis voor de module [Frameworks & Patterns](/programma/framework-patterns).

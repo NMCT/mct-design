@@ -1,6 +1,6 @@
 ---
 title: Cloud Services
-description: Elke onderneming heeft baat bij het gebruiken van “de cloud”. Maar wat is “de cloud” precies? We leren wat er allemaal achter dat woord schuil gaat en gebruiken daarbij diensten van Amazon AWS en Microsoft Azure.
+# description: Elke onderneming heeft baat bij het gebruiken van “de cloud”. Maar wat is “de cloud” precies? We leren wat er allemaal achter dat woord schuil gaat en gebruiken daarbij diensten van Amazon AWS en Microsoft Azure.
 semester: 5
 studycredits: 6
 weight: 10

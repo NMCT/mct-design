@@ -6,44 +6,64 @@
 
 // Start a grid item on a specific grid column / row
 .u-grid-column-start-1 {
-	grid-column-start: 1;
+	@include mq(bp5) {
+		grid-column-start: 1;
+	}
 }
 
 .u-grid-column-start-2 {
-	grid-column-start: 2;
+	@include mq(bp5) {
+		grid-column-start: 2;
+	}
 }
 
 .u-grid-column-start-3 {
-	grid-column-start: 3;
+	@include mq(bp5) {
+		grid-column-start: 3;
+	}
 }
 
 .u-grid-column-start-4 {
-	grid-column-start: 4;
+	@include mq(bp5) {
+		grid-column-start: 4;
+	}
 }
 
 .u-grid-column-start-5 {
-	grid-column-start: 5;
+	@include mq(bp5) {
+		grid-column-start: 5;
+	}
 }
 
 .u-grid-column-start-6 {
-	grid-column-start: 6;
+	@include mq(bp5) {
+		grid-column-start: 6;
+	}
 }
 
 // Span a certain amount of rows or columns
 .u-y-span-3 {
-	grid-row: span 3;
+	@include mq(bp5) {
+		grid-row: span 3;
+	}
 }
 
 .u-y-span-6 {
-	grid-row: span 6;
+	@include mq(bp5) {
+		grid-row: span 6;
+	}
 }
 
 .u-y-span-9 {
-	grid-row: span 9;
+	@include mq(bp5) {
+		grid-row: span 9;
+	}
 }
 
 .u-y-span-24 {
-	grid-row: span 24;
+	@include mq(bp5) {
+		grid-row: span 24;
+	}
 }
 
 // Span a certain amount of rows or columns
