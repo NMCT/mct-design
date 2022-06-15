@@ -1,6 +1,7 @@
 ---
-title: Deep Learning @ Home (keuze)
+title: Deep Learning (keuze)
 semester: 2
+choice: 0
 studycredits: 6
 weight: 20
 tags:

@@ -1,6 +1,7 @@
 ---
-title: AI For Healthcare @ Home (keuze)
+title: AI For Healthcare (keuze)
 semester: 2
+choice: 1
 studycredits: 6
 weight: 30
 tags:

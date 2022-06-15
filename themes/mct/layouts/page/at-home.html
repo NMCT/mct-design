@@ -1,6 +1,7 @@
 {{ define "main" }}
 <main>
-    <div class="c-row c-row--lg">
+    <!-- Introduction -->
+    <section class="c-row c-row--lg">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
@@ -55,50 +56,149 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <div class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxx-light">
         <div class="o-container">
             <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-center">
                 <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp5 u-push-1-of-12-bp5 u-2-of-4-bp6 u-push-1-of-4-bp6">
-                    <div class="c-main-section">
+                    <section class="c-main-section">
+                        {{ with .Site.GetPage "/at-home/how-does-it-work" }}
                         <div class="s-content u-max-width-optimal">
                             {{ .Content }}
                         </div>
-                    </div>
-                    <div class="c-main-section">
-                        <h3>
-                            Specifieke microdegrees voor MCT @ Home
-                        </h3>
-                        <div class="c-curriculum c-curriculum--single c-curriculum--at-home js-curriculum">
-                            {{ $AtHomeTracks := slice "ai-at-home" "deploying-ai-at-home" "ai-at-home-pro" }}
-                            {{ $AtHomeTracksHuman := slice "AI @ Home" "Deploying AI @ Home" "AI @ Home Pro" }}
-                            {{ range $i, $sequence := seq 3 }}
-                                <h3 class="c-curriculum__semester-title">
-                                    {{ index $AtHomeTracksHuman $i }}
-                                </h3>
-        
-                                {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
+                        {{ end }}
+                        {{ with .Site.GetPage "/at-home/ai-at-home" }}
+                        <div class="s-content u-max-width-optimal">
+                            {{ .Content }}
+                            <div class="c-curriculum c-curriculum--single c-curriculum--at-home c-curriculum-divider--2 o-grid-cols--3 js-curriculum">
+                                {{ range $i, $semester := seq 2 }}
+                                    {{ if eq $i 0 }}
+                                        <h3 class="c-curriculum__semester-title u-grid-column-start-1">
+                                            Najaar
+                                        </h3>
+                                    {{ else }}
+                                        <h3 class="c-curriculum__semester-title u-x-span-2 u-grid-column-start-3">
+                                            Voorjaar
+                                        </h3>
+                                    {{ end }}
                                     {{ range (where $.Site.Pages "Type" "programma") }}
-                                    {{ if (isset .Params "home") }}
-                                        {{ if in .Params.Tracks (index $AtHomeTracks $i) }}
+                                        {{ if (isset .Params "home") }}
+                                            {{ if and (in .Params.Tracks "ai-at-home") (eq .Params.Semester $semester) (not (isset .Params "hide")) }}
+                                            {{/* $colstart := add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice) */}}
+                                            {{ $colstart := add .Params.Semester (default 0 .Params.Choice) }}
                                             <a
-                                                href="{{ .Permalink }}"
-                                                class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ add $i 1 }} u-y-span-{{ .Params.StudyCredits }} js-module"
-                                            >
-                                                <h4 class="c-module__title">{{ .Title }}</h4>
-                                                {{ if .Params.Tags }}
-                                                    <p class="c-module__tags">
-                                                        {{ range .Params.Tags }}
-                                                            #{{ . }}
-                                                        {{ end }}
-                                                    </p>
-                                                {{ end }}
-                                            </a>
+                                                    href="{{ .Permalink }}"
+                                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link
+                                                    u-grid-column-start-{{ $colstart }} u-y-span-{{ .Params.StudyCredits }}
+                                                    js-module"
+                                                >
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
+                                                </a>
+                                            {{ end }}
                                         {{ end }}
                                     {{ end }}
                                 {{ end }}
-                            {{ end }}
+                            </div>
                         </div>
+                        {{ end }}
+                        {{ with .Site.GetPage "/at-home/ai-at-home-pro" }}
+                        <div class="s-content u-max-width-optimal">
+                            {{ .Content }}
+                            <div class="c-curriculum c-curriculum--single c-curriculum--at-home c-curriculum-divider--2 o-grid-cols--2 js-curriculum">
+                                {{ range $i, $semester := seq 2 }}
+                                    {{ if eq $i 0 }}
+                                        <h3 class="c-curriculum__semester-title u-grid-column-start-1">
+                                            Najaar
+                                        </h3>
+                                    {{ else }}
+                                        <h3 class="c-curriculum__semester-title u-grid-column-start-2">
+                                            Voorjaar
+                                        </h3>
+                                    {{ end }}
+                                    {{ range (where $.Site.Pages "Type" "programma") }}
+                                        {{ if (isset .Params "home") }}
+                                            {{ if and (in .Params.Tracks "ai-at-home-pro") (eq .Params.Semester $semester) (not (isset .Params "hide")) }}
+                                            {{/* $colstart := add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice) */}}
+                                            {{ $colstart := add .Params.Semester (default 0 .Params.Choice) }}
+                                            <a
+                                                    href="{{ .Permalink }}"
+                                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link
+                                                    u-grid-column-start-{{ $colstart }} u-y-span-{{ .Params.StudyCredits }}
+                                                    js-module"
+                                                >
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ with .Site.GetPage "/at-home/deploying-ai-at-home" }}
+                        <div class="s-content u-max-width-optimal">
+                            {{ .Content }}
+                            <div class="c-curriculum c-curriculum--single c-curriculum--at-home c-curriculum-divider--2 o-grid-cols--2 js-curriculum">
+                                {{ range $i, $semester := seq 2 }}
+                                    {{ if eq $i 0 }}
+                                        <h3 class="c-curriculum__semester-title u-grid-column-start-1">
+                                            Najaar
+                                        </h3>
+                                    {{ else }}
+                                        <h3 class="c-curriculum__semester-title u-grid-column-start-2">
+                                            Voorjaar
+                                        </h3>
+                                    {{ end }}
+                                    {{ range (where $.Site.Pages "Type" "programma") }}
+                                        {{ if (isset .Params "home") }}
+                                            {{ if and (in .Params.Tracks "deploying-ai-at-home") (eq .Params.Semester $semester) (not (isset .Params "hide")) }}
+                                            {{/* $colstart := add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice) */}}
+                                            {{ $colstart := add .Params.Semester (default 0 .Params.Choice) }}
+                                            <a
+                                                    href="{{ .Permalink }}"
+                                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link
+                                                    u-grid-column-start-{{ $colstart }} u-y-span-{{ .Params.StudyCredits }}
+                                                    js-module"
+                                                >
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                        <div class="s-content u-max-width-optimal">
+                            {{ .Content }}
+                        </div>
+                    </section>
+                    <!-- <section class="c-main-section">
+                        <h3>
+                            Specifieke microdegrees voor MCT @ Home
+                        </h3>
+
                         <ul class="o-list c-curriculum-legend">
                             <li class="c-curriculum-legend__item">
                                 <span class="c-curriculum-legend__swatch u-bgcolor-analysis-base"></span>
@@ -109,15 +209,15 @@
                                 Code
                             </li>
                         </ul>
-                    </div>
-                    <div class="c-main-section">
+                    </section> -->
+                    <section class="c-main-section">
                         <div class="s-content u-max-width-optimal">
                             {{ range .Params.questions }}
                                 <h3>{{ .title }}</h3>
                                 <p>{{ .text | markdownify }}</p>
                             {{ end }}
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -131,10 +231,26 @@
 
                         {{ with .Site.GetPage "/at-home/questions" }}
 
-                        {{ range .Params.questions }}
-                            <h3>{{ .question }}</h3>
-                            <p>{{ .answer | markdownify }}</p>
+                        <dl class="c-faq js-faqs">
+                        {{ range $index, $question := .Params.questions }}
+
+                        <dt class="c-faq__title js-faq-title">
+                            <button aria-expanded="false" aria-controls="faq{{ $index }}_desc" class="c-faq__button js-faq-button">
+                                <div class="c-faq__arrow">
+                                    <svg class="c-faq__caret" viewBox="0 0 21 21">
+                                        <path d="M4,5l6,6L4,17" transform="translate(3.5 -0.5)" fill="none" stroke-width="2" />
+                                    </svg>
+                                </div>					
+                                {{ $question.question | markdownify }}
+                            </button>
+                        </dt>
+                        <dd id="faq{{ $index }}_desc" class="c-faq__desc js-faq-desc">
+                            <p>
+                                {{ $question.answer | markdownify }}
+                            </p>
+                        </dd>
                         {{ end }}
+                        </dl>
 
                         {{ end }}
 <!-- 

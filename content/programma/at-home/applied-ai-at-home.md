@@ -1,5 +1,5 @@
 ---
-title: Applied AI @ Home
+title: Applied AI
 semester: 2
 studycredits: 6
 tags:

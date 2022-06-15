@@ -251,10 +251,21 @@ $choice-column-border-style: solid;
 			// END Proof Of Concept
 		}
 	}
+	&-divider {
+		$divider-column: 0;
+		&--1 {
+			@include divider-line(1)
+		}
+		&--2 {
+			@include divider-line(2)
+		}
+		&--3 {
+			@include divider-line(3)
+		}
+	}
 
 	&.c-curriculum--at-home {
-		grid-template-columns: repeat(3,1fr);
-		grid-template-rows: auto repeat(12,1fr);
+		grid-template-rows: auto repeat(6,1fr);
 		column-gap: 4rem;
 	}
 	&.c-curriculum--english {
@@ -292,6 +303,7 @@ $choice-column-border-style: solid;
 	@include padding-tb($alpha-leading/2,$alpha-leading/2);
 	@include margin-bottom($alpha-leading);
 
+	// Default it only has 2 columns, as they are 2 semesters
 	grid-template-columns: repeat(2,1fr);
 
 	// @include mq(bp4) {
@@ -304,24 +316,24 @@ $choice-column-border-style: solid;
 	}
 }
 
-.c-curriculum__semester {
-	position: relative;
-	width: 100%;
-	// display: flex;
-	// flex-wrap: wrap;
-	// flex-direction: column;
+// .c-curriculum__semester {
+// 	position: relative;
+// 	width: 100%;
+// 	// display: flex;
+// 	// flex-wrap: wrap;
+// 	// flex-direction: column;
 
-	@include padding-bottom($alpha-leading / 2);
-	@include padding-lr($columns-gutter / 2, $columns-gutter / 2);
+// 	@include padding-bottom($alpha-leading / 2);
+// 	@include padding-lr($columns-gutter / 2, $columns-gutter / 2);
 
-	@include mq(bp2) {
-		width: 50%;
-	}
+// 	@include mq(bp2) {
+// 		width: 50%;
+// 	}
 
-	@include mq(bp5) {
-		@include padding-top($alpha-leading * 0.5);
-	}
-}
+// 	@include mq(bp5) {
+// 		@include padding-top($alpha-leading * 0.5);
+// 	}
+// }
 
 // background + border around 4th and 5th semester
 
@@ -343,21 +355,21 @@ $choice-column-border-style: solid;
 	}
 }
 
-.c-curriculum__semester--choice-4 {
-	&:before {
-		border-radius: 0 0 0 $radius-lg;
-		border-width: 0 0 $choice-column-border-width
-			$choice-column-border-width;
-	}
-}
+// .c-curriculum__semester--choice-4 {
+// 	&:before {
+// 		border-radius: 0 0 0 $radius-lg;
+// 		border-width: 0 0 $choice-column-border-width
+// 			$choice-column-border-width;
+// 	}
+// }
 
-.c-curriculum__semester--choice-5 {
-	&:before {
-		border-radius: 0 0 $radius-lg 0;
-		border-width: 0 $choice-column-border-width $choice-column-border-width
-			0;
-	}
-}
+// .c-curriculum__semester--choice-5 {
+// 	&:before {
+// 		border-radius: 0 0 $radius-lg 0;
+// 		border-width: 0 $choice-column-border-width $choice-column-border-width
+// 			0;
+// 	}
+// }
 
 .c-curriculum__semester-title {
 	color: palette(color-neutral);

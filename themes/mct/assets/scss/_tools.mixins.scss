@@ -61,3 +61,28 @@
 @mixin box-shadow-xl {
     box-shadow: 0 8px 24px rgba(palette(color-neutral,xxxx-dark),.1);
 }
+
+@mixin divider-line($col) {
+    $choice-column-bgcolor: palette(color-neutral, xxxx-light);
+    $choice-column-bgcolor: transparent;
+    $choice-column-border-color: palette(color-neutral, xx-light);
+    // $choice-column-border-color: rgba(palette(color-neutral,xxxx-dark),.075);
+    $choice-column-border-width: 1px;
+    $choice-column-border-style: solid;
+    &::before {
+        content: attr(data-placeholder);
+        display: block;
+        border: $choice-column-border-width $choice-column-border-style $choice-column-border-color;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        grid-row: 1 / -1;
+        grid-column: $col / span 2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -2rem;
+        right: 0;
+        pointer-events: none;
+    }
+}

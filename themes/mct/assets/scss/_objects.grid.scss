@@ -15,6 +15,17 @@
 .o-grid {
     display: flex;
     flex-wrap: wrap;
+    &-cols {
+        &--2 {
+            grid-template-columns: repeat(2,1fr) !important;
+        }
+        &--3 {
+            grid-template-columns: repeat(3,1fr) !important;
+        }
+        &--4 {
+            grid-template-columns: repeat(4,1fr) !important;
+        }
+    }
 }
 
 // Default gutter

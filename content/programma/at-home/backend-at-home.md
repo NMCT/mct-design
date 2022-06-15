@@ -1,5 +1,5 @@
 ---
-title: Backend @ Home
+title: Backend
 semester: 1
 studycredits: 6
 tags:

@@ -70,7 +70,9 @@
                             {{ if and (eq .Params.Semester $sequence) (not (isset .Params "home")) (not (isset .Params "english-only")) (not (isset .Params "hide")) }}
                                 <a
                                     href="{{ .Permalink }}"
-                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ .Params.Semester }} u-y-span-{{ .Params.StudyCredits }} js-module
+                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link
+                                    u-grid-column-start-{{ .Params.Semester }} u-y-span-{{ .Params.StudyCredits }}
+                                    js-module
                                     {{ if in (slice 4 5) $sequence }}
                                         c-module--dynamic js-module-dynamic
                                         {{ range .Params.Tracks }}

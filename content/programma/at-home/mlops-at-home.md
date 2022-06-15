@@ -1,5 +1,5 @@
 ---
-title: MLOps @ Home
+title: MLOps
 semester: 2
 studycredits: 6
 tags:

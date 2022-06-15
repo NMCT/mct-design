@@ -147,14 +147,14 @@
                         {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
                         {{ range (where $.Site.Pages "Type" "programma") }}
                             {{ if and (eq .Params.Semester $semester) (isset .Params "english-only") (not (isset .Params "hide")) }}
-                            {{ $colspan := add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice) }}
+                            {{ $colstart := add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice) }}
                             <!-- Semester (1) + (Semester - 1) + 0 ==> 1 -->
                             <!-- Semester (1) + (Semester - 1) + 1 ==> 2 -->
                             <!-- Semester (2) + (Semester - 1) + 0 ==> 3 -->
                             <!-- Semester (2) + (Semester - 1) + 1 ==> 4 -->
                                 <a
                                     href="{{ .Permalink }}"
-                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ $colspan }} u-y-span-{{ .Params.StudyCredits }} js-module"
+                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ $colstart }} u-y-span-{{ .Params.StudyCredits }} js-module"
                                 >
                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                     {{ if .Params.Tags }}

@@ -1,5 +1,5 @@
 ---
-title: Advanced AI @ Home
+title: Advanced AI
 semester: 1
 studycredits: 6
 tags:

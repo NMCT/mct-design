@@ -1,0 +1,4 @@
+### AI@Home Pro
+In "AI@Home Pro" focussen we op specifieke toepassingsdomeinen van AI zoals advanced computer vision, advanced NLP (natural language processing), generatieve neural networks, belief networks en multiple-input multiple-output systemen.
+
+Naast het verder uitdiepen van data gedreven machine learning systemen bestuderen en implementeren we in deze cursus ook (deep) reinforcement learning systemen. In plaats van te leren uit data gaan deze zelflerende systemen aan de hand van trial & error een optimale strategie zoeken die hen een maximale reward oplevert. Deze (deep) reinforcement leerstrategieën vinden vooral toepassingen bij zelflerende robots, optimalisatie van industriële processen, computer games, zelfrijdende auto's en gepersonaliseerde aanbevelingen. Aanvullend gaan we dieper in op een aantal populaire optimalisatie- en simulatietechnieken die de performantie van jouw gebruikte leeralgoritme gevoelig kunnen verbeteren.
