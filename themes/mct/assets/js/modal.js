@@ -41,6 +41,12 @@ const modal = (function () {
                 body.classList.remove('has-modal');
                 history.replaceState({}, window.title, baseUrl);
             });
+
+            modal.addEventListener('click', function () {
+                if (body.classList.contains('has-modal')) {
+                    closeModal();
+                }
+            });
         }
     };
 
