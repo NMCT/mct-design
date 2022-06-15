@@ -4,4 +4,11 @@ description: Howest MCT has a long history of international projects, ranging fr
 layout: international-english
 identifier: international-english
 type: page
+partner: true ## Makes sure it renders the page a little different here!
+
+aliases:
+    - /international/partners
+    - /international/partner
+    - /international/english/partner
+
 ---

@@ -1,6 +1,7 @@
 {{ define "main" }}
-{{ $partner := eq (index (last 2 (split .Page.RelPermalink "/")) 0) "partners" }}
+{{ $partner := default false .Params.partner }}
 <main>
+    {{ with .Site.GetPage "/international/english/content" }}
     <section class="c-row c-row--lg">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
@@ -60,6 +61,7 @@
             </div>
         </div>
     </section>
+    {{ end }}
     <!-- English Taught Year explanation -->
     {{ with .Site.GetPage "/international/english-taught-year" }}
     <section class="c-row c-row--lg u-bgcolor-neutral-xxxx-light">
@@ -85,12 +87,12 @@
     </section>
     {{ end }}
     <!-- Prerequisite page -->
-    {{ with .Site.GetPage "/international/english/prerequisites" }}
     <section class="c-row c-row--lg">
         <div class="o-container">
             <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-center">
                 <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp5 u-push-1-of-12-bp5 u-6-of-8-bp6">
                     <div class="c-main-section-lg">
+                        {{ with .Site.GetPage "/international/english/prerequisites" }}
                         <div class="u-max-width">
                             <h1 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
 								{{.Params.title}}
@@ -101,9 +103,13 @@
                         </div>
                         <div >
                             {{ .Content }}
+                        {{ end }}
+
 
                             {{ if not $partner }}
-                            {{ .Params.non_partner | markdownify }}
+                                {{ with .Site.GetPage "/international/english/non_partner" }}
+                                    {{ .Content }}
+                                {{ end }}
                             {{ end }}
                         </div>
                     </div>
@@ -111,7 +117,6 @@
             </div>
         </div>
     </section>
-    {{ end }}
     <!-- Programme -->
     <section class="c-row c-row--lg u-bgcolor-neutral-xxxx-light">
         <div class="o-container">
@@ -195,6 +200,8 @@
             </div>
         </div>
     </section>
+    {{ with .Site.GetPage "/international/english/content" }}
     {{ partial "components/cta.html" .Params.cta }}
+    {{ end }}
 </main>
 {{ end }}
