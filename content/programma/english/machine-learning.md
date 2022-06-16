@@ -4,14 +4,14 @@ semester: 1
 studycredits: 6
 weight: 30
 tags:
-- Kubernetes
-- CI/CD
-- AutomatedAI
-- CloudAI
+- neuralnetworks
+- ai
+- machinelearning
 pillar: analysis
 tracks:
 - ai-english
 english-only: true
+tools: "Support Vector Machines, Random Forest Trees, Naive Bayes, Logistic Regression, Ensemble Learning"
 ---
 
 ### End goal

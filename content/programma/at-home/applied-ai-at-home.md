@@ -2,19 +2,20 @@
 title: Applied AI
 semester: 2
 studycredits: 6
+weight: 10
 tags:
-- AI-Integration
-- CognitiveServices
-- Cloud
+- Transformers
+- GPT-3
+- NLP
+- ComputerVision
 pillar: analysis
 tracks:
 - ai-at-home-pro
 home: true
+tools: "OpenCV, GPT-3"
 ---
-**Onder voorbehoud**
 
-Artificiële intelligentie (AI) is en blijft een hot topic. Ook als Smart XR Developer ben je in staat om een applicatie te verrijken met AI.
-Jouw extended reality apps zijn geconnecteerd aan cloud omgevingen, en maken gebruik van de nieuwste AI oplossingen op de markt.
-Denk maar aan gezichtsherkenning, object detectie en spraaktechnologieën.
+In Applied AI leer je state-of-the-art technologieen die je kan inzetten om je AI-projecten naar een hoger niveau te tillen.
+Via de nieuwste technieken als GAN's en Transformers blijf je op de hoogte van de veranderingen op vlak van Deep Fakes, NLP en Chatbots.
 
-In de module AI Cloud leer je om AI toepassingen te verweven als deel van jouw applicatie. We maken gebruik van Google Vertex, Azure Cognitive Services en IBM Watson om de beste tools te benutten.
+Via enerzijds theoretische lessen worden de geheimen van transformers uit de doeken gedaan. Anderzijds zal je a.d.h.v. praktische opdrachten bekijken hoe je dergelijke systemen kan integreren binnen je bestaande projecten.

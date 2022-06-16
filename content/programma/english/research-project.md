@@ -4,16 +4,15 @@ semester: 1
 studycredits: 6
 weight: 50
 tags:
-- Kubernetes
-- CI/CD
-- AutomatedAI
-- CloudAI
+- research-project
+- thesis
+- new-technologies
 pillar: project
 tracks:
 - ai-english
 - iot-english
 english-only: true
-
+tools: "IEEE, Zotero, Mendeley"
 ---
 
 ### End goal

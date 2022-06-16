@@ -4,14 +4,14 @@ semester: 2
 studycredits: 6
 weight: 10
 tags:
-- Kubernetes
-- CI/CD
-- AutomatedAI
-- CloudAI
+- advancedComputerVision
+- naturaLanguagePr.
+- reinforcementL.
 pillar: analysis
 tracks:
 - ai-english
 english-only: true
+tools: "Python, Jupyter Notebooks"
 
 ---
 

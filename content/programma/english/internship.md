@@ -4,10 +4,10 @@ semester: 2
 studycredits: 24
 weight: 20
 tags:
-- Kubernetes
-- CI/CD
-- AutomatedAI
-- CloudAI
+- teamwork
+- entrepreneur
+- projectmanagement
+- integration
 pillar: project
 tracks:
 - ai-english

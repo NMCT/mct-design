@@ -5,10 +5,8 @@ choice: 0
 studycredits: 3
 weight: 10
 tags:
-- Kubernetes
-- CI/CD
-- AutomatedAI
-- CloudAI
+- Dutch
+- LanguageLearning
 pillar: international
 tracks:
 - ai-english

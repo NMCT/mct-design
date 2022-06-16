@@ -5,10 +5,10 @@ choice: 0
 studycredits: 3
 weight: 10
 tags:
-- Kubernetes
-- CI/CD
-- AutomatedAI
-- CloudAI
+- Flanders
+- Kortrijk
+- Tourism
+- Travel-Tours
 pillar: international
 tracks:
 - ai-english

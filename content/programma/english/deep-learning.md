@@ -5,16 +5,17 @@ choice: 0
 studycredits: 6
 weight: 20
 tags:
-- Kubernetes
-- CI/CD
-- AutomatedAI
-- CloudAI
+- dsp
+- neural-networks
+- predictions
+- classifications
 pillar: analysis
 tracks:
 - ai-english
 english-only: true
 alternates:
     - english/ai-for-healthcare
+tools: "Convolutional Neural Networks (CNN), Generative Adversarial Networks (GAN), Long-Short Term Memory (LSTM), Recurrent Neural Networks (RNN)" 
 ---
 
 **Choice between Deep Learning or AI for Healthcare**

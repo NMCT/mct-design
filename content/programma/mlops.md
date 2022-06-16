@@ -15,6 +15,7 @@ tracks:
 - ai-engineer
 tools: "Azure ML, Vertex AI, GitHub Actions, Kubernetes, Kubeflow"
 ---
+
 In de module MLOps leren we AI modellen, ontwikkeld in [Deep Learning](/programma/deep-learning/) en [Advanced AI](/programma/advanced-ai/), in productie te brengen.
 Getrainde AI modellen moeten namelijk uit de ontwikkelingsfase richting een productie omgeving komen.
 Ze worden in een applicatie geintegreerd op allerlei manieren. Wij leren de best practices rond deployment.
