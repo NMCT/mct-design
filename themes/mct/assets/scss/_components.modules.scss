@@ -5,16 +5,18 @@
 
 .c-module {
 	background-color: #eee;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 
 	position: relative;
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+	align-items: flex-start;
+	gap: .25rem;
+	// flex-wrap: wrap;
+	// flex-direction: column;
 	justify-content: space-between;
 	border-radius: $radius-md;
-	border-bottom: $alpha-leading * 0.25px solid transparent;
+	// border-bottom: $alpha-leading * 0.25px solid transparent;
 	background: palette(color-neutral, xxxxx-light);
 	box-shadow: 0 0 0 1px rgba(palette(color-neutral, xxxx-dark), 0.05),
 		0 2px 4px rgba(palette(color-neutral, xxxx-dark), 0.1);
@@ -22,29 +24,41 @@
 	@include padding-lr($columns-gutter / 2, $columns-gutter / 2);
 	@include padding-tb($alpha-leading / 2, $alpha-leading / 2);
 
-	& + & {
-		@include margin-top($alpha-leading / 8);
+	// & + & {
+	// 	@include margin-top($alpha-leading / 8);
+	// }
+
+
+	.c-module__title,
+	.c-module__tags,
+	.c-module__sp {
+		color: white;
 	}
 
 	&--code {
 		border-color: palette(color-code);
+		background-color: palette(color-code);
 	}
 
 	&--connect {
 		border-color: palette(color-connect);
+		background-color: palette(color-connect);
 	}
 
 	&--design {
 		border-color: palette(color-design);
+		background-color: palette(color-design);
 	}
 
 	&--analysis {
 		border-color: palette(color-analysis);
+		background-color: palette(color-analysis);
 	}
 	
 
 	&--project {
 		border-color: palette(color-project);
+		background-color: palette(color-project);
 	}
 
 	&--dynamic {
@@ -65,10 +79,12 @@
 .c-module--link {
 	&:hover {
 		text-decoration: none;
-		// transform: translate(-2px, -2px);
+		// transform: translate(-2px, -2px) scale(1.02);
+		transform: scale(1.02);
 
 		.c-module__title,
-		.c-module__tags {
+		.c-module__tags,
+		.c-module__sp {
 			color: white;
 		}
 
@@ -107,6 +123,10 @@
 	color: palette(color-neutral, xxx-dark);
 	@include ms-1;
 	// @include margin-bottom($alpha-leading * .5);
+
+	.c-module--3-sp & {
+		@include ms-2;
+	}
 }
 
 .c-module__points {
@@ -118,11 +138,52 @@
 }
 
 .c-module__tags {
+	// display: none;
 	margin-bottom: 0;
 	// margin-top: auto;
 	color: palette(color-neutral);
 	font-family: $beta-font-family;
 	text-transform: uppercase;
-	@include padding-top($alpha-leading * 0.25);
+	@include padding-top($alpha-leading * 0.125);
+	@include ms-2;
+}
+
+.c-module__sp {
+	flex-shrink: 0;
+	margin-bottom: 0;
+	color: palette(color-neutral);
+	// color: #fff;
+	font-family: $beta-font-family;
+	text-transform: uppercase;
+	// background-color: palette(color-neutral, xxxx-light);
+	border-radius: $radius-md;
+	position: relative;
+	top: $columns-gutter / -2 * 1px;
+	right: $columns-gutter / -2 * 1px;
+	// position: absolute;
+	// top: 0;
+	// right: 0;
+	// @include padding-top($alpha-leading * 0.125);
+	@include padding-lr($alpha-leading * 0.25);
 	@include ms-3;
+
+	// .c-module--code & {
+	// 	background-color: palette(color-code);
+	// }
+
+	// .c-module--connect & {
+	// 	background-color: palette(color-connect);
+	// }
+
+	// .c-module--design & {
+	// 	background-color: palette(color-design);
+	// }
+
+	// .c-module--project & {
+	// 	background-color: palette(color-project);
+	// }
+
+	// .c-module--analysis & {
+	// 	background-color: palette(color-analysis);
+	// }
 }

@@ -15,7 +15,7 @@ $choice-column-border-style: solid;
 	// flex-wrap: wrap;
 	z-index: 10;
 	@include padding-top($alpha-leading * 0.5);
-	@include margin-lr($columns-gutter * -0.5);
+	// @include margin-lr($columns-gutter * -0.5);
 	@include margin-bottom($alpha-leading / 2);
 
 	
@@ -37,12 +37,12 @@ $choice-column-border-style: solid;
 	}
 
 	@include mq(bp5) {
-		@include padding-top($alpha-leading + 1);
+		// @include padding-top($alpha-leading + 1);
 
 		grid-template-rows: auto repeat(30, 1fr);
 		grid-template-columns: repeat(6, 1fr);
 		grid-auto-flow: dense;
-		column-gap: 1.5rem;
+		column-gap: 1rem;
 	}
 
 	&:not(.c-curriculum--single) {
@@ -52,11 +52,12 @@ $choice-column-border-style: solid;
 			grid-row: 1 / -1;
 			grid-column: 4 / span 2;
 			position: absolute;
-			top: 0;
-			bottom: .75rem;
-			left: -.75rem;
-			right: -.75rem;
+			top: -.75rem;
+			bottom: .5rem;
+			left: -.5rem;
+			right: -.5rem;
 			pointer-events: none;
+			border-radius: 0 0 $radius-md $radius-md;
 	
 			// START Proof Of Concept
 			padding: 3rem;
@@ -115,7 +116,7 @@ $choice-column-border-style: solid;
 
 	@include mq(bp5) {
 		left: 50%;
-		width: calc(33.3333% + #{$alpha-leading / 3}px);
+		width: calc(33.3333% - 2px);
 		background-color: $choice-column-bgcolor;
 		@include padding-bottom($alpha-leading / 2);
 	}
@@ -391,14 +392,15 @@ $choice-column-border-style: solid;
 	flex-wrap: wrap;
 	font-family: $beta-font-family;
 	color: palette(color-neutral, base);
+	gap: $columns-gutter * 1px;
 	@include ms-2;
-	@include margin-lr($columns-gutter * -0.5);
+	// @include margin-lr($columns-gutter * -1);
 }
 
 .c-curriculum-legend__item {
 	display: flex;
 	align-items: center;
-	@include margin-lr($columns-gutter * 0.5);
+	// @include margin-lr($columns-gutter * 0.5);
 }
 
 .c-curriculum-legend__swatch {

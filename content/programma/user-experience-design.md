@@ -5,7 +5,7 @@ studycredits: 3
 weight: 40
 tags:
 - ux
-- userOriented
+- Testing
 - prototype
 pillar: design
 tools: "Adobe XD, pen & papier"

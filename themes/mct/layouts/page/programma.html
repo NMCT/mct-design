@@ -29,28 +29,39 @@
                         <div class="c-curriculum-choice__body">
                             <button class="c-curriculum-choice__button js-curriculum-button">
                                 <span>Kies je uitstroomprofiel</span>
-                                <svg role="img" class="c-symbol c-symbol-keyboard-arrow-down c-curriculum-choice__icon-down">
-                                    {{ partial "atoms/symbol" (dict "value" "keyboard-arrow-down" "class" "c-curriculum-choice__icon-down") }}
+                                <svg role="img"
+                                    class="c-symbol c-symbol-keyboard-arrow-down c-curriculum-choice__icon-down">
+                                    {{ partial "atoms/symbol" (dict "value" "keyboard-arrow-down" "class"
+                                    "c-curriculum-choice__icon-down") }}
                                 </svg>
                             </button>
                             <div class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-smart-xr-developer" value="profile-smart-xr-developer" class="c-curriculum-choices__filter">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track"
+                                        id="profile-smart-xr-developer" value="profile-smart-xr-developer"
+                                        class="c-curriculum-choices__filter">
                                     <span class="c-curriculum-choices__text">Smart XR Developer</span>
                                 </label>
 
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-next-web-developer" value="profile-next-web-developer" class="c-curriculum-choices__filter">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track"
+                                        id="profile-next-web-developer" value="profile-next-web-developer"
+                                        class="c-curriculum-choices__filter">
                                     <span class="c-curriculum-choices__text">Next Web Developer</span>
                                 </label>
 
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-ai-engineer" value="profile-ai-engineer" class="c-curriculum-choices__filter">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track"
+                                        id="profile-ai-engineer" value="profile-ai-engineer"
+                                        class="c-curriculum-choices__filter">
                                     <span class="c-curriculum-choices__text">AI Engineer</span>
                                 </label>
 
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-iot-infrastructure-engineer" value="profile-iot-infrastructure-engineer" class="c-curriculum-choices__filter">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track"
+                                        id="profile-iot-infrastructure-engineer"
+                                        value="profile-iot-infrastructure-engineer"
+                                        class="c-curriculum-choices__filter">
                                     <span class="c-curriculum-choices__text">IoT Infrastructure Engineer</span>
                                 </label>
 
@@ -61,34 +72,37 @@
 
                 <div class="c-curriculum js-curriculum" data-placeholder="Waar word jij expert in?">
                     {{ range $i, $sequence := seq 6 }}
-                        <h3 class="c-curriculum__semester-title">
-                            Semester {{ $sequence }}
-                        </h3>
+                    <h3 class="c-curriculum__semester-title">
+                        Semester {{ $sequence }}
+                    </h3>
 
-                        {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
-                        {{ range (where $.Site.Pages "Type" "programma") }}
-                            {{ if eq .Params.Semester $sequence }}
-                                <a
-                                    href="{{ .Permalink }}"
-                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ .Params.Semester }} u-y-span-{{ .Params.StudyCredits }} js-module
+                    {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
+                    {{ range (where $.Site.Pages "Type" "programma") }}
+                    {{ if eq .Params.Semester $sequence }}
+                    <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Studycredits }}-sp c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ .Params.Semester }} u-y-span-{{ .Params.StudyCredits }} js-module
                                     {{ if in (slice 4 5) $sequence }}
                                         c-module--dynamic js-module-dynamic
                                         {{ range .Params.Tracks }}
                                             js-track-{{ . }}
                                         {{ end }}
-                                    {{ end }}"
-                                >
-                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                    {{ if .Params.Tags }}
-                                        <p class="c-module__tags">
-                                            {{ range .Params.Tags }}
-                                                #{{ . }}
-                                            {{ end }}
-                                        </p>
-                                    {{ end }}
-                                </a>
+                                    {{ end }}">
+                        <h4 class="c-module__title">{{ .Title }}</h4>
+
+                        <p class="c-module__sp">
+                            {{ .Params.Studycredits }} sp
+                        </p>
+                        {{/*
+                        {{ if .Params.Tags }}
+                        <p class="c-module__tags">
+                            {{ range .Params.Tags }}
+                            #{{ . }}
                             {{ end }}
+                        </p>
                         {{ end }}
+                        */}}
+                    </a>
+                    {{ end }}
+                    {{ end }}
                     {{ end }}
                 </div>
 
@@ -116,8 +130,11 @@
                 </ul>
             </div>
         </div>
-    </div>    
-    {{ partial "components/cta.html" (dict "title" "Inschrijven?" "paragraph" "lijkt deze opleiding wat voor jou? kom dan zeker eens langs op een van onze infodagen.") }}
+    </div>
+    {{/*
+    {{ partial "components/cta.html" (dict "title" "Inschrijven?" "paragraph" "lijkt deze opleiding wat voor jou? kom
+    dan zeker eens langs op een van onze infodagen.") }}
+    */}}
 </main>
 
 <dialog class="c-modal js-dialog">
