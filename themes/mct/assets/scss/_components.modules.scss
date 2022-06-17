@@ -108,6 +108,31 @@
 			background-color: palette(color-analysis);
 		}
 	}
+
+	&:focus-visible {
+		outline: 3px solid transparent;
+		outline-offset: 2px;
+
+		&.c-module--code {
+			outline-color: palette(color-code);
+		}
+
+		&.c-module--connect {
+			outline-color: palette(color-connect);
+		}
+
+		&.c-module--design {
+			outline-color: palette(color-design);
+		}
+
+		&.c-module--project {
+			outline-color: palette(color-project);
+		}
+
+		&.c-module--analysis {
+			outline-color: palette(color-analysis);
+		}
+	}
 }
 
 .c-module__title,
