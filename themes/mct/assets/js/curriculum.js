@@ -35,7 +35,7 @@
 
         trackList.querySelectorAll('.js-track-radio').forEach((radio) => {
             radio.addEventListener('change', function () {
-                curriculum.dataset.placeholder = '';
+                document.querySelector('.js-curriculum-placeholder').classList.add('is-hidden');
 
                 history.pushState(undefined, undefined, `#${this.id}`);
 
@@ -64,7 +64,8 @@
             dropdown.querySelector('span').innerHTML =
                 selectedRadio.nextElementSibling.innerText;
 
-            curriculum.dataset.placeholder = '';
+            document.querySelector('.js-curriculum-placeholder').classList.add('is-hidden');
+
             _toggleModules(track);
         }
     };

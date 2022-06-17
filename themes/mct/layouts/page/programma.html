@@ -28,39 +28,29 @@
                     <div class="c-curriculum-choice__box">
                         <div class="c-curriculum-choice__body">
                             <button class="c-curriculum-choice__button js-curriculum-button">
-                                <span>Kies je uitstroomprofiel</span>
-                                <svg role="img"
-                                    class="c-symbol c-symbol-keyboard-arrow-down c-curriculum-choice__icon-down">
+                                <span>Kies je expertise</span>
+                                <svg role="img" class="c-symbol c-symbol-keyboard-arrow-down c-curriculum-choice__icon-down">
                                     {{ partial "atoms/symbol" (dict "value" "keyboard-arrow-down" "class" "c-curriculum-choice__icon-down") }}
                                 </svg>
                             </button>
                             <div class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track"
-                                        id="profile-smart-xr-developer" value="profile-smart-xr-developer"
-                                        class="c-curriculum-choices__filter">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-smart-xr-developer" value="profile-smart-xr-developer" class="c-curriculum-choices__filter">
                                     <span class="c-curriculum-choices__text">Smart XR Developer</span>
                                 </label>
 
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track"
-                                        id="profile-next-web-developer" value="profile-next-web-developer"
-                                        class="c-curriculum-choices__filter">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-next-web-developer" value="profile-next-web-developer" class="c-curriculum-choices__filter">
                                     <span class="c-curriculum-choices__text">Next Web Developer</span>
                                 </label>
 
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track"
-                                        id="profile-ai-engineer" value="profile-ai-engineer"
-                                        class="c-curriculum-choices__filter">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-ai-engineer" value="profile-ai-engineer" class="c-curriculum-choices__filter">
                                     <span class="c-curriculum-choices__text">AI Engineer</span>
                                 </label>
 
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track"
-                                        id="profile-iot-infrastructure-engineer"
-                                        value="profile-iot-infrastructure-engineer"
-                                        class="c-curriculum-choices__filter">
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-iot-infrastructure-engineer" value="profile-iot-infrastructure-engineer" class="c-curriculum-choices__filter">
                                     <span class="c-curriculum-choices__text">IoT Infrastructure Engineer</span>
                                 </label>
 
@@ -74,7 +64,6 @@
                     <h3 class="c-curriculum__semester-title">
                         Semester {{ $sequence }}
                     </h3>
-
                     {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
                     {{ range (where $.Site.Pages "Type" "programma") }}
                     {{ if eq .Params.Semester $sequence }}
@@ -103,6 +92,11 @@
                     {{ end }}
                     {{ end }}
                     {{ end }}
+                    <div class="c-curriculum__placeholder js-curriculum-placeholder">
+                        <!-- <p>Vanaf semester 4 kies je een uitstroomprofiel. Waar word jij expert in?</p> -->
+                        <p>Word je Smart XR Developer, Next Web Developer, AI Engineer of IoT Infrastructure Engineer? Kies je expertise vanaf semester 4!</p>
+                    </div>
+
                 </div>
 
                 <ul class="o-list c-curriculum-legend">
