@@ -16,7 +16,7 @@ $choice-column-border-style: solid;
 	z-index: 10;
 	@include padding-top($alpha-leading * 0.5);
 	// @include margin-lr($columns-gutter * -0.5);
-	@include margin-bottom($alpha-leading / 2);
+	// @include margin-bottom($alpha-leading);
 
 	
 	position: relative;
@@ -303,9 +303,9 @@ $choice-column-border-style: solid;
 	// border: 1px solid $choice-column-border-color;
 	margin-right: 0;
 	margin-left: 0;
-	@include padding-lr($alpha-leading/2);
-	@include padding-tb($alpha-leading/2,$alpha-leading/2);
-	@include margin-bottom($alpha-leading);
+	// @include padding-lr($alpha-leading/2);
+	// @include padding-tb($alpha-leading/2,$alpha-leading/2);
+	// @include margin-bottom($alpha-leading);
 
 	grid-template-columns: repeat(2,1fr);
 
@@ -315,7 +315,7 @@ $choice-column-border-style: solid;
 
 	@include mq(bp5) {
 		// @include padding-tb($alpha-leading/2,$alpha-leading/2);
-		padding-top: 0;
+		// padding-top: 0;
 	}
 }
 
