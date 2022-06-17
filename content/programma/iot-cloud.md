@@ -2,7 +2,7 @@
 title: IoT Cloud
 semester: 3
 studycredits: 6
-weight: 30
+weight: 40
 tags:
 - azure
 - mqtt

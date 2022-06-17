@@ -2,7 +2,7 @@
 title: Deep Learning
 semester: 5
 studycredits: 6
-weight: 10
+weight: 20
 tags:
 - dsp
 - neural-networks

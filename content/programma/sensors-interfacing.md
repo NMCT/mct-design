@@ -2,7 +2,7 @@
 title: Sensors & Interfacing
 semester: 2
 studycredits: 6
-weight: 20
+weight: 30
 tags:
 - raspberrypi
 - microcontrollers

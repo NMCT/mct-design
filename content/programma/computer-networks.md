@@ -3,7 +3,7 @@ title: Computer Networks
 # description: Deze basismodule dient als opstap voor verschillende andere modules die steunen op de opgebouwde kennis. We bekijken een eenvoudig netwerk met een webserver en databaseserver en zorgen voor een goede beveiliging van alle componenten.
 semester: 1
 studycredits: 6
-weight: 20
+weight: 30
 tags:
 - security
 - debian

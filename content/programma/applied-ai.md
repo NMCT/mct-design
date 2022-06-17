@@ -4,7 +4,7 @@ aliases:
     - ai-cloud
 semester: 4
 studycredits: 6
-weight: 20
+weight: 40
 tags:
 - AI
 - MachineLearning

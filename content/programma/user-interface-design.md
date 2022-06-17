@@ -2,7 +2,7 @@
 title: User Interface Design
 semester: 2
 studycredits: 6
-weight: 40
+weight: 20
 tags:
 - ui
 - design

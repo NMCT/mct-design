@@ -4,7 +4,7 @@ aliases:
     - /programma/data-management
 semester: 2
 studycredits: 6
-weight: 30
+weight: 40
 tags:
 - T-SQL
 - DBMS

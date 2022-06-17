@@ -2,7 +2,7 @@
 title: Network Scripting
 semester: 5
 studycredits: 6
-weight: 30
+weight: 20
 tags:
 - IaC
 - CaC

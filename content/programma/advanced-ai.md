@@ -2,7 +2,7 @@
 title: Advanced AI
 semester: 5
 studycredits: 6
-weight: 10
+weight: 30
 tags: 
 - advancedComputerVision
 - naturaLanguagePr.

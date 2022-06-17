@@ -2,7 +2,7 @@
 title: Security
 semester: 3
 studycredits: 6
-weight: 10
+weight: 30
 tags:
 - privacy
 - security

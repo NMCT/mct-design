@@ -2,7 +2,7 @@
 title: User Experience Design
 semester: 1
 studycredits: 3
-weight: 40
+weight: 25
 tags:
 - ux
 - Testing
