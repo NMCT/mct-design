@@ -73,14 +73,20 @@ $choice-column-border-style: solid;
 }
 
 .c-curriculum__placeholder {
-	grid-column: 4 / span 2;
-	grid-row: 2 / -1;
+	grid-column: 1 / -1 ;
+	grid-row: 11;
+	
 	display: grid;
 	place-items: center;
 	padding: 2rem;
 	text-align: center;
 	// font-weight: $delta-font-weight;
 	color: palette(color-neutral, light);
+
+	@include mq(bp5) {
+		grid-column: 4 / span 2;
+		grid-row: 2 / -1;
+	}
 }
 
 .c-curriculum-title {
