@@ -68,34 +68,9 @@
                         {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
                         {{ range (where $.Site.Pages "Type" "programma") }}
                             {{ if and (eq .Params.Semester $sequence) (not (isset .Params "home")) (not (isset .Params "english-only")) (not (isset .Params "hide")) }}
-                                <a
-                                    href="{{ .Permalink }}"
-                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link
-                                    u-grid-column-start-{{ .Params.Semester }} u-y-span-{{ .Params.StudyCredits }}
-                                    js-module
-                                    {{ if in (slice 4 5) $sequence }}
-                                        c-module--dynamic js-module-dynamic
-                                        {{ range .Params.Tracks }}
-                                            js-track-{{ . }}
-                                        {{ end }}
-                                    {{ end }}">
-                        <h4 class="c-module__title">{{ .Title }}</h4>
-
-                        <p class="c-module__sp">
-                            {{ .Params.Studycredits }} sp
-                        </p>
-                        {{/*
-                        {{ if .Params.Tags }}
-                        <p class="c-module__tags">
-                            {{ range .Params.Tags }}
-                            #{{ . }}
+                                {{ partial "components/module" . }}
                             {{ end }}
-                        </p>
                         {{ end }}
-                        */}}
-                    </a>
-                    {{ end }}
-                    {{ end }}
                     {{ end }}
                     <div class="c-curriculum__placeholder js-curriculum-placeholder">
                         <!-- <p>Vanaf semester 4 kies je een uitstroomprofiel. Waar word jij expert in?</p> -->

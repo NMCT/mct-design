@@ -4,7 +4,7 @@ description: "De international day is het hoogtepunt van de international week. 
 
 Sinds 2020 is er een blend van live en virtuele activiteiten."
 cover: "international-day.jpg"
-draft: false
+draft: true
 type: "international"
 
 international: article

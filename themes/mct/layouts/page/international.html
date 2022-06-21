@@ -15,7 +15,20 @@
                             </p>
                         </div>
                     </div>
+                    <!-- Image -->
+                    <div class="c-main-section-lg">
+                        {{ $cover := .Params.cover }}
+                        {{ $image := .Resources.GetMatch $cover }}
+                        {{ $scaledImage := $image.Fit "1184x1600 webp q70" }}
+                        <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon">
+                            <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
+                        </picture>
+                        <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            {{ .Params.caption }}
+                        </p>
+                    </div>
                     <!-- Video player -->
+                    {{ if isset .Params "video"}}
                     <div class="c-main-section-lg">
                         <div class="c-video-player">
                             <button class="c-video-play-button">
@@ -33,6 +46,7 @@
                             {{ .Params.caption }}
                         </p>
                     </div>
+                    {{ end }}
                     <!-- Introduction -->
                     <div class="c-main-section-lg">
                         <div class="c-main-section">
@@ -153,10 +167,11 @@
                     <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
                         {{ range .RegularPages  }}
                             {{ if eq .Params.type "international"}}
-                            <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
-                                {{ partial "atoms/international" .}}
-                            </article>
-                            
+                             {{ if not .Params.Draft }}
+                                <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
+                                    {{ partial "atoms/international" .}}
+                                </article>
+                                {{ end }}
                             {{ end }}
                         {{ end }}
                     </div>

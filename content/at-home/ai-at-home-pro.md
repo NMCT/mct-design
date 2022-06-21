@@ -1,4 +1,4 @@
-### AI@Home Pro
+# AI@Home Pro
 
 Na je opleiding AI@Home kan je kiezen om ofwel **Deploying AI@Home** ofwel **AI@Home Pro** te volgen.
 

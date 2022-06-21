@@ -89,8 +89,32 @@ $choice-column-border-style: solid;
 		column-gap: 4rem;
 	}
 	&.c-curriculum--english {
-		grid-template-columns: repeat(3,1fr);
-		grid-template-rows: auto repeat(30,1fr);
+		grid-template-rows: auto repeat(30,auto);
+		grid-template-columns: repeat(1,1fr);
+
+		@include mq(bp2) {
+			grid-template-columns: repeat(3,1fr);
+		}
+
+		@include mq(bp5) {
+			grid-template-rows: auto repeat(30,1fr);
+		}
+	
+		.c-curriculum__semester-title {
+			grid-column: 1/-1;
+			&.u-x-span {
+				&-1 {
+					@include mq(bp5) {
+						grid-column: span 1;
+					}
+				}
+				&-2 {
+					@include mq(bp5) {
+						grid-column: span 2;
+					}
+				}
+			}
+		}
 	}
 }
 

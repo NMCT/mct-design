@@ -25,7 +25,7 @@ questions:
 - title: Kostprijs
   text: "Een niet-beursstudent betaalt **382 Euro**.\n Beursstudenten informeren best bij het studentensecretariaat 056 24 12 25"
 - title: Vragen?
-  text: Contacteer [Johan De Gelas](/contact) of kom langs tidjens één van onze infodagen op onze campus in Kortrijk.
+  text: Contacteer [Johan De Gelas](/contact) of kom langs tijdens één van onze infodagen op onze campus in Kortrijk.
 ---
 
 

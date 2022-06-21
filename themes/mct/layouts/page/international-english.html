@@ -17,7 +17,20 @@
                             </p>
                         </div>
                     </div>
+                    <!-- Image -->
+                    <div class="c-main-section-lg">
+                        {{ $cover := .Params.cover }}
+                        {{ $image := .Resources.GetMatch $cover }}
+                        {{ $scaledImage := $image.Fit "1184x1600 webp q70" }}
+                        <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon">
+                            <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
+                        </picture>
+                        <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            {{ .Params.caption }}
+                        </p>
+                    </div>
                     <!-- Video player -->
+                    {{ if isset .Params "video"}}
                     <div class="c-main-section-lg">
                         <div class="c-video-player">
                             <button class="c-video-play-button">
@@ -35,6 +48,7 @@
                             {{ .Params.caption }}
                         </p>
                     </div>
+                    {{ end }}
                     <!-- Introduction -->
                     <div class="c-main-section-lg">
                         <div class="c-main-section">
@@ -139,7 +153,7 @@
                             Fall Semester
                         </h3>
                             {{ else }}
-                        <h3 class="c-curriculum__semester-title u-grid-column-start-3">
+                        <h3 class="c-curriculum__semester-title u-x-span-1 u-grid-column-start-3">
                             Spring Semester
                         </h3>
                             {{ end }}
@@ -147,24 +161,11 @@
                         {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
                         {{ range (where $.Site.Pages "Type" "programma") }}
                             {{ if and (eq .Params.Semester $semester) (isset .Params "english-only") (not (isset .Params "hide")) }}
-                            {{ $colstart := add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice) }}
                             <!-- Semester (1) + (Semester - 1) + 0 ==> 1 -->
                             <!-- Semester (1) + (Semester - 1) + 1 ==> 2 -->
                             <!-- Semester (2) + (Semester - 1) + 0 ==> 3 -->
                             <!-- Semester (2) + (Semester - 1) + 1 ==> 4 -->
-                                <a
-                                    href="{{ .Permalink }}"
-                                    class="c-module c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ $colstart }} u-y-span-{{ .Params.StudyCredits }} js-module"
-                                >
-                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                    {{ if .Params.Tags }}
-                                        <p class="c-module__tags">
-                                            {{ range .Params.Tags }}
-                                                #{{ . }}
-                                            {{ end }}
-                                        </p>
-                                    {{ end }}
-                                </a>
+                                {{ partial "components/module" . }}
                             {{ end }}
                         {{ end }}
                     {{ end }}
