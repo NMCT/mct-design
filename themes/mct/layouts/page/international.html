@@ -1,0 +1,169 @@
+{{ define "main" }}
+<main>
+    <div class="c-row c-row--lg">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <!-- Title -->
+                    <div class="c-main-section-lg">
+                        <div class="u-max-width-xl">
+                            <h1 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
+								{{.Params.Subheader}}
+                            </h1>
+                            <p class="c-type-intro">
+								{{.Params.Intro | markdownify}}
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Video player -->
+                    <div class="c-main-section-lg">
+                        <div class="c-video-player">
+                            <button class="c-video-play-button">
+                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol")}}
+                            </button>
+                            <video class="c-video-player__video" poster="{{ .Params.Poster }}">
+                                {{ range .Params.video }}
+                                    {{ $ext := index (last 1 (split . ".")) 0 }}
+                                    <source src="{{ . }}" type="video/{{ $ext }}">
+                                {{ end }}
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            {{ .Params.caption }}
+                        </p>
+                    </div>
+                    <!-- Introduction -->
+                    <div class="c-main-section-lg">
+                        <div class="c-main-section">
+                            <div class="s-content u-max-width-lg">
+                                <h2 class="c-type-title-lg">
+									{{ .Params.quote }}
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="c-main-section">
+                            <div class="o-grid o-grid--gutter-lg">
+                                {{ $length := len .Params.introText }}
+                                {{ range $i, $text := .Params.introText }}
+                                <div class="o-grid__item u-1-of-{{ $length }}-bp4">
+                                    <div class="s-content u-max-width-optimal">
+                                        {{ $text | markdownify}}
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- Other International Opportunities -->
+	<section class="c-row c-row--lg c-row--divide">
+		<div class="o-container">
+			<div class="o-grid o-grid--gutter-lg">
+				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+					<div class="c-main-section">
+                        {{ with .Site.GetPage "/international/opportunities" }}
+
+                        <p class="c-type-intro">
+                            Wat zijn de mogelijkheden als MCT student?
+                        </p>
+
+                        {{ range $opportunity_index, $opportunity_element := .Params.opportunities }}
+                            <section class="o-grid__item u-max-width c-row">
+                                <div class="o-grid o-grid--gutter-lg">
+                                    {{ $cover := $opportunity_element.cover}}
+                                    <div class="o-grid__item u-ms4-bp5 {{ if $cover }}u-6-of-12-bp5 {{else}}u-10-of-12-bp5 {{end}}u-push-1-of-12-bp5 o-flex--align-end {{ if not (modBool $opportunity_index 2) }}o-flex-order2-bp5{{end}}">
+                                        <h2 class="u-ms4-bp3 u-ms4-bp5">{{ $opportunity_element.title }}</h2>
+                                        {{ $opportunity_element.content | markdownify }}
+                                    </div>
+                                    {{ if $cover }}
+                                        <div class="o-grid__item u-4-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end ">
+                                            <div class="o-grid o-grid--gutter-sm o-flex o-flex--wrap o-flex--align-end">
+                                                {{ $image := .Resources.GetMatch $cover }}
+                                                {{ $scaledImage := $image.Resize "200x" }}
+                                                <div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
+                                                    <p><img alt="{{ $opportunity_element.title }}" src="{{ $cover }}"></p>
+                                                    <p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+                                                        {{ $opportunity_element.title }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{ end }}
+                                </div>
+                            </section>
+                        {{ end }}
+
+                        {{ end }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- Testimonials -->
+    <section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxx-light">
+        <div class="c-main-section-lg">
+            <div class="c-carousel__items-holder  u-6-of-8 u-push-1-of-8">
+                <div class="c-carousel__items js-carousel-items is-released" style="--n:4; --i:0; --tx:0px; --f:0.5">
+                {{ $testimonials := (where .Site.Pages "Type" "International Testimonial") }}
+                {{ range $i, $testimonial := $testimonials }}
+                    <article class="
+                    u-8-of-8
+                    c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item
+                    "
+                    data-slide="{{ $i }}"
+                    >
+                        {{ partial "atoms/international-testimonial" $testimonial }}
+                    </article>
+                {{end}}
+                </div>
+            </div>
+            <div class="c-carousel js-carousel u-4-of-8 u-push-2-of-8">
+                <div class="c-carousel-nav" aria-hidden="true">
+                    <ol class="o-list c-carousel-nav-list js-nav-list u-ms-1">
+                        {{ range $i, $testimonial :=  $testimonials }}
+                            <li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
+                                {{ add $i 1 }} 
+                            </li>
+                        {{ end }}
+                    </ol>
+                </div>
+        
+                <button class="c-carousel__arrow c-carousel__arrow--left js-button-prev u-bgcolor-neutral-xxxx-light">
+                    {{ partial "atoms/symbol" (dict "value" "arrow-left" "class" "c-carousel__arrow-symbol") }}
+                </button>
+        
+                <button class="c-carousel__arrow c-carousel__arrow--right js-button-next u-bgcolor-neutral-xxxx-light">
+                    {{ partial "atoms/symbol" (dict "value" "arrow-right" "class" "c-carousel__arrow-symbol") }}
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- International articles -->
+    <section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxxx-light">
+        <div class="o-container">
+            <div class="c-news">
+                <h2 class="c-type-svg c-type-svg--news">
+                    <img class="c-type-svg__svg" src="/img/svg/word-news.svg" alt="Nieuws">
+                </h2>
+                <div class="c-news__body">
+                    <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+                        {{ range .RegularPages  }}
+                            {{ if eq .Params.type "international"}}
+                            <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
+                                {{ partial "atoms/international" .}}
+                            </article>
+                            
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ partial "components/cta.html" .Params.cta }}
+</main>
+{{ end }}
