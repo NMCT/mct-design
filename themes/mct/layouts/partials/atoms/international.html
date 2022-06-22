@@ -1,0 +1,19 @@
+{{ $cover := .Params.cover }}
+{{ $image := .Resources.GetMatch $cover }}
+{{ $scaledImage := $image.Resize "400x" }}
+
+<a class="c-media c-media--link" href="{{ .Permalink }}">
+    <picture class="c-media__picture u-mb-delta">
+        <img class="c-media__image" src="{{ $scaledImage.Permalink }}" alt="">
+    </picture>
+    <div class="c-media__body">
+        <div class="c-media__content">
+            <h2 class="c-media__title u-ms0 u-mb-gamma">
+                {{ .Title }}
+            </h2>
+            <p class="c-media__text u-ms0">
+                {{ .Description }}
+            </p>
+        </div>
+    </div>
+</a>

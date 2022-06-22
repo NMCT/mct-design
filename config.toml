@@ -60,5 +60,6 @@ publishDir = "www"
 	url = "/sizing-servers-lab/"
 	identifier = "sizing-servers-lab"
 	weight = 70
+
 [outputs]
     page = ["HTML", "json"]

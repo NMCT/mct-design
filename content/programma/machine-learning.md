@@ -1,7 +1,8 @@
 ---
 title: Machine Learning
 semester: 4
-weight: 30
+studycredits: 6
+weight: 40
 tags:
 - neuralnetworks
 - ai
@@ -9,13 +10,12 @@ tags:
 pillar: analysis
 tracks:
 - ai-engineer
+tools: "Support Vector Machines, Random Forest Trees, Naive Bayes, Logistic Regression, Ensemble Learning"
 ---
 
 IoT en machine learning zijn de drijvende krachten van de vierde industriële revolutie die de wereld zoals we deze nu kennen **in een razend tempo transformeert**. Dit zal onvermijdelijk leiden tot een (aard)verschuiving op de arbeidsmarkt.
 
-<blockquote>
-	<p>Veel (repetitieve jobs) zullen door AI-toepassingen worden overgenomen.</p>
-</blockquote>
+Veel (repetitieve jobs) zullen door AI-toepassingen worden overgenomen.
 
 Echter zullen er enorme **opportuniteiten** zijn voor IT’ers met kennis van machine learning die slimme algoritmes en system kunnen integreren.
 
@@ -33,4 +33,4 @@ Vandaag de dag al zijn **data scientists en AI experts bij de meest gegeerde pro
 
 In deze module leer je de **concepten** van een aantal **machine learning algoritmes** en vooral hoe je ze **praktisch** kunt **toepassen** om ML problemen op te lossen.
 
-Tevens wordt **de basis** gelegd **voor** de module <a class="js-module-link" href="/programma/deep-learning/">deep learning</a> die hierop aansluit.
+Tevens wordt de basis gelegd voor de module [Deep Learning](/programma/deep-learning/) die hierop aansluit.

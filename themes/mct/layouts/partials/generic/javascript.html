@@ -4,27 +4,26 @@
 <!-- Our app file -->
 {{ $carousel := resources.Get "js/carousel.js" }}
 {{ $curriculum := resources.Get "js/curriculum.js" }}
+{{ $modal := resources.Get "js/modal.js" }}
 {{ $contact := resources.Get "js/contact.js" }}
 {{ $faq := resources.Get "js/faq.js" }}
 {{ $sharing := resources.Get "js/sharing.js" }}
 {{ $dialog := resources.Get "js/polyfill/dialog.js" }}
-{{ $modal := resources.Get "js/modal.js" }}
 {{ $theCollective := resources.Get "js/the-collective.js" }}
 
 {{ $js := slice $app $carousel $curriculum $contact $sharing $dialog $modal $theCollective $faq | resources.Concat "js/app.js" | resources.Minify }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
 
 <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
-<script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+<script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
 
 {{ if eq .Params.Identifier "contact" }}
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBit5aFgJO91h5puuF2lOHl-K06__ZvFOc&callback=initMap"></script>
-	{{/*<script src="{{ (resources.Get "js/form.js").RelPermalink }}"></script>*/}}
 {{end}}
 
 {{/* Conditional Google Analytics & web font */}}
 {{ if not .Site.IsServer }}
-	<script type="text/javascript">
+	<script>
 		WebFontConfig = {
 			google: { families: ['Roboto+Mono&display=swap'] }
 		};
@@ -45,11 +44,5 @@
 		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 		ga('create', 'UA-34713257-1', 'auto');
 		ga('send', 'pageview');
-
-		var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){i[e]=function(){var n=arguments;i.queue.push(function(){i[e].apply(i,n)})}}var i={config:e};i.initialize=!0;var a=document,t=window;setTimeout(function(){var n=a.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/next/ai.2.min.js",a.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{i.cookie=a.cookie}catch(e){}i.queue=[],i.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var o="Track"+r[0];if(n("start"+o),n("stop"+o),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var s=t[r];t[r]=function(e,n,a,t,o){var c=s&&s(e,n,a,t,o);return!0!==c&&i["_"+r]({message:e,url:n,lineNumber:a,columnNumber:t,error:o}),c},e.autoExceptionInstrumented=!0}return i}
-		(
-			{instrumentationKey:"c3c025fd-5206-4cf2-ad04-82fcf29209af"}
-		);
-		window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
 	</script>
 {{ end }}

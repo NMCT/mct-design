@@ -1,0 +1,27 @@
+{{ $data := newScratch }}
+
+{{ if (isset .Params "english-only") }}
+{{ $data.Set "colstart" (add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice)) }}
+{{ else if (isset .Params "home") }}
+{{ $data.Set "colstart" (add .Params.Semester (default 0 .Params.Choice)) }}
+{{ else }}
+{{ $data.Set "colstart" .Params.Semester }}
+{{ end }}
+    
+    <a
+        href="{{ .Permalink }}"
+        class="c-module c-module--{{ .Params.Pillar }} c-module--{{ .Params.Studycredits }}-sp c-module--link
+        u-grid-column-start-{{ $data.Get `colstart` }} u-y-span-{{ .Params.Studycredits }}
+        js-module
+        {{ if in (slice 4 5) .Params.Semester }}
+            c-module--dynamic js-module-dynamic
+            {{ range .Params.Tracks }}
+                js-track-{{ . }}
+            {{ end }}
+        {{ end }}"
+    >
+    <h4 class="c-module__title">{{ .Title }}</h4>
+    <p class="c-module__sp">
+        {{ .Params.Studycredits }} sp
+    </p>
+</a>

@@ -6,7 +6,7 @@ const modal = (function () {
     let body = null;
 
     const setup = function () {
-        modules = document.querySelectorAll('.js-module-link');
+        modules = document.querySelectorAll('.js-module');
         modal = document.querySelector('.js-dialog');
         body = document.querySelector('body');
 
@@ -40,7 +40,12 @@ const modal = (function () {
             modal.addEventListener('close', function () {
                 body.classList.remove('has-modal');
                 history.replaceState({}, window.title, baseUrl);
-                ga('send', 'pageview', location.pathname);
+            });
+
+            modal.addEventListener('click', function () {
+                if (body.classList.contains('has-modal')) {
+                    closeModal();
+                }
             });
         }
     };
@@ -48,7 +53,6 @@ const modal = (function () {
     const showModal = function () {
         modal.showModal();
         body.classList.add('has-modal');
-        // ga('send', 'pageview', location.pathname);
     };
 
     const closeModal = function () {
@@ -66,12 +70,11 @@ const modal = (function () {
 
         const followModules = modal.querySelectorAll('.js-module-link');
         for (const m of followModules) {
-            m.addEventListener('click', attachModel);
+            m.addEventListener('click', (event) => attachModel(event, m.href));
         }
     };
 
     const populateModal = function (data) {
-        console.log(data.tags);
         const modalHTML = `
 				<div class="c-modal__body c-modal__body--module c-modal__body--module-${
                     data.pillar
@@ -155,8 +158,6 @@ const modal = (function () {
         if (!modal.open) {
             showModal();
         }
-
-        ga('send', 'pageview', location.pathname);
     };
 
     return {

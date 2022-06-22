@@ -1,6 +1,7 @@
 ---
 title: 3D UX and Rigging
 semester: 4
+studycredits: 6
 weight: 40
 tags:
 - Rigging

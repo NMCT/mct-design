@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $track := .Params.Track }}
 <main>
     <div class="c-row c-row--lg">
         <div class="o-container u-max-width-optimal">
@@ -17,16 +18,16 @@
                     </p>
                 </div>
                 {{ if isset .Params "future" }}
-                    <aside class="c-main-section">
-    					<div class="c-main-section">
-    						<h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
-    							Jouw toekomst
-    						</h3>
-    						<p class="u-color-neutral-base">
-    							{{ delimit .Params.future ", " " of " }}
-    						</p>
-    					</div>
-                    </aside>
+                <aside class="c-main-section">
+                    <div class="c-main-section">
+                        <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+                            Jouw toekomst
+                        </h3>
+                        <p class="u-color-neutral-base">
+                            {{ delimit .Params.future ", " " of " }}
+                        </p>
+                    </div>
+                </aside>
                 {{ end }}
                 <div class="c-main-section">
                     <div class="s-content">
@@ -37,136 +38,69 @@
                     <h3>
                         Specifieke modules voor {{ .Title }}
                     </h3>
-                    <div class="c-curriculum c-curriculum--single">
-                        <section class="c-curriculum__profile">
-                            <div class="c-curriculum__semester">
-                                <h3 class="c-curriculum__semester-title">
-                                    Semester 4
-    							</h3>
-                                {{ if in .Params.Track "ai-engineer" }}
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "ai-engineer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
+                    <div class="c-curriculum c-curriculum--single js-curriculum">
+                        {{ range $i, $sequence := seq 4 5 }}
+                        <h3 class="c-curriculum__semester-title">
+                            Semester {{ $sequence }}
+                        </h3>
+
+                        {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
+                        {{ range (where $.Site.Pages "Type" "programma") }}
+                        {{ if in .Params.Tracks ($.Title | urlize) }}
+                        {{ if eq .Params.Semester $sequence }}
+                        <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Studycredits }}-sp c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ add $i 1 }} u-y-span-{{ .Params.StudyCredits }} js-module">
+                            <h4 class="c-module__title">{{ .Title }}</h4>
+                            <p class="c-module__sp">
+                                {{ .Params.Studycredits }} sp
+                            </p>
+                            {{/*
+                            {{ if .Params.Tags }}
+                            <p class="c-module__tags">
+                                {{ range .Params.Tags }}
+                                #{{ . }}
                                 {{ end }}
-                                {{ if in .Params.Track "smart-xr-developer" }}
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "smart-xr-developer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                {{ end }}
-                                {{ if in .Params.Track "next-web-developer" }}
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "next-web-developer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                {{ end }}
-                                {{ if in .Params.Track "infrastructure-engineer" }}
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "infrastructure-engineer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                {{ end }}
-                            </div>
-                            <div class="c-curriculum__semester">
-                                <h3 class="c-curriculum__semester-title">
-                                    Semester 5
-                                </h3>
-                                {{ if in .Params.Track "ai-engineer" }}
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "ai-engineer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                {{ end }}
-                                {{ if in .Params.Track "smart-xr-developer" }}
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "smart-xr-developer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                {{ end }}
-                                {{ if in .Params.Track "next-web-developer" }}
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "next-web-developer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                {{ end }}
-                                {{ if in .Params.Track "infrastructure-engineer" }}
-                                    {{ range (where .Site.Pages "Type" "programma") }}
-                                        {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "infrastructure-engineer" }}
-                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
-                                                    <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
-                                                </a>
-                                            {{ end }}
-                                        {{ end }}
-                                    {{ end }}
-                                {{ end }}
-                            </div>
-                        </section>
+                            </p>
+                            {{ end }}
+                            */}}
+                        </a>
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
                     </div>
+                    <ul class="o-list c-curriculum-legend">
+                        <li class="c-curriculum-legend__item">
+                            <span class="c-curriculum-legend__swatch u-bgcolor-analysis-base"></span>
+                            Analysis
+                        </li>
+                        <li class="c-curriculum-legend__item">
+                            <span class="c-curriculum-legend__swatch u-bgcolor-code-base"></span>
+                            Code
+                        </li>
+                        <li class="c-curriculum-legend__item">
+                            <span class="c-curriculum-legend__swatch u-bgcolor-connect-base"></span>
+                            Connect
+                        </li>
+                        <li class="c-curriculum-legend__item">
+                            <span class="c-curriculum-legend__swatch u-bgcolor-design-base"></span>
+                            Design
+                        </li>
+                        <li class="c-curriculum-legend__item">
+                            <span class="c-curriculum-legend__swatch u-bgcolor-project-base"></span>
+                            Integrate
+                        </li>
+                    </ul>
                 </div>
             </div>
-			<div class="c-main-section-lg">
-				<p>
-					<a class="c-link-more" href="{{ ref . "/programma" }}">< Het volledige programma</a>
-				</p>
-			</div>
+            <div class="c-main-section-lg">
+                <p>
+                    <a class="c-link-more" href="{{ ref . "/programma" }}">
+                        < Het volledige programma</a>
+                </p>
+            </div>
         </div>
     </div>
-    {{ if in .Params.Track "ai-engineer" }}
-    {{ partial "components/cta.html" (dict "title" "Kies jij AI Engineer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
-    {{ end }}
-    {{ if in .Params.Track "smart-xr-developer" }}
-    {{ partial "components/cta.html" (dict "title" "Kies jij Smart XR Developer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
-    {{ end }}
-    {{ if in .Params.Track "infrastructure-engineer" }}
-    {{ partial "components/cta.html" (dict "title" "Kies jij AI Engineer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
-    {{ end }}
-    {{ if in .Params.Track "next-web-developer" }}
-    {{ partial "components/cta.html" (dict "title" "Kies jij Next Web Developer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
-    {{ end }}
+    {{ $text := print "Kies jij " .Title "?" }}
+    {{ partial "components/cta.html" (dict "title" $text "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in." "hyperlink" "https://www.howest.be/nl/studeren/inschrijven-en-info") }}
 </main>
 {{ end }}

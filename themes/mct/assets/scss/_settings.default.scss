@@ -56,6 +56,7 @@ $color-connect: #ef3696;
 $color-design: #fb9d3c;
 $color-analysis: #a46b50;
 $color-project: #7b9641;
+$color-international: #7c7c7c;
 
 // Palettes
 $palettes: (
@@ -174,6 +175,9 @@ $palettes: (
 	),
 	color-project: (
 		base: $color-project,
+	),
+	color-international: (
+		base: $color-international,
 	)
 ) !default;
 
@@ -394,7 +398,7 @@ $legend-line-height: $alpha-line-height !default;
 $legend-margin-bottom: $alpha-leading !default;
 
 $label-font-size: $alpha-font-size !default;
-$label-line-height: $alpha-line-height !default;
+$label-line-height: 1 !default;
 $label-margin-bottom: $alpha-leading !default;
 
 $placeholder-font-family: $alpha-font-family !default;
