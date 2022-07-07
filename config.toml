@@ -56,9 +56,9 @@ publishDir = "www"
 	weight = 60
   
   [[menu.main]]
-	name = "Sizing Servers Lab"
-	url = "/sizing-servers-lab/"
-	identifier = "sizing-servers-lab"
+	name = "Onderzoek"
+	url = "/onderzoek/"
+	identifier = "onderzoek"
 	weight = 70
 
 [outputs]
