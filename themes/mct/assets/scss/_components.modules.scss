@@ -54,7 +54,7 @@
 		border-color: palette(color-analysis);
 		background-color: palette(color-analysis);
 	}
-	
+
 
 	&--project {
 		border-color: palette(color-project);
@@ -195,9 +195,11 @@
 	// position: absolute;
 	// top: 0;
 	// right: 0;
-	@include padding-tb($alpha-leading / 8, $alpha-leading / 8);
+	// @include padding-tb($alpha-leading / 8, $alpha-leading / 8);
 	// @include padding-lr($alpha-leading * 0.275);
-	@include ms-3;
+	// @include ms-3;
+	font-size: 11px;
+	line-height: 21px;
 
 	// .c-module--code & {
 	// 	background-color: palette(color-code);
