@@ -19,11 +19,11 @@ publishDir = "www"
 	identifier = "home"
 	weight = 10
 
-  [[menu.main]]
-	name = "Waarom MCT"
-	url = "/waarom-mct/"
-	identifier = "waarom"
-	weight = 20
+#	[[menu.main]]
+#	name = "Waarom MCT"
+#	url = "/waarom-mct/"
+#	identifier = "waarom"
+#	weight = 20
 
   [[menu.main]]
 	name = "Programma"
