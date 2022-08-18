@@ -1,11 +1,13 @@
 ---
-title: Sizing Servers Lab
-layout: sizing-servers-lab
-identifier: sizing-servers-lab
+title: Onderzoek
+layout: onderzoek
+identifier: onderzoek
+aliases:
+  - sizing-servers-lab
 type: page
 
 subheader: "Toegepast onderzoek naar AI en Big Data"
-intro: "Sizing Servers Lab"
+intro: "MCT Onderzoek"
 catchline: "Toegepast IT onderzoek sinds 2007"
 image: "./images/software-development-leren.jpg"
 imageDescription: "Bij projecten werken we jouw Proof of Concept uit."

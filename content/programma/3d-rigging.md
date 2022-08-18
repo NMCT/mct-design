@@ -9,8 +9,6 @@ tags:
 - 3D-UX
 - 3D-UI
 pillar: design
-tracks:
-- smart-xr-developer
 ---
 
 **Onder voorbehoud**

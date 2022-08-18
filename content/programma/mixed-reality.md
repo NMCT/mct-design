@@ -1,13 +1,12 @@
 ---
-title: Augmented & Mixed Reality
+title: Mixed Reality
 semester: 5
 studycredits: 6
 weight: 30
 tags:
-- AR
 - MR
-- Unity
-- hololens
+- Mobile-AR
+- Hololens
 pillar: design
 tracks:
 - smart-xr-developer
@@ -19,4 +18,4 @@ De kennis die opgedaan werd in UX-design, UI-design en [Interaction Design](/pro
 
 - Je leert de **User Experience** te optimaliseren voor Augmented/Mixed Reality omgevingen.
 - Je wordt ondergedompeld in de mogelijkheden die reeds op de markt zijn voor **interactie en visualisatie** van Augmented en Mixed Reality. 
-- De look en feel van de game engine **Unity** wordt aangeleerd om een 3D augmented reality omgeving om te zetten en te programmeren.
+- Het gebruik van de game engine **Unity** wordt verder bekeken om een 3D augmented reality omgeving op te zetten en te programmeren.

@@ -11,6 +11,7 @@ tags:
 pillar: analysis
 tracks:
 - ai-engineer
+- smart-xr-developer
 tools: "Python, Matplotlib, Pandas, Numpy, SciPy"
 ---
 
