@@ -84,11 +84,11 @@
 	background-color: palette(color-alpha);
 	color: palette(color-neutral, xxxxx-light);
 
-	a {
-		text-decoration: underline;
-		color: white;
-		font-weight: 700;
-	}
+	// a {
+	// 	text-decoration: underline;
+	// 	color: white;
+	// 	font-weight: 700;
+	// }
 }
 
 .c-row--visual {
@@ -98,7 +98,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: -7.5%;
+		bottom: -27%;
 		height: 50%;
 		background-color: #fff;
 		transform: skewY(-3deg);

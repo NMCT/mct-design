@@ -18,6 +18,7 @@
 .c-type-intro {
     font-weight: $delta-font-weight;
     font-family: $gamma-font-family;
+    // letter-spacing: -.02em;
     @include ms4;
 
     a {
@@ -49,6 +50,7 @@
 .c-type-intro-small {
     font-weight: $delta-font-weight;
     font-family: $gamma-font-family;
+    // letter-spacing: -.02em;
     font-weight: $delta-font-weight;
 }
 
@@ -106,15 +108,17 @@
 
 .c-type-title-sm {
     font-family: $gamma-font-family;
+    // letter-spacing: -.02em;
     @include ms2;
 
     @include mq(bp3) {
         @include ms6;
     }
 }
-    
+
 .c-type-title-md {
     font-family: $gamma-font-family;
+    // letter-spacing: -.02em;
 
     @include mq(bp3) {
         @include ms6;
@@ -127,12 +131,13 @@
 
 .c-type-title-lg {
     font-family: $gamma-font-family;
+    // letter-spacing: -.02em;
 
     @include mq(bp3) {
         @include ms10;
     }
 
-    @include mq(bp5) {
-        @include ms12;
-    }
+    // @include mq(bp5) {
+    //     @include ms12;
+    // }
 }

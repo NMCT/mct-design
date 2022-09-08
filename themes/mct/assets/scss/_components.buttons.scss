@@ -172,7 +172,7 @@ button::-moz-focus-inner {
 
 // special cases
 
-.c-button--header-cta {
+.c-button--beta {
     z-index: 30;
     text-decoration: none;
     @include box-shadow;
@@ -181,6 +181,38 @@ button::-moz-focus-inner {
     &:visited {
         background-color: palette(color-neutral,xxxxx-light);
         color: palette(color-alpha);
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: rgba(palette(color-neutral,xxxxx-light),.9);
+        color: palette(color-alpha);
+        transform: translateY(-1px);
+        @include box-shadow-lg;
+    }
+
+    &:active {
+        background-color: palette(color-neutral,xxxxx-light);
+        color: palette(color-alpha);
+        transform: scale(1);
+    }
+
+    .c-header & {
+        display: none;
+
+        @include mq(bp4) {
+            display: block;
+        }
+    }
+}
+
+.c-button--ghost {
+
+    &,
+    &:visited {
+        border: 1px solid palette(color-neutral,xxxxx-light);
+        color: white;
         text-decoration: none;
     }
 
@@ -223,9 +255,10 @@ button::-moz-focus-inner {
 .c-button-group {
     display: flex;
     flex-wrap: wrap;
-    @include margin-lr($columns-gutter * -1);
+    gap: $columns-gutter * 1.5px;
+    // @include margin-lr($columns-gutter * -1);
 
-    .c-button {
-        @include margin-lr($columns-gutter);
-    }
+    // .c-button {
+    //     @include margin-lr($columns-gutter);
+    // }
 }
