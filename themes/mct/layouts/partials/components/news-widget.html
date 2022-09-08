@@ -1,14 +1,17 @@
 <div class="c-news">
     <h2 class="c-type-svg c-type-svg--news">
+        <span class="o-hide-accessible">Nieuws</span>
         <img class="c-type-svg__svg" src="/img/svg/word-news.svg" alt="Nieuws">
     </h2>
     <div class="c-news__body">
         <div class="c-main-section">
-            <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+            <div
+                class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
                 {{ range first 4 (where .Site.RegularPages "Section" "nieuws") }}
-                    <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
-                        {{ partial "atoms/news-article" . }}
-                    </article>
+                <article
+                    class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
+                    {{ partial "atoms/news-article" . }}
+                </article>
                 {{ end }}
             </div>
         </div>

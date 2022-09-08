@@ -2,19 +2,21 @@
 {{ $image := .Resources.GetMatch $cover }}
 {{ $scaledImage := $image.Fill "800x448" }}
 
-<div class="c-media">
-    <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon no-drag">
-        <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
-	</picture>
+<article class="c-media">
+    <picture
+        class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon no-drag">
+        <img class="c-media__image lozad"
+            data-src="{{ $scaledImage.Permalink }}" alt="">
+    </picture>
 
     <div class="c-media__body">
         <div class="c-media__content u-max-width-optimal">
             <p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
                 {{ .Params.Year }} - Project {{ .Params.Project }}
             </p>
-            <h2 class="c-media__title u-ms2 u-mb-gamma">
+            <h3 class="c-media__title u-ms2 u-mb-gamma">
                 {{ .Title }}
-            </h2>
+            </h3>
             <p class="c-media__text u-mb-gamma">
                 {{ .Description }}
             </p>
@@ -25,4 +27,4 @@
             </p>
         </div>
     </div>
-</div>
+</article>
