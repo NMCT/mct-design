@@ -27,6 +27,8 @@
 }
 
 .c-video-player--home {
+    @include margin-top($alpha-leading * 2);
+
     &::before {
         content: '';
         display: block;
@@ -42,6 +44,13 @@
         filter: blur(15px);
         // background-color: rgba(palette(color-alpha,dark),.25);
         // z-index: 15;
+    }
+
+    @include mq(bp6) {
+        position: relative;
+        transform: perspective(1500px) rotateY(-10deg);
+        // margin-left: -2rem;
+        margin-top: 0;
     }
 }
 
