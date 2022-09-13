@@ -5,64 +5,88 @@
 			<div class="o-grid o-grid--gutter">
 				<div class="o-grid__item u-4-of-12-bp6">
 					<div class="u-max-width-optimal">
-						<h1 class="c-type-intro">
+						<!-- <h1 class="c-type-intro">
 							<span class="o-hide-accessible">MCT</span>
-							<!-- {{.Params.Subheader}} -->
-							<!-- MCT &mdash;  -->
 							Bachelor <br>
-							<!-- <span
-									class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">Bachelor
-									<br>
-								</span> -->
 							Multimedia &amp; Creative Technologies
+						</h1> -->
+						<h1
+							class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
+							Bachelor Multimedia &amp; Creative Technologies
 						</h1>
-						<p class="u-mb-zeta">
-							Lorem ipsum dolor sit amet consectetur
-							adipisicing elit. Illum, totam odit quas quis
-							nihil in modi iusto dolorum rerum. Lorem, ipsum
-							dolor sit amet consectetur adipisicing elit.
+						<p class="c-type-intro c-type-intro--md">
+							<!-- Bachelor <br>
+							Multimedia &amp; Creative Technologies -->
+							Leer de nieuwste technologieën.
+							Ontwikkel je creatieve ideeën.
 						</p>
-						<p class="c-button-group">
-							<a class="c-button c-button--md c-button--ghost"
-								href="#!">
-								Waarom MCT
+						<p class="u-mb-zeta">
+							Iets als: Je bent gebeten door mediatechnologie:
+							virtual reality, prototyping, robotica,
+							3D, televisie, radio, web-development,
+							app-development, ‘Internet of Things’
+						</p>
+						<p>
+							<a class="c-link-intro" href="#">
+								Kom meer te weten
 							</a>
+						</p>
+
+						<!-- <p class="c-button-group">
 							<a class="c-button c-button--md c-button--beta"
 								href="test.html">
 								Inschrijven
 							</a>
-						</p>
+							<a class="c-button c-button--md c-button--ghost"
+								href="#!">
+								Waarom MCT
+							</a>
+						</p> -->
 						<!-- <p>
 								{{.Params.Intro | markdownify}}
 							</p> -->
 					</div>
 				</div>
-				<div class="o-grid__item u-8-of-12-bp6">
+				<div
+					class="o-grid__item u-8-of-12-bp6 js-video-player-home-container">
 
-					<div class="c-video-player c-video-player--home">
+					<div
+						class="c-video-player c-video-player--home js-video-player">
 						<button class="c-video-play-button">
 							{{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
 						</button>
 						<video class="c-video-player__video" playsinline
 							poster="https://mctwebsite.blob.core.windows.net/video/poster.jpg">
-							<!-- <source src="https://mctwebsite.blob.core.windows.net/video/2021-MCT_promo.webm" type="video/webm"> -->
 							<source
 								src="https://mctwebsite.blob.core.windows.net/video/Teaser_trajecten_WEB.mp4"
 								type="video/mp4">
 							Your browser does not support HTML5 video.
 						</video>
-
-						<!-- <p
-								class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
-								Onze vier uitstroomprofielen.
-							</p> -->
-
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script>
+		// new element video player
+		const videoPlayer = document.querySelector('.js-video-player');
+		const videoContainer = document.querySelector('.js-video-player-home-container');
 
+		// change the perspective of the video player based on the mouse position inside the container with css variables
+		videoContainer.addEventListener('mousemove', (e) => {
+			const y = e.clientX - videoContainer.offsetLeft;
+			const x = e.clientY - videoContainer.offsetTop;
+			const width = videoContainer.offsetWidth;
+			const height = videoContainer.offsetHeight;
+
+			const xPercent = x / height;
+			const yPercent = y / width;
+
+			videoPlayer.style.setProperty('--x', xPercent);
+			videoPlayer.style.setProperty('--y', yPercent);
+		});
+
+	</script>
 	<section class="c-row c-row--lg c-row--no-overflow">
 		<div class="o-container">
 			<div class="c-projects">

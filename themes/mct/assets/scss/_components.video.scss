@@ -44,13 +44,16 @@
         filter: blur(15px);
         // background-color: rgba(palette(color-alpha,dark),.25);
         // z-index: 15;
+        pointer-events: none;
     }
 
     @include mq(bp6) {
+        --y: -1;
+        --x: 0;
         position: relative;
-        transform: perspective(1500px) rotateY(-10deg);
-        // margin-left: -2rem;
+        transform: perspective(1500px) rotateY(calc(var(--y) * 10deg)) rotateX(calc(var(--x) * -10deg)) ;
         margin-top: 0;
+        transition: transform $animation-duration-alpha $animation-easing-alpha;
     }
 }
 

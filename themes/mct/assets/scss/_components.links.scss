@@ -15,3 +15,33 @@
         text-decoration: none;
     }
 }
+
+a.c-link-more--white {
+    color: white;
+    border-bottom-color: white;
+}
+
+.c-link-intro {
+    position: relative;
+    color: white;
+    font-family: $gamma-font-family;
+    @include ms3;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        border-radius: 3px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}

@@ -84,11 +84,10 @@
 	background-color: palette(color-alpha);
 	color: palette(color-neutral, xxxxx-light);
 
-	// a {
-	// 	text-decoration: underline;
-	// 	color: white;
-	// 	font-weight: 700;
-	// }
+	::selection {
+		background-color: palette(color-neutral, xxxxx-light);
+		color: palette(color-alpha);
+	}
 }
 
 .c-row--visual {

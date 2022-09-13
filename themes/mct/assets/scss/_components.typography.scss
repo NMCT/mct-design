@@ -47,6 +47,14 @@
     }
 }
 
+.c-type-intro--md {
+    // @include ms6;
+
+    @include mq(bp4) {
+        @include ms7;
+    }
+}
+
 .c-type-intro-small {
     font-weight: $delta-font-weight;
     font-family: $gamma-font-family;
