@@ -6,7 +6,9 @@
     position: relative;
     border-radius: $radius-md;
     background: palette(color-neutral, xxxx-light);
-    @include margin-bottom($alpha-leading);
+    transform-origin: center;
+    transform-style: preserve-3d;
+    // @include margin-bottom($alpha-leading);
 
     // &:after {
     //     content: '';
@@ -33,17 +35,15 @@
         content: '';
         display: block;
         position: absolute;
-        bottom: -24px;
-        left: 48px;
-        top: 24px;
-        right: -48px;
-        // background-color: #fff;
-        // border: 1px solid hsla(0, 0%, 100%, 0.5);
+        inset: 0;
+        // bottom: -24px;
+        // left: 48px;
+        // top: 24px;
+        // right: -48px;
+        transform: translateX(calc(var(--y, 1) * -48px)) translateY(calc(var(--x, 1) * -24px + 24px));
         border-radius: $radius-md;
         background-color: rgba(palette(color-neutral,xxx-dark),.15);
         filter: blur(15px);
-        // background-color: rgba(palette(color-alpha,dark),.25);
-        // z-index: 15;
         pointer-events: none;
     }
 
@@ -51,7 +51,7 @@
         --y: -1;
         --x: 0;
         position: relative;
-        transform: perspective(1500px) rotateY(calc(var(--y) * 10deg)) rotateX(calc(var(--x) * -10deg)) ;
+        transform: perspective(1000px) rotateY(calc(var(--y) * 5deg)) rotateX(calc(var(--x) * -5deg));
         margin-top: 0;
         transition: transform $animation-duration-alpha $animation-easing-alpha;
     }
@@ -62,6 +62,7 @@
 }
 
 .c-video-play-button {
+    --video-play-button-translateZ: translateZ(2rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +72,7 @@
     border-radius: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) var(--video-play-button-translateZ);
     background-color: rgba(white,.95);
     z-index: 20;
     transition: all $animation-duration-alpha $animation-easing-alpha;
@@ -81,12 +82,12 @@
     &:hover,
     &:focus {
         background-color: #fff;
-        transform: translate(-50%, -50%) scale(1.1);
+        transform: translate(-50%, -50%) scale(1.1) var(--video-play-button-translateZ);
         outline: none;
     }
 
     &:active {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1) var(--video-play-button-translateZ);
     }
 
     @include mq(bp3) {
@@ -108,19 +109,19 @@
         bottom: 5%;
         right: 5%;
         background-color: #fff;
-        transform: translate(0, 0);
+        transform: translate(0, 0) var(--video-play-button-translateZ);
         height: $alpha-leading * 2.75px;
         width: $alpha-leading * 2.75px;
 
         &:hover,
         &:focus {
             background-color: #fff;
-            transform: scale(1.1);
+            transform: scale(1.1) var(--video-play-button-translateZ);
             outline: none;
         }
 
         &:active {
-            transform: scale(1);
+            transform: scale(1) var(--video-play-button-translateZ);
         }
     }
 

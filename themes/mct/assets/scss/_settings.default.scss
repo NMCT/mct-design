@@ -285,7 +285,7 @@ $increments: (
 $animation-duration-alpha: 0.1s !default;
 $animation-duration-beta: 0.2s !default;
 $animation-duration-gamma: 0.3s !default;
-$animation-easing-alpha: ease-in-out !default;
+$animation-easing-alpha: ease !default;
 $animation-easing-beta: cubic-bezier(
 	0.68,
 	-0.55,

@@ -70,20 +70,30 @@
 	<script>
 		// new element video player
 		const videoPlayer = document.querySelector('.js-video-player');
-		const videoContainer = document.querySelector('.js-video-player-home-container');
+		// get vide element original --x and --y
+		const videoPlayerX = getComputedStyle(videoPlayer).getPropertyValue('--x');
+		const videoPlayerY = getComputedStyle(videoPlayer).getPropertyValue('--y');
 
-		// change the perspective of the video player based on the mouse position inside the container with css variables
-		videoContainer.addEventListener('mousemove', (e) => {
-			const y = e.clientX - videoContainer.offsetLeft;
-			const x = e.clientY - videoContainer.offsetTop;
-			const width = videoContainer.offsetWidth;
-			const height = videoContainer.offsetHeight;
+		function setVideoPosition(e) {
+			var rect = e.target.getBoundingClientRect();
+			var x = e.clientX - rect.x - rect.width / 2;
+			var y = e.clientY - rect.y - rect.height / 2;
 
-			const xPercent = x / height;
-			const yPercent = y / width;
+			console.log(rect);
 
-			videoPlayer.style.setProperty('--x', xPercent);
-			videoPlayer.style.setProperty('--y', yPercent);
+			// recalculate x and y to a number between -1 and 1
+			x = x / (this.offsetWidth / 2);
+			y = y / (this.offsetHeight / 2);
+			this.style.setProperty('--x', y);
+			this.style.setProperty('--y', x);
+		}
+
+		videoPlayer.addEventListener('mousemove', setVideoPosition);
+
+		// reset video position on mouseleave
+		videoPlayer.addEventListener('mouseleave', function (e) {
+			this.style.setProperty('--x', videoPlayerX);
+			this.style.setProperty('--y', videoPlayerY);
 		});
 
 	</script>
