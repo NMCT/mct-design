@@ -18,7 +18,7 @@ $choice-column-border-style: solid;
 	// @include margin-lr($columns-gutter * -0.5);
 	// @include margin-bottom($alpha-leading);
 
-	
+
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -59,7 +59,7 @@ $choice-column-border-style: solid;
 			right: -.5rem;
 			pointer-events: none;
 			border-radius: 0 0 $radius-md $radius-md;
-	
+
 			// START Proof Of Concept
 			padding: 3rem;
 			text-align: center;
@@ -99,7 +99,7 @@ $choice-column-border-style: solid;
 		@include mq(bp5) {
 			grid-template-rows: auto repeat(30,1fr);
 		}
-	
+
 		.c-curriculum__semester-title {
 			grid-column: 1/-1;
 			&.u-x-span {
@@ -120,14 +120,20 @@ $choice-column-border-style: solid;
 
 .c-curriculum__placeholder {
 	grid-column: 1 / -1 ;
-	grid-row: 11;
-	
+	grid-row: 21;
 	display: grid;
 	place-items: center;
 	padding: 2rem;
 	text-align: center;
-	// font-weight: $delta-font-weight;
 	color: palette(color-neutral, light);
+
+	@include mq(bp2) {
+		grid-row: 14;
+	}
+
+	@include mq(bp3) {
+		grid-row: 11;
+	}
 
 	@include mq(bp5) {
 		grid-column: 4 / span 2;
@@ -161,7 +167,7 @@ $choice-column-border-style: solid;
 	position: -webkit-sticky; // Safari needs this prefix. Otherwise z-index doesn't work ;-) (because there is no positioning).
 	// top: 24px;
 	z-index: 20;
-	
+
 	@include margin-lr($columns-gutter * -0.5);
 
 	@include mq(bp5) {
@@ -297,7 +303,7 @@ $choice-column-border-style: solid;
 .c-curriculum-choices {
 	position: relative;
 	border-top: 1px solid palette(color-neutral, xxx-light);
-	margin-bottom: 0;	
+	margin-bottom: 0;
 	@include padding-tb($alpha-leading / 4, $alpha-leading / 4);
 }
 
