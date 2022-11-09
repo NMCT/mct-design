@@ -23,7 +23,7 @@ questions:
 - title: Voorwaarde
   text: De student kent de programmeertaal **Python** voldoende om zelf programma's te schrijven en te interpreteren.
 - title: Kostprijs
-  text: "Een niet-beursstudent betaalt **382 Euro**.\n Beursstudenten informeren best bij het studentensecretariaat 056 24 12 25"
+  text: "Een niet-beursstudent betaalt **398,8 Euro**.\n Beursstudenten informeren best bij het studentensecretariaat 056 24 12 25"
 - title: Vragen?
   text: Contacteer [Johan De Gelas](/contact) of kom langs tijdens één van onze infodagen op onze campus in Kortrijk.
 ---
