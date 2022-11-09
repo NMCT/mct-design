@@ -14,6 +14,8 @@ pillar: project
 tools: "Trello, Toggl"
 ---
 
+Dit word nu al een lueke module.
+
 Na alle modules en examens uit Semester 3 ([Device Programming](/programma/device-programming), [Security](/programma/security), [IoT Cloud](/programma/iot-cloud) en [Interaction Design](/programma/interaction-design)), volgt het Team Project, een traject van 3 à 4 weken. De opgedane kennis uit de vorige modules wordt tijdens deze projectweken in de praktijk omgezet in een **interne case**.
 
 Het voornaamste doel van deze module is om de **rollen & werkmethodes** in **projectmanagement** te leren kennen en deze ook te integreren in een **project van begin tot einde**. Deze case wordt binnen een **team** uitgewerkt en gepresenteerd.
