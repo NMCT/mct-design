@@ -60,6 +60,12 @@
 	}
 }
 
+.u-y-span-12 {
+	@include mq(bp5) {
+		grid-row: span 12;
+	}
+}
+
 .u-y-span-24 {
 	@include mq(bp5) {
 		grid-row: span 24;

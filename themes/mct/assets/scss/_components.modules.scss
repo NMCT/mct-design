@@ -66,6 +66,31 @@
 		background-color: palette(color-international);
 	}
 
+	&--ai-technologies {
+		border-color: palette(color-ai-technologies);
+		background-color: palette(color-ai-technologies);
+	}
+
+	&--ai-programming {
+		border-color: palette(color-ai-programming);
+		background-color: palette(color-ai-programming);
+	}
+
+	&--ai-cloud {
+		border-color: palette(color-ai-cloud);
+		background-color: palette(color-ai-cloud);
+	}
+
+	&--ai-data {
+		border-color: palette(color-ai-data);
+		background-color: palette(color-ai-data);
+	}
+
+	&--ai-projects {
+		border-color: palette(color-ai-projects);
+		background-color: palette(color-ai-projects);
+	}
+
 	&--dynamic {
 		opacity: 0;
 		display: none;
@@ -112,6 +137,29 @@
 		&.c-module--analysis {
 			background-color: palette(color-analysis);
 		}
+		&.c-module--ai-technologies {
+			background-color: palette(color-ai-technologies);
+		}
+	
+		&.c-module--ai-programming {
+			background-color: palette(color-ai-programming);
+		}
+	
+		&.c-module--ai-cloud {
+			background-color: palette(color-ai-cloud);
+		}
+	
+		&.c-module--ai-data {
+			background-color: palette(color-ai-data);
+		}
+	
+		&.c-module--ai-projects {
+			background-color: palette(color-ai-projects);
+		}
+
+		&.c-module--international {
+			background-color: palette(color-international);
+		}
 	}
 
 	&:focus-visible {
@@ -136,6 +184,28 @@
 
 		&.c-module--analysis {
 			outline-color: palette(color-analysis);
+		}
+		&.c-module--ai-technologies {
+			outline-color: palette(color-ai-technologies);
+		}
+	
+		&.c-module--ai-programming {
+			outline-color: palette(color-ai-programming);
+		}
+	
+		&.c-module--ai-cloud {
+			outline-color: palette(color-ai-cloud);
+		}
+	
+		&.c-module--ai-data {
+			outline-color: palette(color-ai-data);
+		}
+	
+		&.c-module--ai-projects {
+			outline-color: palette(color-ai-projects);
+		}
+		&.c-module--international {
+			outline-color: palette(color-international);
 		}
 	}
 }

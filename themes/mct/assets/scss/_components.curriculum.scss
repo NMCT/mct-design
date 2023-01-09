@@ -45,7 +45,8 @@ $choice-column-border-style: solid;
 		column-gap: 1rem;
 	}
 
-	&:not(.c-curriculum--single) {
+	&:not(.c-curriculum--single)
+	&:not(.c-curriculum-bachelor-creative-tech) {
 
 		&::before {
 			display: block;
