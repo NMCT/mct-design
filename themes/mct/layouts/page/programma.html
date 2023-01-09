@@ -67,7 +67,7 @@
 
                         {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
                         {{ range (where $.Site.Pages "Type" "programma") }}
-                            {{ if and (eq .Params.Semester $sequence) (not (isset .Params "home")) (not (isset .Params "english-only")) (not (isset .Params "hide")) }}
+                            {{ if and (eq .Params.Semester $sequence) (not (isset .Params "home")) (not (isset .Params "english-only")) (not (isset .Params "bachelor-creative-tech-ai")) (not (isset .Params "hide")) }}
                                 {{ partial "components/module" . }}
                             {{ end }}
                         {{ end }}

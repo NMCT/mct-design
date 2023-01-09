@@ -58,6 +58,12 @@ $color-analysis: #a46b50;
 $color-project: #7b9641;
 $color-international: #7c7c7c;
 
+$color-ai-technologies: #E2C912;
+$color-ai-programming: $color-code;
+$color-ai-data: $color-analysis;
+$color-ai-cloud: #7A4CEC;
+$color-ai-projects: $color-project;
+
 // Palettes
 $palettes: (
 	color-neutral: (
@@ -178,6 +184,21 @@ $palettes: (
 	),
 	color-international: (
 		base: $color-international,
+	),
+	color-ai-technologies: (
+		base: $color-ai-technologies,
+	),
+	color-ai-programming: (
+		base: $color-ai-programming,
+	),
+	color-ai-data: (
+		base: $color-ai-data,
+	),
+	color-ai-cloud: (
+		base: $color-ai-cloud,
+	),
+	color-ai-projects: (
+		base: $color-ai-projects,
 	)
 ) !default;
 
