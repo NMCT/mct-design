@@ -9,10 +9,10 @@ cta:
     hyperlink: https://www.howest.be/en/programmes/bachelor/creative-technologies-and-artificial-intelligence
 
 
-cover: AndreiLavrenov_OfficeWindow02.jpg
-poster: internationals.jpeg
+cover: YerlDeblauwe_Tequila.jpg
+poster: YerlDeblauwe_Tequila.jpg
 # caption: "International students from Asia, Africa, North and South America as well as Europe have studied at MCT before!"
-caption: "Internship in Kazachstan - Andrei Lavrenov"
+caption: "Exchanges between partner universities - like TEC Monterrey, Mexico - work both ways!"
 
 quote: "Broaden your horizon and study in English at the Bachelor of Creative Technologies & AI!"
 introtext:

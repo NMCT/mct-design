@@ -61,5 +61,11 @@ publishDir = "www"
 	identifier = "onderzoek"
 	weight = 70
 
+  [[menu.main]]
+	name = "Creative Tech & AI"
+	url = "/programme/bachelor-creative-tech-ai/"
+	identifier = "creative-tech-ai"
+	weight = 80
+
 [outputs]
     page = ["HTML", "json"]
