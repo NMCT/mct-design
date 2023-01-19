@@ -94,10 +94,12 @@ const modal = (function () {
 				<h1 class="c-type-intro u-mb-alpha">
 					${data.title}
 				</h1>
-
-				<p class="c-type-meta u-ms-1 u-color-neutral-base">
-					#${data.tags.join(' #')}
-				</p>
+                ${
+                    (data.tags && data.tags.length > 0) ? `<p class="c-type-meta u-ms-1 u-color-neutral-base">
+					    #${data.tags.join(' #')}
+				    </p>` : ``
+                }
+				
 
 				<div class="u-max-width-optimal">
 					${
