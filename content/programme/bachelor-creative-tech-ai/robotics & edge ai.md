@@ -1,6 +1,6 @@
 ---
 title: "Robotics & Edge AI"
-semester: 5
+semester: 4
 studycredits: 6
 weight: 10
 pillar: "ai-technologies"
