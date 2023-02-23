@@ -8,7 +8,7 @@ tags:
 - 3DProgramming
 pillar: code
 tracks:
-- smart-xr-developer
+- xr-developer
 tools: "Unity"
 ---
 

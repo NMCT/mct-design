@@ -9,7 +9,7 @@ tags:
 - Hololens
 pillar: design
 tracks:
-- smart-xr-developer
+- xr-developer
 tools: "Unity, Vuforia, Hololens"
 ---
 Het doel van deze module is om kennis te maken met Augmented Reality en Mixed Reality. Je maakt kennis met de verschillende mogelijkheden naar **interactie en visualisatie**. In het praktische luik van de module worden hiervoor business toepassingen uitgewerkt, in hoofdzaak a.d.h.v. **Microsoft Hololens** maar ook via **mobile devices** en alternatieven zoals **MagicLeap**.

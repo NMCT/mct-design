@@ -12,7 +12,7 @@ tags:
 pillar: analysis
 tracks:
 - iot-infrastructure-engineer
-- smart-xr-developer
+- xr-developer
 tools: "InfluxDB, Grafana, MQTT, Reachy"
 ---
 Robots bestaan al lang: zware industriële robots werden reeds geproduceerd sinds 1956. Sinds een paar jaar zijn huishoudelijke robots zoals een grasmaairobot en stofzuigerbot gemeengoed aan het worden.

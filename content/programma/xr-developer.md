@@ -1,8 +1,8 @@
 ---
-title: Smart XR Developer
+title: XR Developer
 intro: Welkom in het tijdperk van spatial computing. Waar de echte en de virtuele wereld versmelten tot een rijkere en betere ervaring voor iedereen. Als eerste profiel in Vlaanderen word je klaargestoomd voor het tijdperk waarin innovatieve Extended Reality (XR) interfaces on-the-job-training, medische interventies en mobiliteit naar een ander niveau zullen brengen.
 layout: profile
-track: smart-xr-developer
+track: xr-developer
 future:
     - AR/XR software developer
     - .Net/Unity Software developer
