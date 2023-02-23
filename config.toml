@@ -56,7 +56,7 @@ publishDir = "www"
 	weight = 60
 
   [[menu.main]]
-	name = "Creative Tech & AI"
+	name = "Creative Technologies & AI"
 	url = "/programme/bachelor-creative-tech-ai/"
 	identifier = "creative-tech-ai"
 	weight = 70

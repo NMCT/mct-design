@@ -77,9 +77,9 @@
     </section>
     {{ end }}
     <!-- Programme -->
-    <section class="c-row c-row--lg u-bgcolor-neutral-xxxx-light">
+    <section class="c-row c-row--lg u-bgcolor-neutral-xxxx-light" >
         <div class="o-container">
-            <h2 class="c-type-svg c-type-svg--programm c-curriculum-title">
+            <h2 class="c-type-svg c-type-svg--programm c-curriculum-title" id="programme">
                 <img class="c-type-svg__svg" src="/img/svg/word-programme.svg" alt="Programme">
             </h2>
             <div class="c-curriculum-overview">
@@ -90,7 +90,7 @@
                         </h3>
 
                         {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
-                        {{ range (where $.Site.Pages "Type" "programma") }}
+                        {{ range (where $.Site.Pages "Type" "programme") }}
                             {{ if and (eq .Params.Semester $semester) (isset .Params "bachelor-creative-tech-ai") (not (isset .Params "hide")) }}
                                 {{ partial "components/module" . }}
                             {{ end }}

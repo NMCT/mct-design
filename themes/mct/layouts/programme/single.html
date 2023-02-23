@@ -1,0 +1,60 @@
+{{ define "main" }}
+	<section class="c-row c-row--lg">
+		<div class="o-container u-max-width-optimal">
+			<div class="c-main-section-lg">
+				<div class="c-main-section">
+					<ul class="o-list c-curriculum-legend u-mb-delta">
+						<li class="c-curriculum-legend__item">
+							<span class="c-curriculum-legend__swatch u-bgcolor-{{ .Params.Pillar }}-base"></span>
+							{{ range (split .Params.Pillar "-") }}
+								{{ replace (strings.FirstUpper .) "Ai" "AI" }}
+							{{ end}}
+						</li>
+					</ul>
+					<h1 class="c-type-intro u-mb-alpha">
+						{{ .Title }}
+					</h1>
+
+					{{ if .Params.Tags }}
+						<p class="c-type-meta u-ms-1 u-color-neutral-base">
+							{{ range .Params.Tags }}
+								#{{ . }}
+							{{ end }}
+						</p>
+					{{ end }}
+
+					{{ if .Params.Description }}
+						<p class="c-type-intro-small">
+							{{ .Description }}
+						</p>
+					{{ end }}
+					{{ if .Params.Tools }}
+						<h3 class="u-mb-alpha">
+							Tools: <span class="u-color-neutral-base"></span>
+						</h3>
+						<p class="u-color-neutral-base">
+							{{ .Params.Tools }}
+	                    </p>
+					{{ end }}
+				
+					<div class="s-content">
+						{{ .Content }}
+					</div>
+				</div>
+			</div>
+			<div class="c-main-section-lg">
+				<div class="c-main-section">
+					<p>
+						<a class="c-link-more" href="{{ ref . "/programme/bachelor-creative-tech-ai#programme" }}">< View the full programme</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="application/ld+json">
+		{"@context":"http://schema.org","@type":"course",
+		"name": {{ .Title | jsonify }},
+		"description": {{ .Content | jsonify }},
+		"provider": {"@type":"Organization","name":"MCT","sameAs":"https://mct.be"}}
+	</script>
+{{ end }}
