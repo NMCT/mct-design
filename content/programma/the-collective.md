@@ -16,6 +16,7 @@ tracks:
 - ai-engineer
 - iot-infrastructure-engineer
 tools: "Miro"
+hide: true
 ---
 
 The Collective is a module that requires **international** and / or **interdisciplinary** teamwork: you get the chance to work together with Communication Management, Occupational Therapy, Network Economy, Tourism & Recreation Management, DAE and Industrial Product Design students.

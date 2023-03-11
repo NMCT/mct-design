@@ -1,5 +1,5 @@
 (function () {
-    let curriculum, modules, dynamicModules, dropdown, trackList;
+    let curriculum, modules, dynamicModules, defaultModules, dropdown, trackList;
 
     const _addEscFunction = (e) => {
         e = e || window.event;
@@ -18,6 +18,7 @@
     };
 
     const _toggleModules = (track) => {
+        console.log(track);
         for (const m of Array.from(dynamicModules)) {
             if (m.classList.contains(`js-track-${track}`)) {
                 m.classList.add('is-visible');
@@ -83,6 +84,9 @@
             if (modules) {
                 dynamicModules = Array.from(modules).filter((module) =>
                     module.classList.contains('js-module-dynamic')
+                );
+                defaultModules = Array.from(modules).filter((module) =>
+                    module.classList.contains('js-module-default')
                 );
             }
 

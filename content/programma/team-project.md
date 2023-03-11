@@ -12,6 +12,11 @@ tags:
 - projectmanagement
 pillar: project
 tools: "Trello, Toggl"
+tracks:
+- ai-engineer
+- xr-developer
+- next-web-developer
+- iot-infrastructure-engineer
 ---
 
 Na alle modules en examens uit Semester 3 ([Device Programming](/programma/device-programming), [Security](/programma/security), [IoT Cloud](/programma/iot-cloud) en [Interaction Design](/programma/interaction-design)), volgt het Team Project, een traject van 3 à 4 weken. De opgedane kennis uit de vorige modules wordt tijdens deze projectweken in de praktijk omgezet in een **interne case**.

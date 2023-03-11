@@ -1,5 +1,5 @@
 ---
-title: IoT Devices & Robotics
+title: Robotics
 semester: 5
 studycredits: 6
 weight: 40

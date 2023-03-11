@@ -1,5 +1,5 @@
 ---
-title: Network Scripting
+title: Infrastructure Automation
 semester: 5
 studycredits: 6
 weight: 20

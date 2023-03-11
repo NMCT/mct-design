@@ -2,7 +2,7 @@
 title: Mixed Reality
 semester: 5
 studycredits: 6
-weight: 30
+weight: 15
 tags:
 - MR
 - Mobile-AR
