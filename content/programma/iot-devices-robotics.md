@@ -9,7 +9,7 @@ tags:
 - embeddedpython
 - wearables
 - EdgeAI
-pillar: analysis
+pillar: connect
 tracks:
 - iot-infrastructure-engineer
 - xr-developer
