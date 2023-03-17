@@ -14,7 +14,7 @@ tracks:
 - next-web-developer
 - xr-developer
 - ai-engineer
-- iot-infrastructure-engineer
+- iot-engineer
 tools: "IEEE, Zotero, Mendeley"
 ---
 

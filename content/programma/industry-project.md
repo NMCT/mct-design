@@ -16,7 +16,7 @@ tracks:
 - next-web-developer
 - xr-developer
 - ai-engineer
-- iot-infrastructure-engineer
+- iot-engineer
 ---
 
 **Na alle modules en examens uit Semester 4, volgt het Industry Project, een traject van 4 à 5 weken. De opgedane kennis uit de vorige modules wordt tijdens deze projectweken in de praktijk omgezet in een externe case.**

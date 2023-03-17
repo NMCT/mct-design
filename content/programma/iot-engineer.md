@@ -1,8 +1,8 @@
 ---
-title: IoT Infrastructure Engineer
-intro: "Als gepassioneerd IoT Infrastructure Engineer sta je in het kloppend hart van de onderneming. Je onderhoudt het netwerk en servers met aandacht voor bedrijfscontinuïteit. Je hebt daarbij oog voor de modernste beveiliging tegen externe en interne bedreigingen."
+title: IoT Engineer
+intro: "Als gepassioneerd IoT Engineer sta je in het kloppend hart van de onderneming. Je onderhoudt het netwerk en servers met aandacht voor bedrijfscontinuïteit. Je hebt daarbij oog voor de modernste beveiliging tegen externe en interne bedreigingen."
 layout: profile
-track: iot-infrastructure-engineer
+track: iot-engineer
 future:
 - Cloud Engineer
 - IT Engineer

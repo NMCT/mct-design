@@ -13,7 +13,7 @@ tracks:
 - ai-engineer
 - xr-developer
 - next-web-developer
-- iot-infrastructure-engineer
+- iot-engineer
 ---
 Studenten worden bewust gemaakt van de mogelijke bedreigingen die de **beschikbaarheid**, de **vertrouwelijkheid** of de **integriteit** van een systeem **kunnen compromitteren**
 Er worden diverse tegenmaatregelen besproken die de kwetsbaarheid tegenover deze bedreigingen kunnen verminderen of minimaliseren.

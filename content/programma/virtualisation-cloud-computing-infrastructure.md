@@ -9,7 +9,7 @@ tags:
 - data-storage
 pillar: connect
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 tools: "VMware, HyperV, Data Storage"
 ---
 

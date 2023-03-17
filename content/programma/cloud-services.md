@@ -11,7 +11,7 @@ tags:
 - Azure
 pillar: connect
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 tools: "File storage, Object storage, Docker, VPC, DDoS"
 ---
 

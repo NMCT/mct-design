@@ -14,7 +14,7 @@ tags:
 - Git
 pillar: connect
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 tools: "Powershell, Bash, Terraform, Ansible, Git, VMware"
 ---
 

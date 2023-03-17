@@ -3,7 +3,7 @@ type: International Testimonial
 title: Guillaume Deplancke
 cover: "Guillaume_Zwolle.jpg"
 weight: 40
-class: 3MCT - IoT Infrastructure Engineer
+class: 3MCT - IoT Engineer
 country: Nederland
 partner: Windesheim
 reason: Study

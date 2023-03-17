@@ -10,7 +10,7 @@ tags:
 pillar: connect
 tools: "Arduino, ESP32"
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 ---
 
 **Beschrijving kan nog veranderen**

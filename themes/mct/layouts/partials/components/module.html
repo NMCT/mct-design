@@ -1,9 +1,9 @@
 {{ $data := newScratch }}
 
 {{ if (isset .Params "english-only") }}
-{{ $data.Set "colstart" (add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice)) }}
+{{ $data.Set "colstart" (add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Option)) }}
 {{ else if (isset .Params "home") }}
-{{ $data.Set "colstart" (add .Params.Semester (default 0 .Params.Choice)) }}
+{{ $data.Set "colstart" (add .Params.Semester (default 0 .Params.Option)) }}
 {{ else }}
 {{ $data.Set "colstart" .Params.Semester }}
 {{ end }}

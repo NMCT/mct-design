@@ -18,7 +18,7 @@ countries:
   images:
     - src: https://www.flickr.com/photos/clokortrijk/49719582931/in/album-72157713698788337
       type: Flickr
-      caption: IoT Infrastructure Engineer Killian Deloof liep stage in Finland in 2018 bij onze partneruniversiteit Metropolia.
+      caption: IoT Engineer Killian Deloof liep stage in Finland in 2018 bij onze partneruniversiteit Metropolia.
   link: https://www.metropolia.fi/en/academics/courses-for-exchange-studies
 
 - name: Nederland
@@ -54,12 +54,12 @@ countries:
     - 6
     - 5
   tracks:
-    - iot-infrastructure-engineer
+    - iot-engineer
     - ai-engineer
   images:
     - src: https://www.flickr.com/photos/clokortrijk/23985639917/in/album-72157661291145037
       type: Flickr
-      caption: "Nog niemand ging er studeren, maar vraag ook maar aan Tom Decavele die er was in 2019: de mogelijkheden voor IoT infrastructure engineers zijn mooi!"
+      caption: "Nog niemand ging er studeren, maar vraag ook maar aan Tom Decavele die er was in 2019: de mogelijkheden voor IoT Engineers zijn mooi!"
   link: https://www.his.se/en/education/exchange-student/courses-for-exchange-students/
 
 

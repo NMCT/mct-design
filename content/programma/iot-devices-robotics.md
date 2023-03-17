@@ -11,7 +11,7 @@ tags:
 - EdgeAI
 pillar: connect
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 - xr-developer
 tools: "InfluxDB, Grafana, MQTT, Reachy"
 ---

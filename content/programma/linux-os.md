@@ -11,7 +11,7 @@ tags:
 - iot
 pillar: connect
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 tools: "Debian GNU/Linux, Apache httpd, haproxy, bash, ssh"
 ---
 

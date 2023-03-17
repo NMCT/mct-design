@@ -11,7 +11,7 @@ tags:
 - security
 pillar: connect
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 tools: "Microsoft Windows Server 2019, Active Directory"
 hide: true
 ---

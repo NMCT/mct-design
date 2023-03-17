@@ -15,7 +15,7 @@ tracks:
 - ai-engineer
 - xr-developer
 - next-web-developer
-- iot-infrastructure-engineer
+- iot-engineer
 ---
 
 Het doel van deze module is om **C#.NET** te leren en de concepten van **object georiënteerd programmeren** verder uit te diepen. Deze kennis wordt ingezet om mobiele Xamarin.Forms/.NET MAUI applicaties te ontwikkelen die data manipuleren van bestaande **bronnen in de cloud**. Hoewel Xamarin.Forms/.NET MAUI toelaat op verschillende platformen te draaien, ligt de focus van het testen voornamelijk op Android.

@@ -3,7 +3,7 @@ type: International Testimonial
 title: Jens De Bock
 cover: lake_back.JPG
 weight: 50
-class: 3MCT - IoT Infrastructure Engineer
+class: 3MCT - IoT Engineer
 country: USA
 partner: Northwest Missouri State University
 reason: Study

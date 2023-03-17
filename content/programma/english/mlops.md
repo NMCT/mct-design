@@ -1,7 +1,7 @@
 ---
 title: MLOps (choice)
 semester: 1
-choice: 1
+option: 1
 studycredits: 6
 weight: 10
 tags:

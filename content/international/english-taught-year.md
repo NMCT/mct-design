@@ -11,7 +11,7 @@ hyperlinks:
 
 programmes:
     - https://www.howest.be/en/programmes/english-taught-semester/ai-engineer
-    - https://www.howest.be/en/programmes/english-taught-semester/iot-infrastructure-engineer
+    - https://www.howest.be/en/programmes/english-taught-semester/iot-engineer
 ---
 The English taught Bachelor in Creative Technologies & AI has a one-year, short-track option to transform you at an accelerated pace into an AI engineer. The short track option has been put to the test over the past four years by no fewer than 300 professionals who received the same content over a two-year period in a blended learning program (also called AI @home). The short track,  consisting of 60 ECTS, excels because of its hands-on "learn from the professionals" approach, allowing you turn your ideas into fully functional, professionally deployed AI products.
 

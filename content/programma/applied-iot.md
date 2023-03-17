@@ -11,7 +11,7 @@ tags:
 - OPC-UA
 pillar: connect
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 ---
 
 

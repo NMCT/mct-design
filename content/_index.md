@@ -4,5 +4,5 @@ description: 'Welkom bij De IoT generatie Van user interface tot artificial inte
 type: page
 
 subheader: 'Multimedia & Creative Technologies'
-intro: Word [XR Developer](programma/xr-developer), [Next Web Developer](programma/next-web-developer), [AI Engineer](programma/ai-engineer) of [IoT Infrastructure Engineer](programma/iot-infrastructure-engineer).
+intro: Word [XR Developer](programma/xr-developer), [Next Web Developer](programma/next-web-developer), [AI Engineer](programma/ai-engineer) of [IoT Engineer](programma/iot-engineer).
 ---

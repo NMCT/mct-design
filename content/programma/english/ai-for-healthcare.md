@@ -2,7 +2,7 @@
 title: AI For Healthcare (choice)
 semester: 1
 studycredits: 6
-choice: 1
+option: 1
 weight: 20
 tags:
 - Kubernetes
