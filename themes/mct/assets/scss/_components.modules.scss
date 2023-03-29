@@ -55,7 +55,6 @@
 		background-color: palette(color-analysis);
 	}
 
-
 	&--project {
 		border-color: palette(color-project);
 		background-color: palette(color-project);
@@ -64,6 +63,11 @@
 	&--international {
 		border-color: palette(color-international);
 		background-color: palette(color-international);
+	}
+
+	&--specialisatie {
+		border-color: palette(color-specialisatie);
+		background-color: palette(color-specialisatie);
 	}
 
 	&--ai-technologies {

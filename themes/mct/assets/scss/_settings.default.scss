@@ -57,6 +57,7 @@ $color-design: #fb9d3c;
 $color-analysis: #a46b50;
 $color-project: #7b9641;
 $color-international: #7c7c7c;
+$color-keuzemodule: #7c7c7c;
 
 $color-ai-technologies: #efb239;
 $color-ai-programming: $color-code;
@@ -184,6 +185,9 @@ $palettes: (
 	),
 	color-international: (
 		base: $color-international,
+	),
+	color-specialisatie: (
+		base: $color-keuzemodule,
 	),
 	color-ai-technologies: (
 		base: $color-ai-technologies,
