@@ -23,6 +23,6 @@ De huidige generatie van autonome robots kunnen dus met behulp van IoT en **AI**
 
 In de module "IoT Devices & Robotics" wordt de huidige stand van moderne commerciële en industriële robotica verkend. Je wordt uitgedaagd een visie te ontwikkelen op de mogelijkheden van de producten van de toekomst.
 
-Maar daar blijft het niet bij. In de practica ga je zelf aan de slag met bestaande robots, die je slimmer maakt en uitbreidt met baanbrekende nieuwe functionaliteiten dankzij wat je geleerd hebt in de modules [IoT Cloud](/programma/iot-cloud/), [Big Data](/programma/big-data/), [Machine Learning](/programma/machine-learning/) en [Deep Learning](/programma/deep-learning/) of [Applied AI](/programma/applied-ai).
+Maar daar blijft het niet bij. In de practica ga je zelf aan de slag met bestaande robots, die je slimmer maakt en uitbreidt met nieuwe functies.
 
 Inzichten in robotica, sensoren, dataverwerking, AI en Computer vision worden aangebracht met technologieën zoals MQTT, ESP32, LoraWAN, OpenCV en Nvidia Jetson GPU processing.
