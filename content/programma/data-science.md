@@ -1,8 +1,8 @@
 ---
 title: Data Science & AI
-semester: 1
+semester: 2
 studycredits: 6
-weight: 30
+weight: 40
 tags: 
 - informationextraction
 - datarepresentation

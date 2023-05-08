@@ -1,9 +1,9 @@
 {{ $data := newScratch }}
 
 {{ if (isset .Params "english-only") }}
-{{ $data.Set "colstart" (add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Choice)) }}
+{{ $data.Set "colstart" (add (add .Params.Semester (sub .Params.Semester 1)) (default 0 .Params.Option)) }}
 {{ else if (isset .Params "home") }}
-{{ $data.Set "colstart" (add .Params.Semester (default 0 .Params.Choice)) }}
+{{ $data.Set "colstart" (add .Params.Semester (default 0 .Params.Option)) }}
 {{ else }}
 {{ $data.Set "colstart" .Params.Semester }}
 {{ end }}
@@ -11,14 +11,19 @@
     <a
         href="{{ .Permalink }}"
         class="c-module c-module--{{ .Params.Pillar }} c-module--{{ .Params.Studycredits }}-sp c-module--link
-        u-grid-column-start-{{ $data.Get `colstart` }} u-y-span-{{ .Params.Studycredits }}
-        js-module
-        {{ if in (slice 4 5) .Params.Semester }}
+        u-grid-column-start-{{ $data.Get `colstart` }} u-y-span-{{ .Params.Studycredits }} js-module
+        {{ if or (and (in (slice 4 5) .Params.Semester) (not (isset .Params "bachelor-creative-tech-ai"))) (.Params.Choice)  }}
             c-module--dynamic js-module-dynamic
             {{ range .Params.Tracks }}
                 js-track-{{ . }}
             {{ end }}
-        {{ end }}"
+        {{ end }}
+        {{ if .Params.Default }}
+            js-module-default
+            c-module--dynamic js-module-dynamic
+            is-visible
+        {{ end }}
+        "
     >
     <h4 class="c-module__title">{{ .Title }}</h4>
     <p class="c-module__sp">

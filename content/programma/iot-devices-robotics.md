@@ -1,5 +1,5 @@
 ---
-title: IoT Devices & Robotics
+title: Robotics
 semester: 5
 studycredits: 6
 weight: 40
@@ -9,10 +9,10 @@ tags:
 - embeddedpython
 - wearables
 - EdgeAI
-pillar: analysis
+pillar: connect
 tracks:
-- iot-infrastructure-engineer
-- smart-xr-developer
+- iot-engineer
+- xr-developer
 tools: "InfluxDB, Grafana, MQTT, Reachy"
 ---
 Robots bestaan al lang: zware industriële robots werden reeds geproduceerd sinds 1956. Sinds een paar jaar zijn huishoudelijke robots zoals een grasmaairobot en stofzuigerbot gemeengoed aan het worden.
@@ -23,6 +23,6 @@ De huidige generatie van autonome robots kunnen dus met behulp van IoT en **AI**
 
 In de module "IoT Devices & Robotics" wordt de huidige stand van moderne commerciële en industriële robotica verkend. Je wordt uitgedaagd een visie te ontwikkelen op de mogelijkheden van de producten van de toekomst.
 
-Maar daar blijft het niet bij. In de practica ga je zelf aan de slag met bestaande robots, die je slimmer maakt en uitbreidt met baanbrekende nieuwe functionaliteiten dankzij wat je geleerd hebt in de modules [IoT Cloud](/programma/iot-cloud/), [Big Data](/programma/big-data/), [Machine Learning](/programma/machine-learning/) en [Deep Learning](/programma/deep-learning/) of [Applied AI](/programma/applied-ai).
+Maar daar blijft het niet bij. In de practica ga je zelf aan de slag met bestaande robots, die je slimmer maakt en uitbreidt met nieuwe functies.
 
 Inzichten in robotica, sensoren, dataverwerking, AI en Computer vision worden aangebracht met technologieën zoals MQTT, ESP32, LoraWAN, OpenCV en Nvidia Jetson GPU processing.

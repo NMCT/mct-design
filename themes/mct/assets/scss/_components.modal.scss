@@ -78,6 +78,29 @@
 	&-project {
 		border-color: $color-project;
 	}
+	&-international {
+		border-color: palette(color-international);
+	}
+
+	&-ai-technologies {
+		border-color: palette(color-ai-technologies);
+	}
+
+	&-ai-programming {
+		border-color: palette(color-ai-programming);
+	}
+
+	&-ai-cloud {
+		border-color: palette(color-ai-cloud);
+	}
+
+	&-ai-data {
+		border-color: palette(color-ai-data);
+	}
+
+	&-ai-projects {
+		border-color: palette(color-ai-projects);
+	}
 }
 
 .c-modal__close {

@@ -9,7 +9,7 @@ categories:
 
 Tijd om je brein eens te testen? Probeer dan eens [de site van Tibo Van Craenenbroeck](https://tibovancraenenbroeck.be/).
 
-Kreeg je een kleine boost - dopamine shot - toen je ontdekte hoe het werkt? Merk je dat je de liefde voor een doordenkertje, de coding en de scripting deelt met Tibo? Dan ben waarschijnlijk een rasechte backend programmeur zoals Tibo. Als je vond dat het veel te simpel was en je pas tevreden bent als je linux scripts het moderne equivalent zijn van geëncrypteerde sanskriet, ga dan onmiddellijk naar [IoT infrastructure Engineer](/programma/iot-infrastructure-engineer).
+Kreeg je een kleine boost - dopamine shot - toen je ontdekte hoe het werkt? Merk je dat je de liefde voor een doordenkertje, de coding en de scripting deelt met Tibo? Dan ben waarschijnlijk een rasechte backend programmeur zoals Tibo. Als je vond dat het veel te simpel was en je pas tevreden bent als je linux scripts het moderne equivalent zijn van geëncrypteerde sanskriet, ga dan onmiddellijk naar [IoT Engineer](/programma/iot-engineer).
 
 Het concept achter Tibo’s website die hij maakte als voorbereiding voor zijn eerste project in MCT:
 

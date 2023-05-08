@@ -48,18 +48,24 @@ publishDir = "www"
 	url = "/at-home/"
 	identifier = "at-home"
 	weight = 50
-
-  [[menu.main]]
-	name = "Contact"
-	url = "/contact/"
-	identifier = "contact"
-	weight = 60
   
   [[menu.main]]
 	name = "Onderzoek"
 	url = "/onderzoek/"
 	identifier = "onderzoek"
+	weight = 60
+
+  [[menu.main]]
+	name = "Creative Technologies & AI"
+	url = "/programme/bachelor-creative-tech-ai/"
+	identifier = "creative-tech-ai"
 	weight = 70
+
+  [[menu.main]]
+	name = "Contact"
+	url = "/contact/"
+	identifier = "contact"
+	weight = 80
 
 [outputs]
     page = ["HTML", "json"]

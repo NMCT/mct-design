@@ -1,5 +1,5 @@
 ---
-title: Network Scripting
+title: Infrastructure Automation
 semester: 5
 studycredits: 6
 weight: 20
@@ -14,7 +14,7 @@ tags:
 - Git
 pillar: connect
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 tools: "Powershell, Bash, Terraform, Ansible, Git, VMware"
 ---
 

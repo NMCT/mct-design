@@ -2,7 +2,7 @@
 title: Datamanagement
 aliases:
     - /programma/data-management
-semester: 2
+semester: 1
 studycredits: 6
 weight: 40
 tags:

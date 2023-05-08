@@ -44,5 +44,5 @@ __“De school doet naast lesgeven ook bepaalde activiteiten op de campus. Zo he
 **Stéphanie Minne**  
 **Voorkennis**: Humane wetenschappen  
 **Provincie**: Oost-Vlaanderen  
-**Keuzetraject**: [Smart XR developer](/programma/smart-xr-developer/)  
+**Keuzetraject**: [Smart XR developer](/programma/xr-developer/)  
 **Waarom MCT**: Ik was op zoek naar een informatica opleiding en doordat de lessen zo praktisch gericht zijn, zijn ze ook echt tof!

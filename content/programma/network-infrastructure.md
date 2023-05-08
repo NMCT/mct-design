@@ -10,11 +10,11 @@ tags:
 - cabling
 pillar: connect
 tracks:
-- iot-infrastructure-engineer
+- iot-engineer
 tools: "Cisco, HP, CCNA"
 ---
 
-Je hebt gekozen voor het afstudeerprofiel 'IoT Infrastructure Engineer'. Hier zetten we bedrijfsnetwerken op in het klein, ondersteund met algemene theorie:  
+Je hebt gekozen voor het afstudeerprofiel 'IoT Engineer'. Hier zetten we bedrijfsnetwerken op in het klein, ondersteund met algemene theorie:  
 - IP subnetting  
 - DNS  
 - DHCP  
