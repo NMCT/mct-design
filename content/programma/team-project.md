@@ -13,7 +13,7 @@ tags:
 pillar: project
 tools: "Trello, Toggl"
 tracks:
-- ai-engineer
+
 - xr-developer
 - next-web-developer
 - iot-engineer

@@ -10,7 +10,7 @@ tags:
 pillar: connect
 tools: "Kali, Wireshark, OWASP ZAP"
 tracks:
-- ai-engineer
+
 - xr-developer
 - next-web-developer
 - iot-engineer

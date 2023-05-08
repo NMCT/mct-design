@@ -11,7 +11,7 @@ tags:
 pillar: analysis
 tools: "Azure Portal, Azure IoT-Hub"
 tracks:
-- ai-engineer
+
 - xr-developer
 - next-web-developer
 - iot-engineer

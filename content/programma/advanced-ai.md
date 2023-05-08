@@ -7,7 +7,7 @@ tags:
 - reinforcementLearning
 pillar: analysis
 tracks:
-- ai-engineer
+
 tools: "Deep Reinforcement Learning models"
 ---
 

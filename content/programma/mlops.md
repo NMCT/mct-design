@@ -12,7 +12,7 @@ tags:
 - CloudAI
 pillar: code
 tracks:
-- ai-engineer
+
 tools: "Azure ML, Vertex AI, GitHub Actions, Kubernetes, Kubeflow"
 ---
 

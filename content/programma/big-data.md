@@ -16,7 +16,7 @@ tags:
 - cloud
 pillar: analysis
 tracks: 
-- ai-engineer
+
 tools: "Elasticsearch, Kafka, InfluxDB, AWS, MySQL, PySpark"
 ---
 

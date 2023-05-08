@@ -13,7 +13,7 @@ pillar: project
 tracks:
 - xr-developer
 - next-web-developer
-- ai-engineer
+
 - iot-engineer
 tools: "Miro"
 hide: true

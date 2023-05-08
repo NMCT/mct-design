@@ -13,7 +13,7 @@ pillar: project
 tracks:
 - next-web-developer
 - xr-developer
-- ai-engineer
+
 - iot-engineer
 tools: "IEEE, Zotero, Mendeley"
 ---

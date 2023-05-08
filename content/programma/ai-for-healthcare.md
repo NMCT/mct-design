@@ -9,7 +9,7 @@ tags:
 - dsp
 pillar: analysis
 tracks:
-- ai-engineer
+
 hide: true
 alternates:
     - deep-learning

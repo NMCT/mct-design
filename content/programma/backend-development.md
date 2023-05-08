@@ -11,7 +11,7 @@ tags:
 pillar: code
 tracks:
 - next-web-developer
-- ai-engineer
+
 tools: "Visual Studio Code, .NET Core, MongoDB, Docker, Azure"
 ---
 

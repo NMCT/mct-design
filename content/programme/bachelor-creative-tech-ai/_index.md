@@ -4,5 +4,7 @@ description: Howest MCT has an English counterpart in the Bachelor of Creative T
 layout: bachelor-creative-tech
 identifier: bachelor-creative-tech
 type: page
+aliases:
+  - /programma/ai-engineer
 
 ---

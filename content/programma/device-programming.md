@@ -12,7 +12,7 @@ tags:
 pillar: code
 tools: "Xamarin.Forms, .NET MAUI, Visual Studio"
 tracks:
-- ai-engineer
+
 - xr-developer
 - next-web-developer
 - iot-engineer

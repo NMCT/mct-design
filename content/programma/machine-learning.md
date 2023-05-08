@@ -9,7 +9,7 @@ tags:
 - machinelearning
 pillar: analysis
 tracks:
-- ai-engineer
+
 tools: "Support Vector Machines, Random Forest Trees, Naive Bayes, Logistic Regression, Ensemble Learning"
 ---
 

@@ -8,7 +8,7 @@ tags:
 - Kubernetes
 pillar: code
 tracks:
-- ai-engineer
+
 - iot-engineer
 tools: "Docker, Kubernetes"
 choice: true

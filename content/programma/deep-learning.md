@@ -10,7 +10,7 @@ tags:
 - classifications
 pillar: analysis
 tracks:
-- ai-engineer
+
 tools: "Convolutional Neural Networks (CNN), Generative Adversarial Networks (GAN), Long-Short Term Memory (LSTM), Recurrent Neural Networks (RNN)" 
 ---
 

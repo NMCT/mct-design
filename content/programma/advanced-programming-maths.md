@@ -10,7 +10,7 @@ tags:
 - maths
 pillar: analysis
 tracks:
-- ai-engineer
+
 - xr-developer
 tools: "Python, Matplotlib, Pandas, Numpy, SciPy"
 ---
