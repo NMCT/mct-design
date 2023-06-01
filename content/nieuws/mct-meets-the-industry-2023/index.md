@@ -10,8 +10,6 @@ cover: "MCT.jpg"
 draft: false 
 --- 
 
-Het is weer zo ver. Het MCT Team organiseert samen met de "Slimme technologie opleidingen" op donderdag 22 juni 2023 in Kortrijk "meets the industry", hét event waar MCT alumni en professionals worden samengebracht voor een boeiende avond.
-
 * Laat je inspireren door geavanceerde technologische oplossingen
 * Ontmoet studenten die innovatieve projecten realiseren i.s.m. werkveldpartners
 *Bevraag onze experten over AI Software Deployment, Energietransitie, Next Web Development, ...
