@@ -35,4 +35,4 @@ Krijg je er maar niet genoeg van? Dan kan je in je derde jaar nog de laatste mod
 
 Onze in-person sessies gaan door op onze campus Kortrijk Weide, Gebouw A, Sint-Martens-Latemlaan 2B, 8500 Kortrijk.
 
-Je kan inschrijven tot **4 oktober 2022**. 
+Je kan inschrijven tot **4 oktober**. 
