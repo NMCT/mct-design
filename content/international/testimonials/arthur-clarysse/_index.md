@@ -9,10 +9,10 @@ partner: The Washington Center
 reason: Internship
 year: 2023
 images:
-- IMG_2001 - Arthur Clarysse.heic
-- IMG_2098 - Arthur Clarysse.heic
-- IMG_2140 - Arthur Clarysse.heic
-- IMG_2186 - Arthur Clarysse.heic
+- IMG_2001 - Arthur Clarysse.jpg
+- IMG_2098 - Arthur Clarysse.jpg
+- IMG_2140 - Arthur Clarysse.jpg
+- IMG_2186 - Arthur Clarysse.jpg
 - IMG_2260 - Arthur Clarysse.JPG
 
 ---
