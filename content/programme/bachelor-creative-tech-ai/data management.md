@@ -2,7 +2,7 @@
 title: "Data Management"
 semester: 1
 studycredits: 6
-weight: 30
+weight: 41
 pillar: "ai-data"
 tracks:
 - bachelor-creative-tech-ai

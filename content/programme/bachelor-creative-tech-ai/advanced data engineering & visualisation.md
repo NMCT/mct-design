@@ -1,8 +1,8 @@
 ---
 title: "Advanced Data Engineering & Visualisation"
-semester: 3
+semester: 4
 studycredits: 6
-weight: 30
+weight: 40
 pillar: "ai-data"
 tracks:
 - bachelor-creative-tech-ai

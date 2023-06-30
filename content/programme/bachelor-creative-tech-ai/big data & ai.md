@@ -1,8 +1,8 @@
 ---
 title: "Big Data & AI"
-semester: 2
+semester: 3
 studycredits: 6
-weight: 30
+weight: 41
 pillar: "ai-data"
 tracks:
 - bachelor-creative-tech-ai

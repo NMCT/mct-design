@@ -1,5 +1,5 @@
 ---
-title: Advanced AI
+title: Reinforcement Learning
 semester: 1
 studycredits: 6
 weight: 10

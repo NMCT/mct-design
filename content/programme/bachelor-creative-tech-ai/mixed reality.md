@@ -7,6 +7,7 @@ pillar: "ai-cloud"
 tracks:
 - bachelor-creative-tech-ai
 bachelor-creative-tech-ai: true
+hide: true
 ---
 
 **Subject to change**
