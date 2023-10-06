@@ -31,7 +31,7 @@ __"Tijdens mijn carrière in MCT hou ik me bezig met [het digitaliseren van het 
 
 Het gebruikt de volgende technologieën:
 
-- Adobe XD (1ste semester)
+- Figma (1ste semester)
 - Data Science (1ste semester)
 - Python (1ste semester)
 - Linux (1ste semester)
