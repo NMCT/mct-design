@@ -27,7 +27,7 @@ __“Het beste moment van mijn MCT-carrière was het moment dat ik bericht kreeg
 Haar vertrek uit Amerika heeft voor enkele hectische dagen gezorgd. Maar dankzij het advies van een vriend in Atlanta en de geruchten van een lockdown, heeft Ilse op tijd actie kunnen ondernemen om veilig terug te keren.  
 __"Liever in een veilige omgeving dan in een omgeving waar je niets of niemand kent."__
 
-Nu haar afstuderen dichterbij komt is het duidelijk dat ze nog verder wil gaan. Volgend jaar zal ze nog enkele vakken binnen het afstudeertraject IoT Infrastructure Engineer opnemen en tegelijkertijd haar carrière opstarten. Al ligt MCT dus nog niet volledig achter haar, beschrijft ze haar ervaring als volgt:  
+Nu haar afstuderen dichterbij komt is het duidelijk dat ze nog verder wil gaan. Volgend jaar zal ze nog enkele vakken binnen het afstudeertraject IoT Engineer opnemen en tegelijkertijd haar carrière opstarten. Al ligt MCT dus nog niet volledig achter haar, beschrijft ze haar ervaring als volgt:  
 
 > "Van geen voorkennis van IT, naar een volledige rugzak. Tijdens de opleiding MCT heb ik mezelf beter leren kennen en met veel vallen en opstaan ben ik er toch geraakt."
 

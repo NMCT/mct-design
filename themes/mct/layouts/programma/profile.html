@@ -38,7 +38,7 @@
                     <h3>
                         Specifieke modules voor {{ .Title }}
                     </h3>
-                    <div class="c-curriculum c-curriculum--single js-curriculum">
+                    <div class="c-curriculum c-curriculum--single js-curriculum" id="curriculum">
                         {{ range $i, $sequence := seq 4 5 }}
                         <h3 class="c-curriculum__semester-title">
                             Semester {{ $sequence }}
@@ -46,6 +46,8 @@
 
                         {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
                         {{ range (where $.Site.Pages "Type" "programma") }}
+
+                        {{ if not (.Params.Hide) }}
                         {{ if in .Params.Tracks ($.Title | urlize) }}
                         {{ if eq .Params.Semester $sequence }}
                         <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Studycredits }}-sp c-module--{{ .Params.Pillar }} c-module--link u-grid-column-start-{{ add $i 1 }} u-y-span-{{ .Params.StudyCredits }} js-module">
@@ -63,6 +65,7 @@
                             {{ end }}
                             */}}
                         </a>
+                        {{ end }}
                         {{ end }}
                         {{ end }}
                         {{ end }}

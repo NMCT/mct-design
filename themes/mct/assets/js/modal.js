@@ -88,16 +88,20 @@ const modal = (function () {
 				<ul class="o-list c-curriculum-legend">
 					<li class="c-curriculum-legend__item">
 						<span class="c-curriculum-legend__swatch u-bgcolor-${data.pillar}-base"></span>
-						${data.pillar}
+						${data.pillar.replace('ai', 'AI').split('-').map((word) => {
+                            return word[0].toUpperCase() + word.substring(1)
+                        }).join(" ") }
 					</li>
 				</ul>
 				<h1 class="c-type-intro u-mb-alpha">
 					${data.title}
 				</h1>
-
-				<p class="c-type-meta u-ms-1 u-color-neutral-base">
-					#${data.tags.join(' #')}
-				</p>
+                ${
+                    (data.tags && data.tags.length > 0) ? `<p class="c-type-meta u-ms-1 u-color-neutral-base">
+					    #${data.tags.join(' #')}
+				    </p>` : ``
+                }
+				
 
 				<div class="u-max-width-optimal">
 					${

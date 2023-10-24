@@ -1,7 +1,7 @@
 ---
 title: AI For Healthcare (keuze)
 semester: 2
-choice: 1
+option: 1
 studycredits: 6
 weight: 30
 tags:

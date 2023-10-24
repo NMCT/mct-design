@@ -12,9 +12,9 @@ tags:
 pillar: project
 tracks:
 - next-web-developer
-- smart-xr-developer
+- xr-developer
 - ai-engineer
-- iot-infrastructure-engineer
+- iot-engineer
 tools: "IEEE, Zotero, Mendeley"
 ---
 

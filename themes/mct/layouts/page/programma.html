@@ -35,8 +35,8 @@
                             </button>
                             <div class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-smart-xr-developer" value="profile-smart-xr-developer" class="c-curriculum-choices__filter">
-                                    <span class="c-curriculum-choices__text">Smart XR Developer</span>
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-xr-developer" value="profile-xr-developer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">XR Developer</span>
                                 </label>
 
                                 <label class="c-curriculum-choices__item">
@@ -50,8 +50,8 @@
                                 </label>
 
                                 <label class="c-curriculum-choices__item">
-                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-iot-infrastructure-engineer" value="profile-iot-infrastructure-engineer" class="c-curriculum-choices__filter">
-                                    <span class="c-curriculum-choices__text">IoT Infrastructure Engineer</span>
+                                    <input type="radio" class="c-curriculum-choices__radio js-track-radio" name="track" id="profile-iot-engineer" value="profile-iot-engineer" class="c-curriculum-choices__filter">
+                                    <span class="c-curriculum-choices__text">IoT Engineer</span>
                                 </label>
 
                             </div>
@@ -67,14 +67,14 @@
 
                         {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
                         {{ range (where $.Site.Pages "Type" "programma") }}
-                            {{ if and (eq .Params.Semester $sequence) (not (isset .Params "home")) (not (isset .Params "english-only")) (not (isset .Params "hide")) }}
+                            {{ if and (eq .Params.Semester $sequence) (not (isset .Params "home")) (not (isset .Params "english-only")) (not (isset .Params "bachelor-creative-tech-ai")) (not (isset .Params "hide")) }}
                                 {{ partial "components/module" . }}
                             {{ end }}
                         {{ end }}
                     {{ end }}
                     <div class="c-curriculum__placeholder js-curriculum-placeholder">
                         <!-- <p>Vanaf semester 4 kies je een uitstroomprofiel. Waar word jij expert in?</p> -->
-                        <p>Word je Smart XR Developer, Next Web Developer, AI Engineer of IoT Infrastructure Engineer? Kies je expertise vanaf semester 4!</p>
+                        <p>Word je XR Developer, Next Web Developer, AI Engineer of IoT Engineer? Kies je expertise vanaf semester 4!</p>
                     </div>
 
                 </div>

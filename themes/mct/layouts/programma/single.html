@@ -6,7 +6,9 @@
 					<ul class="o-list c-curriculum-legend u-mb-delta">
 						<li class="c-curriculum-legend__item">
 							<span class="c-curriculum-legend__swatch u-bgcolor-{{ .Params.Pillar }}-base"></span>
-							{{ .Params.Pillar }}
+							{{ range (split .Params.Pillar "-") }}
+								{{ replace (strings.FirstUpper .) "Ai" "AI" }}
+							{{ end}}
 						</li>
 					</ul>
 					<h1 class="c-type-intro u-mb-alpha">

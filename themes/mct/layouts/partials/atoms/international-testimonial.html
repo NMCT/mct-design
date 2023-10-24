@@ -1,16 +1,16 @@
 {{ $cover := .Params.cover }}
 {{ $image := .Resources.GetMatch $cover }}
-{{ $scaledImage := $image.Fill "1004x1004 Center"}}
+{{ $scaledImage := $image.Fill "2008x2008 Center"}}
 
 <div class="o-grid o-grid--gutter o-grid--align-center">
     {{ if $cover }}
-    <div class="o-grid__item u-2-of-5-bp3">
-        <figure class="u-rounded-full">
+    <div class="o-grid__item u-4-of-8">
+        <figure class="u-rounded-full o-img--international">
             <img class="lozad" data-src="{{ $scaledImage.Permalink }}" alt="{{ .Title }} - {{ .Params.Country }}">
         </figure>	
     </div>
     {{ end }}
-    <div class="o-grid__item u-3-of-5-bp3 s-content">
+    <div class="o-grid__item u-4-of-8 s-content">
         <blockquote class="c-quote u-pl-clear">
             {{ .Content }}
             <p class="c-quote__author">

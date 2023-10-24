@@ -51,7 +51,7 @@ Als we hem vragen wat zijn ambities zijn eens hij afgestudeerd is, heeft Niels e
 __"Mijn doel voor het professionele leven is mensen helpen met mijn werk, hedendaagse problemen oplossen, een job hebben waar ik nooit stop met leren. "__
 
 En ondertussen, is er iets dat we dringend moeten verbeteren in MCT?  
-__"Sommige van de AI-Engineers zijn stiekem jaloers op de IoT Infrastructure Engineers, omdat zij een eigen koffiezet hebben."__  
+__"Sommige van de AI-Engineers zijn stiekem jaloers op de IoT Engineers, omdat zij een eigen koffiezet hebben."__  
 Genoteerd, Niels. Volgend academiejaar beter, dankzij de koffiebar in het nieuwe Howest Penta gebouw!
 
 ## Korte Bio:

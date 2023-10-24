@@ -5,7 +5,7 @@ description: Een MCT New young professional kan zijn competenties inzetten in ee
 
 programmes:
     - https://www.howest.be/en/programmes/english-taught-semester/ai-engineer
-    - https://www.howest.be/en/programmes/english-taught-semester/iot-infrastructure-engineer
+    - https://www.howest.be/en/programmes/english-taught-semester/iot-engineer
 ---
 
 Een MCT New young professional kan zijn competenties inzetten in een internationaal IT team. 
@@ -21,5 +21,5 @@ Door het "buitenland" naar hier te brengen met het aanbod van Engelstalige semes
 
 ### Wat is het Engelstalig aanbod?
 
-- [Infrastructure Engineer sem 3](https://www.howest.be/en/programmes/english-taught-semester/iot-infrastructure-engineer)
+- [Infrastructure Engineer sem 3](https://www.howest.be/en/programmes/english-taught-semester/iot-engineer)
 - [AI Engineer sem 5 & 6](https://www.howest.be/en/programmes/english-taught-semester/ai-engineer)

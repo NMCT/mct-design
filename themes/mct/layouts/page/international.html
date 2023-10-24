@@ -121,11 +121,10 @@
     <section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxx-light">
         <div class="c-main-section-lg">
             <div class="c-carousel__items-holder  u-6-of-8 u-push-1-of-8">
-                <div class="c-carousel__items js-carousel-items is-released" style="--n:4; --i:0; --tx:0px; --f:0.5">
+                <div class="c-carousel__items js-carousel-items is-released">
                 {{ $testimonials := (where .Site.Pages "Type" "International Testimonial") }}
-                {{ range $i, $testimonial := $testimonials }}
+                {{ range $i, $testimonial := ($testimonials).Reverse }}
                     <article class="
-                    u-8-of-8
                     c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item
                     "
                     data-slide="{{ $i }}"

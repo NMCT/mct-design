@@ -1,0 +1,135 @@
+{{ define "main" }}
+{{ $partner := default false .Params.partner }}
+<main>
+    {{ with .Site.GetPage "/international/bachelor-creative-tech-ai/content" }}
+    <section class="c-row c-row--lg">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <!-- Title -->
+                    <div class="c-main-section-lg">
+                        <div class="u-max-width-xl">
+                            <h1 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
+								{{.Params.Subheader}}
+                            </h1>
+                            <p class="c-type-intro">
+								{{.Params.Intro | markdownify}}
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="c-main-section-lg">
+                        {{ $cover := .Params.cover }}
+                        {{ $image := .Resources.GetMatch $cover }}
+                        {{ $scaledImage := $image.Fit "1184x1600 webp q70" }}
+                        <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon">
+                            <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
+                        </picture>
+                        <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            {{ .Params.caption }}
+                        </p>
+                    </div>
+                    <!-- Video player -->
+                    {{ if isset .Params "video"}}
+                    <div class="c-main-section-lg">
+                        <div class="c-video-player">
+                            <button class="c-video-play-button">
+                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol")}}
+                            </button>
+                            <video class="c-video-player__video" poster="{{ .Params.Poster }}">
+                                {{ range .Params.video }}
+                                    {{ $ext := index (last 1 (split . ".")) 0 }}
+                                    <source src="{{ . }}" type="video/{{ $ext }}">
+                                {{ end }}
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            {{ .Params.caption }}
+                        </p>
+                    </div>
+                    {{ end }}
+                    <!-- Introduction -->
+                    <div class="c-main-section-lg">
+                        <div class="c-main-section">
+                            <div class="s-content u-max-width-lg">
+                                <h2 class="c-type-title-lg">
+									{{ .Params.quote }}
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="c-main-section">
+                            <div class="o-grid o-grid--gutter-lg">
+                                {{ $length := len .Params.introText }}
+                                {{ range $i, $text := .Params.introText }}
+                                <div class="o-grid__item u-1-of-{{ $length }}-bp4">
+                                    <div class="s-content u-max-width-optimal">
+                                        {{ $text | markdownify}}
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+    <!-- Programme -->
+    <section class="c-row c-row--lg u-bgcolor-neutral-xxxx-light" >
+        <div class="o-container">
+            <h2 class="c-type-svg c-type-svg--programm c-curriculum-title" id="programme">
+                <img class="c-type-svg__svg" src="/img/svg/word-programme.svg" alt="Programme">
+            </h2>
+            <div class="c-curriculum-overview">
+                <div class="c-curriculum c-curriculum-bachelor-creative-tech js-curriculum">
+                    {{ range $i, $semester := seq 6 }}
+                        <h3 class="c-curriculum__semester-title">
+                            Semester {{ $semester }}
+                        </h3>
+
+                        {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
+                        {{ range (where $.Site.Pages "Type" "programme") }}
+                            {{ if and (eq .Params.Semester $semester) (isset .Params "bachelor-creative-tech-ai") (not (isset .Params "hide")) }}
+                                {{ partial "components/module" . }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+
+                <!-- Curriculum legend -->
+                <ul class="o-list c-curriculum-legend">
+                    <li class="c-curriculum-legend__item">
+                        <span class="c-curriculum-legend__swatch u-bgcolor-ai-technologies-base"></span>
+                        AI Technologies
+                    </li>
+                    <li class="c-curriculum-legend__item">
+                        <span class="c-curriculum-legend__swatch u-bgcolor-ai-programming-base"></span>
+                        AI Programming
+                    </li>
+                    <li class="c-curriculum-legend__item">
+                        <span class="c-curriculum-legend__swatch u-bgcolor-ai-data-base"></span>
+                        AI Data
+                    </li>
+                    <li class="c-curriculum-legend__item">
+                        <span class="c-curriculum-legend__swatch u-bgcolor-ai-cloud-base"></span>
+                        AI Cloud
+                    </li>
+                    <li class="c-curriculum-legend__item">
+                        <span class="c-curriculum-legend__swatch u-bgcolor-ai-projects-base"></span>
+                        AI Projects
+                    </li>
+                    <li class="c-curriculum-legend__item">
+                        <span class="c-curriculum-legend__swatch u-bgcolor-international-base"></span>
+                        International
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    {{ with .Site.GetPage "/international/bachelor-creative-tech-ai/content" }}
+    {{ partial "components/cta.html" .Params.cta }}
+    {{ end }}
+</main>
+{{ end }}

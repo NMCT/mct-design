@@ -32,8 +32,8 @@ En onze MCT-studenten? Die voerden AI-projecten uit voor o.a. Touring Mobilis, T
 Je voert in het vierde semester een project uit samen met de industrie gedurende vijf weken in groep.
 In het vijfde semester onderzoek je een topic, door jou gekozen maar in overleg met professionals. De laatste 4 weken van je semester heb je geen les of examens meer en kan je je dus helemaal concentreren op je onderzoek. Dat is ook de reden dat MCT-studenten een hogere kans hebben om echt een stageplaats met AI-opdracht te veroveren.
 
-## MCT “Smart XR Developer” of “AI Engineer”?
+## MCT “XR Developer” of “AI Engineer”?
 Beide zijn gebaseerd op meer dan 5 jaar naarstig onderzoek en 4 jaar ervaring met AI-opleiding. Sommige van onze docenten (o.a. Wouter Gevaert) hebben meer dan 10 jaar AI-ervaring. 
-[Smart XR Developer](/programma/#profile-smart-xr-developer) specialiseren zich in de hele IoT ketting van sensors devices tot AI. Zij realiseren projecten in industry 4.0, Smart Cities enz. Zij gaan dieper in op IoT & Robotics, Augmented Reality om Internet-of-things-applicaties tot leven te brengen.
+[XR Developer](/programma/#profile-xr-developer) specialiseren zich in de hele IoT ketting van sensors devices tot AI. Zij realiseren projecten in industry 4.0, Smart Cities enz. Zij gaan dieper in op IoT & Robotics, Augmented Reality om Internet-of-things-applicaties tot leven te brengen.
 
 Onze [AI-engineers](/programma/ai-engineer/) zijn softwareontwikkelaars die een complete AI-backend kunnen ontwikkelen. Zij zijn eerder een match voor AI-consultancy en andere IT-dienstverleners en gaan dieper in op cloud services, Continuous Integration en Deployment...
