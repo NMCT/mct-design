@@ -1,8 +1,8 @@
 ---
-title: "Unity (DAE: Platform Development 2)"
+title: "3D Programming"
 semester: 4
 studycredits: 6
-weight: 10
+weight: 8
 tags:
 - Unity
 - 3DProgramming
