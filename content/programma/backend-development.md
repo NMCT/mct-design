@@ -1,5 +1,5 @@
 ---
-title: Backend Development
+title: Back-End Development
 semester: 4
 studycredits: 6
 weight: 10
