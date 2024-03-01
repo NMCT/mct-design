@@ -5,7 +5,7 @@ var map,
 		'</div>' +
 		'<h1 id="firstHeading" class="firstHeading">MCT</h1>' +
 		'<div id="bodyContent">' +
-		'<p>MCT @ Howest Kortrijk<br/>Graaf Karel de Goedelaan 5<br/>8500 Kortrijk</p>' +
+		'<p>Howest Kortrijk<br>Campus Kortrijk Weide – Gebouw A<br>Sint - Martens - Latemlaan 2B<br>8500 Kortrijk</p>' +
 		'</div>' +
 		'</div>',
 	imagePath = '';
