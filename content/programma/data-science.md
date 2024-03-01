@@ -1,5 +1,5 @@
 ---
-title: Data Science & AI
+title: Data Science
 semester: 2
 studycredits: 6
 weight: 40

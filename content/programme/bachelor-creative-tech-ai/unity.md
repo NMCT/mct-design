@@ -1,5 +1,5 @@
 ---
-title: "Unity"
+title: "3D Programming"
 semester: 4
 studycredits: 6
 weight: 30

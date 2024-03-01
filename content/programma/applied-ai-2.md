@@ -1,5 +1,5 @@
 ---
-title: Applied AI
+title: Applied & Generative AI
 semester: 5
 studycredits: 6
 weight: 30

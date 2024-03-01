@@ -47,8 +47,7 @@
 							</div>
 							<div class="o-grid__item u-4-of-12-bp4">
 								<div class="c-projects__body-sm">
-									<p><img alt="{{ .Params.ImageDescription}}" data-src="{{ .Params.Image }}"
-										class="lozad"></p>
+									<p><img alt="{{ .Params.ImageDescription}}" data-src="{{ .Params.Image }}" class="lozad"></p>
 									<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
 										{{ .Params.ImageDescription}}
 									</p>
@@ -89,24 +88,24 @@
 							{{ .Content }}
 						</div>
 						{{ if $images }}
-							<div class="o-grid__item u-4-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end ">
-								<div class="o-grid o-grid--gutter-sm o-flex o-flex--wrap o-flex--align-end">
-									{{ range $elem := $images }}
-										{{ $cover := $elem.cover }}
-										{{ $image := .Resources.GetMatch $elem.cover }}
-										{{ $scaledImage := $image.Resize "200x" }}
-										<div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
-											<p><img alt="{{ $elem.description }}" src="{{ $cover }}"></p>
-											<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-												{{ if $elem.link }}<a href="{{$elem.link}}">{{ end }}
-													{{ $elem.description }}
-												{{ if $elem.link }}</a>{{ end }}
-												
-											</p>
-										</div>
-									{{end}}
+						<div class="o-grid__item u-4-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end ">
+							<div class="o-grid o-grid--gutter-sm o-flex o-flex--wrap o-flex--align-end">
+								{{ range $elem := $images }}
+								{{ $cover := $elem.cover }}
+								{{ $image := .Resources.GetMatch $elem.cover }}
+								{{ $scaledImage := $image.Resize "200x" }}
+								<div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
+									<p><img alt="{{ $elem.description }}" src="{{ $cover }}"></p>
+									<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+										{{ if $elem.link }}<a href="{{$elem.link}}">{{ end }}
+											{{ $elem.description }}
+											{{ if $elem.link }}</a>{{ end }}
+
+									</p>
 								</div>
+								{{end}}
 							</div>
+						</div>
 						{{ end }}
 					</div>
 				</section>
@@ -116,7 +115,7 @@
 	</section>
 	<!-- Projecten -->
 
-	<!-- Team -->
+	<!-- Team
 	<section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxx-light">
 		<div class="o-container">
 			<div class="c-team">
@@ -145,9 +144,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- <h2 class="c-type-svg c-type-svg--team">
-						<img class="c-type-svg__svg" src="/img/svg/word-team.svg" alt="Research team">
-					</h2> -->
 					<div class="c-main-section">
 						<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
 							{{ range (where .Site.Pages "Type" "Researcher") }}
@@ -161,6 +157,7 @@
 			</div>
 		</div>
 	</section>
+	-->
 	<!-- Team -->
 
 	<!-- CTA -->
@@ -180,7 +177,7 @@
 								{{ .Content }}
 							</p>
 							<p class="u-ms0">
-							{{ range $email_index, $email := $emails }}
+								{{ range $email_index, $email := $emails }}
 								<a href="mailto:{{ $email }}">{{ $email }}</a><br>
 								{{ end }}
 							</p>
@@ -194,7 +191,7 @@
 				</div>
 			</div>
 		</div>
-	</section>	
+	</section>
 	{{ end }}
 
 	<!-- CTA -->
