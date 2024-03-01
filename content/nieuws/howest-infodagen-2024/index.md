@@ -1,7 +1,7 @@
 ---
 title: "Howest Infodagen 2024"
 date: 2024-02-16T08:30:40+01:00
-description: "Een gerichte studiekeuze maken is niet eenvoudig. Kom daarom zeker eens langs op één van onze infodagen om een goed beeld te krijgen wat je kan verwachten van je opleiding MCT."
+description: "Een gerichte studiekeuze maken is niet eenvoudig. Kom daarom zeker eens langs op één van onze infodagen om een goed beeld te krijgen van wat je kan verwachten van de opleiding MCT."
 cover: "howest-infodagen-2024.jpeg"
 ---
 
@@ -21,3 +21,13 @@ cover: "howest-infodagen-2024.jpeg"
 - Infodag zaterdag **29 juni** 2024 (van 10u tot 16u)
 - Infodag zaterdag **31 augustus** 2024 (van 10u tot 16u)
 - Infodag vrijdag **13 september** 2024 (van 17u tot 19u30)
+
+## Waar?
+
+Campus Kortrijk Weide - Gebouw A  
+Sint-Martens-Latemlaan 2B  
+8500 Kortrijk
+
+## Meer info
+
+Alle details over de infodagen staat op de [website van Howest](https://www.howest.be/nl/infodagen).

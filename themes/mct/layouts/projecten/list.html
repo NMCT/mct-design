@@ -50,7 +50,7 @@
                         <p class="c-type-meta u-ms-1 u-color-neutral-base">
                             Een verzameling van projecten uit Project One.
                         </p>
-					</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,11 +68,11 @@
                                 Team Project
                             </h2>
                             <p>
-								Halverwege het tweede jaar valt Team Project. Het voornaamste doel in dit project is om de rollen & werkmethodes in projectmanagement op een agile manier toe te passen. Dit is de eerste keer in de opleiding dat een groot project in team uitgewerkt wordt. Het is ook een gelegenheid om je te verdiepen in datgene wat je echt boeit, met een aantal technische uitdagingen...
-							</p>
-							<p>
-								Hier werken we aan IT-projecten die we krijgen van andere Howest-opleidingen.
-							</p>
+                                Halverwege het tweede jaar valt Team Project. Het voornaamste doel in dit project is om de rollen & werkmethodes in projectmanagement op een agile manier toe te passen. Dit is de eerste keer in de opleiding dat een groot project in team uitgewerkt wordt. Het is ook een gelegenheid om je te verdiepen in datgene wat je echt boeit, met een aantal technische uitdagingen...
+                            </p>
+                            <p>
+                                Hier werken we aan IT-projecten die we krijgen van andere Howest-opleidingen.
+                            </p>
                         </div>
                     </div>
                     <!-- <div class="c-main-section">
@@ -86,7 +86,7 @@
                             {{ end }}
                         </div>
 					</div> -->
-					<div class="c-main-section">
+                    <div class="c-main-section">
                         <div class="c-video-player">
                             <button class="c-video-play-button">
                                 {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol")}}
@@ -98,9 +98,9 @@
                             </video>
                         </div>
                         <p class="c-type-meta u-ms-1 u-color-neutral-base">
-							Projecten van halverwege het tweede jaar.
+                            Projecten van halverwege het tweede jaar.
                         </p>
-					</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,11 +125,11 @@
                     <div class="c-main-section">
                         <div class="o-grid o-grid--gutter u-mb-epsilon-neg">
                             {{ range .Pages }}
-                                {{ if eq .Params.project 3 }}
-                                <div class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp5 u-mb-epsilon">
-                                    {{ partial "atoms/project-article-small" .}}
-                                </div>
-                                {{ end }}
+                            {{ if eq .Params.project 3 }}
+                            <div class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp5 u-mb-epsilon">
+                                {{ partial "atoms/project-article-small" .}}
+                            </div>
+                            {{ end }}
                             {{ end }}
                         </div>
                     </div>
@@ -137,6 +137,6 @@
             </div>
         </div>
     </section>
-    {{ partial "components/cta.html" (dict "title" "Klaar om zelf een project te bouwen?" "paragraph" "STOOM JE KLAAR VOOR DE TOEKOMST EN SCHRIJF JE VANDAAG IN." "hyperlink" "https://www.howest.be/nl/studeren/inschrijven-en-info") }}
+    {{ partial "components/cta.html" (dict "title" "Kom eens langs" "paragraph" "Bezoek ons op één van de infodagen om de projecten met je eigen ogen te zien." "hyperlink" "/nieuws/howest-infodagen-2024/" "cta" "Bekijk alle data") }}
 </main>
 {{ end }}
