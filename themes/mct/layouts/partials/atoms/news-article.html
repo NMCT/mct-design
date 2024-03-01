@@ -1,6 +1,6 @@
 {{ $cover := .Params.cover }}
 {{ $image := .Resources.GetMatch $cover }}
-{{ $scaledImage := $image.Resize "400x" }}
+{{ $scaledImage := $image.Fill "400x250" }}
 
 <a class="c-media c-media--link" href="{{ .Permalink }}">
     <picture class="c-media__picture u-mb-delta">
@@ -8,7 +8,7 @@
     </picture>
     <div class="c-media__body">
         <p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
-			{{ .Date.Format "02/01/2006" }}
+            {{ .Date.Format "02/01/2006" }}
         </p>
         <div class="c-media__content">
             <h2 class="c-media__title u-ms0 u-mb-gamma">
