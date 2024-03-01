@@ -5,13 +5,15 @@
 			<div class="o-grid o-grid--gutter-lg">
 				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
 					<div class="c-main-section-lg">
-						<div class="u-max-width-xl">
-							<h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
-								{{.Params.Subheader}}
-							</h1>
-							<p class="c-type-intro">
-								{{.Params.Intro | markdownify}}
+						<div class="u-max-width-lg">
+							<p class="c-type-meta u-ms-1 u-mb-delta">
+								<!-- {{.Params.Subheader}} -->
+								Bachelor IT opleiding
 							</p>
+							<h1 class="c-type-title-lg u-max-width-md">
+								<!-- {{.Params.Intro | markdownify}} -->
+								Multimedia en Creatieve Technologie
+							</h1>
 						</div>
 					</div>
 					<div class="c-main-section-lg">
@@ -19,16 +21,13 @@
 							<button class="c-video-play-button">
 								{{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
 							</button>
-							<video class="c-video-player__video" playsinline poster="https://mctwebsite.blob.core.windows.net/video/poster.jpg">
+							<video class="c-video-player__video" playsinline poster="https://mctwebsite.blob.core.windows.net/video/video-poster.jpg">
 								<!-- <source src="https://mctwebsite.blob.core.windows.net/video/2021-MCT_promo.webm" type="video/webm"> -->
-								<source src="https://mctwebsite.blob.core.windows.net/video/Teaser_trajecten_WEB.mp4" type="video/mp4">
+								<!-- <source src="https://mctwebsite.blob.core.windows.net/video/Teaser_trajecten_WEB.mp4" type="video/mp4"> -->
+								<source src="https://mctwebsite.blob.core.windows.net/video/01-MCT-Projecten-720.mp4" type="video/mp4">
 								Your browser does not support HTML5 video.
 							</video>
 						</div>
-
-						<p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
-							Onze vier uitstroomprofielen.
-						</p>
 					</div>
 				</div>
 			</div>
@@ -64,9 +63,9 @@
 									<div class="c-carousel-nav" aria-hidden="true">
 										<ol class="o-list c-carousel-nav-list js-nav-list">
 											{{ range $i, $sequence :=  (first 4 (where .Site.RegularPages "Section" "projecten")) }}
-												<li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
-													{{ $i }}
-												</li>
+											<li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
+												{{ $i }}
+											</li>
 											{{ end }}
 										</ol>
 									</div>
@@ -75,9 +74,9 @@
 										<div class="c-carousel__items-holder">
 											<div class="c-carousel__items js-carousel-items is-released" style="--n:4; --i:0; --tx:0px; --f:0.5">
 												{{ range $i, $sequence := (first 4 (where .Site.RegularPages "Section" "projecten")) }}
-													<div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
-														{{ partial "atoms/project-article-home" . }}
-													</div>
+												<div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
+													{{ partial "atoms/project-article-home" . }}
+												</div>
 												{{ end }}
 											</div>
 										</div>
