@@ -1,5 +1,5 @@
 ---
-title: Backend Development
+title: Back-End Development
 semester: 4
 studycredits: 6
 weight: 10
@@ -12,6 +12,7 @@ pillar: code
 tracks:
 - next-web-developer
 - ai-engineer
+- xr-developer
 tools: "Visual Studio Code, .NET Core, MongoDB, Docker, Azure"
 ---
 

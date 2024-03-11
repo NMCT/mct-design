@@ -1,5 +1,5 @@
 ---
-title: Frontend
+title: Front-End Development
 # Description: Hoe kunnen we een performante user interface maken in de browser? We bekijken de volledige flow van een goede test-driven development omgeving tot optimalisatie in de browser.
 semester: 4
 studycredits: 6

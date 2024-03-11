@@ -5,12 +5,17 @@
 			<div class="o-grid o-grid--gutter-lg">
 				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
 					<div class="c-main-section-lg">
-						<div class="u-max-width-xl">
-							<h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
-								{{.Params.Subheader}}
+						<div class="u-max-width-lg ">
+							<h1 class="c-type-meta u-ms-1 u-mb-delta">
+								<!-- {{.Params.Subheader}} -->
+								Multimedia en Creatieve Technologie
 							</h1>
-							<p class="c-type-intro">
-								{{.Params.Intro | markdownify}}
+							<p class="c-type-title-lg u-max-width-md ">
+								<!-- {{.Params.Intro | markdownify}} -->
+								Creating impact with future technology and IT
+							</p>
+							<p class="u-max-width-optimal ">
+								Ben je gebeten door informatica en innovatie en wil je impact creëren op de wereld rondom ons heen door de applicaties van morgen te ontwikkelen met cutting-edge technologie? Klinken artificial intelligence, augmented reality, user interfaces, full stack web development of 5G je als muziek in de oren? Dan is de <strong>bachelor Multimedia en Creatieve Technologie (MCT)</strong> je op het lijf geschreven.
 							</p>
 						</div>
 					</div>
@@ -19,16 +24,11 @@
 							<button class="c-video-play-button">
 								{{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
 							</button>
-							<video class="c-video-player__video" playsinline poster="https://mctwebsite.blob.core.windows.net/video/poster.jpg">
-								<!-- <source src="https://mctwebsite.blob.core.windows.net/video/2021-MCT_promo.webm" type="video/webm"> -->
-								<source src="https://mctwebsite.blob.core.windows.net/video/Teaser_trajecten_WEB.mp4" type="video/mp4">
+							<video class="c-video-player__video" playsinline poster="https://mctwebsite.blob.core.windows.net/video/video-poster.jpg">
+								<source src="https://mctwebsite.blob.core.windows.net/video/MCT-Projecten-v2024-720.webm" type="video/mp4">
 								Your browser does not support HTML5 video.
 							</video>
 						</div>
-
-						<p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
-							Onze vier uitstroomprofielen.
-						</p>
 					</div>
 				</div>
 			</div>
@@ -64,9 +64,9 @@
 									<div class="c-carousel-nav" aria-hidden="true">
 										<ol class="o-list c-carousel-nav-list js-nav-list">
 											{{ range $i, $sequence :=  (first 4 (where .Site.RegularPages "Section" "projecten")) }}
-												<li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
-													{{ $i }}
-												</li>
+											<li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
+												{{ $i }}
+											</li>
 											{{ end }}
 										</ol>
 									</div>
@@ -75,9 +75,9 @@
 										<div class="c-carousel__items-holder">
 											<div class="c-carousel__items js-carousel-items is-released" style="--n:4; --i:0; --tx:0px; --f:0.5">
 												{{ range $i, $sequence := (first 4 (where .Site.RegularPages "Section" "projecten")) }}
-													<div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
-														{{ partial "atoms/project-article-home" . }}
-													</div>
+												<div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
+													{{ partial "atoms/project-article-home" . }}
+												</div>
 												{{ end }}
 											</div>
 										</div>

@@ -61,16 +61,16 @@
 
                 <div class="c-curriculum js-curriculum" data-placeholder="Waar word jij expert in?">
                     {{ range $i, $sequence := seq 6 }}
-                        <h3 class="c-curriculum__semester-title">
-                            Semester {{ $sequence }}
-                        </h3>
+                    <h3 class="c-curriculum__semester-title">
+                        Semester {{ $sequence }}
+                    </h3>
 
-                        {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
-                        {{ range (where $.Site.Pages "Type" "programma") }}
-                            {{ if and (eq .Params.Semester $sequence) (not (isset .Params "home")) (not (isset .Params "english-only")) (not (isset .Params "bachelor-creative-tech-ai")) (not (isset .Params "hide")) }}
-                                {{ partial "components/module" . }}
-                            {{ end }}
-                        {{ end }}
+                    {{/* Loop the modules of the common semesters, the rest is dynamically added */}}
+                    {{ range (where $.Site.Pages "Type" "programma") }}
+                    {{ if and (eq .Params.Semester $sequence) (not (isset .Params "home")) (not (isset .Params "english-only")) (not (isset .Params "bachelor-creative-tech-ai")) (not (isset .Params "hide")) }}
+                    {{ partial "components/module" . }}
+                    {{ end }}
+                    {{ end }}
                     {{ end }}
                     <div class="c-curriculum__placeholder js-curriculum-placeholder">
                         <!-- <p>Vanaf semester 4 kies je een uitstroomprofiel. Waar word jij expert in?</p> -->
@@ -103,8 +103,8 @@
                 </ul>
             </div>
         </div>
-    </div>    
-    {{ partial "components/cta.html" (dict "title" "Inschrijven?" "paragraph" "lijkt deze opleiding wat voor jou? kom dan zeker eens langs op een van onze infodagen." "hyperlink" "https://www.howest.be/nl/studeren/inschrijven-en-info") }}
+    </div>
+    {{ partial "components/cta.html" (dict "title" "Kom eens langs!" "paragraph" "Bezoek ons op één van de infodagen om een goed beeld te krijgen van de opleiding." "hyperlink" "/nieuws/howest-infodagen-2024/" "cta" "Bekijk alle data") }}
 </main>
 
 <dialog class="c-modal js-dialog">
