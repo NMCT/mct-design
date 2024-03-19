@@ -28,7 +28,7 @@
                                 1MCT - Project 1
                             </p>
                             <h2 class="c-type-intro u-mb-zeta">
-                                Your project
+                                Project One
                             </h2>
 
                             <p>
@@ -50,7 +50,7 @@
                         <p class="c-type-meta u-ms-1 u-color-neutral-base">
                             Een verzameling van projecten uit Project One.
                         </p>
-					</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,11 +68,11 @@
                                 Team Project
                             </h2>
                             <p>
-								Halverwege het tweede jaar valt Team Project. Het voornaamste doel in dit project is om de rollen & werkmethodes in projectmanagement op een agile manier toe te passen. Dit is de eerste keer in de opleiding dat een groot project in team uitgewerkt wordt. Het is ook een gelegenheid om je te verdiepen in datgene wat je echt boeit, met een aantal technische uitdagingen...
-							</p>
-							<p>
-								Hier werken we aan IT-projecten die we krijgen van andere Howest-opleidingen.
-							</p>
+                                Halverwege het tweede jaar valt Team Project. Het voornaamste doel in dit project is om de rollen & werkmethodes in projectmanagement op een agile manier toe te passen. Dit is de eerste keer in de opleiding dat een groot project in team uitgewerkt wordt. Het is ook een gelegenheid om je te verdiepen in datgene wat je echt boeit, met een aantal technische uitdagingen...
+                            </p>
+                            <p>
+                                Hier werken we aan IT-projecten die we krijgen van andere Howest-opleidingen.
+                            </p>
                         </div>
                     </div>
                     <!-- <div class="c-main-section">
@@ -86,7 +86,7 @@
                             {{ end }}
                         </div>
 					</div> -->
-					<div class="c-main-section">
+                    <div class="c-main-section">
                         <div class="c-video-player">
                             <button class="c-video-play-button">
                                 {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol")}}
@@ -98,9 +98,9 @@
                             </video>
                         </div>
                         <p class="c-type-meta u-ms-1 u-color-neutral-base">
-							Projecten van halverwege het tweede jaar.
+                            Projecten van halverwege het tweede jaar.
                         </p>
-					</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,11 +125,11 @@
                     <div class="c-main-section">
                         <div class="o-grid o-grid--gutter u-mb-epsilon-neg">
                             {{ range .Pages }}
-                                {{ if eq .Params.project 3 }}
-                                <div class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp5 u-mb-epsilon">
-                                    {{ partial "atoms/project-article-small" .}}
-                                </div>
-                                {{ end }}
+                            {{ if eq .Params.project 3 }}
+                            <div class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp5 u-mb-epsilon">
+                                {{ partial "atoms/project-article-small" .}}
+                            </div>
+                            {{ end }}
                             {{ end }}
                         </div>
                     </div>
@@ -137,42 +137,6 @@
             </div>
         </div>
     </section>
-    <section class="c-row c-row--lg c-row--divide">
-        <div class="o-container">
-            <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
-                    <div class="c-main-section">
-                        <div class="u-max-width-optimal">
-                            <p class="c-type-meta u-mb-alpha u-ms-1 u-color-neutral-base">
-                                3MCT - The Collective
-                            </p>
-                            <h2 class="c-type-intro u-mb-zeta">
-                                The Collective
-                            </h2>
-                            <p>
-								Vlak voor je stage maak je kennis met de werking van bedrijven in 'The Collective'. In deze module kijken we naar de werking van een bedrijf. Hier kies je zelf op welke manier je dit bekijkt: alsof het je eigen bedrijf zou zijn, of hoe je in een bedrijf zal terecht komen na je studies.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="c-main-section">
-                        <div class="c-video-player">
-                            <button class="c-video-play-button">
-                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol")}}
-                            </button>
-                            <video playsinline class="c-video-player__video" poster="https://mctwebsite.blob.core.windows.net/video/startup-beurs-poster.jpg">
-                                <source src="https://mctwebsite.blob.core.windows.net/video/depart-startup-beurs-studenten-ondernemen.webm" type="video/webm">
-                                <source src="https://mctwebsite.blob.core.windows.net/video/depart-startup-beurs-studenten-ondernemen.mp4" type="video/mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
-                        </div>
-                        <p class="c-type-meta u-ms-1 u-color-neutral-base">
-                            Projecten van de verschillende opleidingen samen in The Collective.
-                        </p>
-					</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {{ partial "components/cta.html" (dict "title" "Klaar om zelf een project te bouwen?" "paragraph" "STOOM JE KLAAR VOOR DE TOEKOMST EN SCHRIJF JE VANDAAG IN." "hyperlink" "https://www.howest.be/nl/studeren/inschrijven-en-info") }}
+    {{ partial "components/cta.html" (dict "title" "Kom eens langs" "paragraph" "Bezoek ons op één van de infodagen om de projecten met je eigen ogen te zien." "hyperlink" "/nieuws/howest-infodagen-2024/" "cta" "Bekijk alle data") }}
 </main>
 {{ end }}
