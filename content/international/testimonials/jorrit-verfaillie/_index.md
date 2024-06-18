@@ -6,7 +6,7 @@ weight: 120
 class: 3MCT - Next Web Developer
 country: Austria
 partner: EPS
-reason: Internship
+reason: Erasmus Internship
 year: 2023
 
 ---

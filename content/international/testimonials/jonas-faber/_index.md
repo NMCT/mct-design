@@ -6,7 +6,7 @@ weight: 110
 class: 3MCT - AI Engineer
 country: Germany
 partner: Elie.DE
-reason: Internship
+reason: Erasmus Internship
 year: 2023
 
 ---

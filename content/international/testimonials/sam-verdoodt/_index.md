@@ -6,7 +6,7 @@ weight: 190
 class: 3MCT - XR Developer
 country: Italy
 partner: Granstudio
-reason: Internship
+reason: Erasmus Internship
 year: 2023
 
 ---

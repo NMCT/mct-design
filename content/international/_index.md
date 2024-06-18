@@ -11,9 +11,9 @@ intro: "Wil je proeven van internationale culturen? Een buitenlandse studie of s
 cover: AndreiLavrenov_OfficeWindow02.jpg
 poster: internationals.jpeg
 # caption: "International students from Asia, Africa, North and South America as well as Europe have studied at MCT before!"
-caption: "Internship in Kazachstan - Andrei Lavrenov"
+caption: "Erasmus Internship in Kazachstan - Andrei Lavrenov"
 
-cta: 
+cta:
     title: Geprikkeld om te proeven van buitenlandse culturen?
     paragraph: Neem contact op met Claudia Eeckhout!
     cta: Stuur een e-mail
