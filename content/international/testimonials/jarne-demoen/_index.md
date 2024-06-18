@@ -6,7 +6,7 @@ weight: 100
 class: 3MCT - AI Engineer
 country: Brazil
 partner: UNAERP
-reason: Erasmus Internship
+reason: Internship
 year: 2023
 
 ---
