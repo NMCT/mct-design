@@ -6,7 +6,7 @@ weight: 40
 class: 3MCT - IoT Engineer
 country: Nederland
 partner: Windesheim
-reason: Study
+reason: Erasmus Study
 year: 2022
 ---
 Ik heb een deel van mijn studies in Zwolle (NL) gedaan, het was even wennen en veel werken, maar het was een niet te vergeten ervaring. En uiteindelijk, na inspanning komt ontspanning ;)

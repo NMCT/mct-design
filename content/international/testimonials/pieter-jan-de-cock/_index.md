@@ -6,7 +6,7 @@ weight: 10
 class: 3MCT - Next Web Developer
 country: South Africa
 partner: UWC
-reason: Internship
+reason: Erasmus Internship
 year: 2020
 ---
 

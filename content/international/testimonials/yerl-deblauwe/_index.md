@@ -6,7 +6,7 @@ weight: 60
 class: 3MCT - AI Engineer
 country: Mexico
 partner: Tecnológico de Monterrey (ITESM)
-reason: Study
+reason: Erasmus Study
 year: 2022
 ---
 

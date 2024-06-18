@@ -6,7 +6,7 @@ weight: 80
 class: 3MCT - AI Engineer
 country: USA
 partner: The Washington Center
-reason: Internship
+reason: Erasmus Internship
 year: 2023
 images:
 - IMG_2001 - Arthur Clarysse.jpg

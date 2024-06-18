@@ -6,7 +6,7 @@ weight: 180
 class: 2MCT - Next Web Developer
 country: USA
 partner: NWMSU
-reason: Study
+reason: Erasmus Study
 year: 2023
 images:
 - foto1 - Wout Blomme.png
