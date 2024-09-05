@@ -1,5 +1,5 @@
 ---
-title: Deep Learning (keuze)
+title: Deep Learning
 semester: 2
 choice: 0
 studycredits: 6
