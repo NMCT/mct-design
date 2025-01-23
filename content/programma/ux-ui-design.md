@@ -1,11 +1,15 @@
 ---
 title: UX & UI design
 semester: 2
+aliases:
+- user-experience-design
+- user-interface-design
 studycredits: 6
 weight: 20
 tags:
 - ui
 - ux
+- design
 - Testing
 - prototype
 pillar: design

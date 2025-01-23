@@ -1,6 +1,8 @@
 ---
 title: Frontend Foundations
 semester: 1
+aliases:
+- frontend-foundations
 studycredits: 3
 weight: 20
 tags:
