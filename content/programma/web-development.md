@@ -1,11 +1,11 @@
 ---
-title: Web Development
+title: Frontend Foundations
 semester: 1
-studycredits: 6
+studycredits: 3
 weight: 20
 tags:
 - HTML
-- CSS
+- (S)CSS
 - Responsive
 pillar: code
 tools:
@@ -22,3 +22,6 @@ Volgende topics komen aan bod:
 - Responsiveness
 - Gebruik van best practices
 - Voorontwerpen omzetten naar (deel)assets en/of volledige webinterfaces
+
+
+Je leer ook responsive webdesign, hover effecten, kleine animaties&hellip; allemaal zaken die je het best kan doen met **CSS**. Daarom leren we in deze module al snel hoe je de principes van visual design kan toepassen met CSS.
