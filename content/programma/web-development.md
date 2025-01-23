@@ -1,9 +1,9 @@
 ---
-title: Frontend Foundations
+title: Web Development
 semester: 1
 aliases:
 - frontend-foundations
-studycredits: 3
+studycredits: 6
 weight: 20
 tags:
 - HTML
