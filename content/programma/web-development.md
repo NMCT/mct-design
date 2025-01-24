@@ -13,7 +13,7 @@ pillar: code
 tools:
     - Visual Studio Code
 ---
-In deze korte module kan je leren hoe een webpagina technisch opgebouwd wordt. Dit doen we niet aan de hand van ellenlange theorie, maar we pakken deze module onmiddellijk hand-on aan.
+In deze module leer je hoe een webpagina technisch opgebouwd wordt. Dit doen we niet aan de hand van ellenlange theorie, maar we pakken deze module onmiddellijk hands-on aan.
 Je leert werken met Hypertext Markup Language **(HTML)** en (Sassy) Cascading Style Sheets **(SCSS)** om web interfaces technisch uit te werken vanaf een voorontwerp.
 
 Volgende topics komen aan bod:

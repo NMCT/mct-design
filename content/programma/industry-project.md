@@ -23,4 +23,4 @@ tracks:
 
 Deze module werkt verder op de [Team Project](/programma/team-project) module. In deze module zal er een project uitgewerkt worden voor een **bedrijf**. Hierbij worden alle rollen en werkmethodes in projectmanagement vlot toegepast. De druk en verwachtingen liggen hier een stuk hoger. Hierbij is een goede communicatie met **externe partijen** dus van groot belang. De projecten situeren zich in de context van **web development**, **AI & machine learning**, **XR Development** en **infrastructure**.
 
-Bedrijven waar we reeds mee samenwerken zijn onder andere [TVH](https://www.tvh.com), [Smappee](https://www.smappee.com), [Barco](https://www.barco.com), [Ordina](https://www.ordina.be/, [Kinepolis](https://www.kinepolis.com), [Delaware](https://www.delaware.pro).
+Bedrijven waar we reeds mee samenwerken zijn onder andere [TVH](https://www.tvh.com), [Smappee](https://www.smappee.com), [Barco](https://www.barco.com), [Ordina](https://www.ordina.be/), [Kinepolis](https://www.kinepolis.com), [Delaware](https://www.delaware.pro).
