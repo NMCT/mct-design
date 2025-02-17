@@ -1,7 +1,7 @@
 ---
 title: "Howest Infodagen 2025"
 date: 2025-02-17T08:30:40+01:00
-description: "Een goede inkijk van we doen in Multimedia & creatieve technologie krijg je tijdens één van onze infodagen. Ontdek via docenten en studenten wat je mag verwachten van onze opleiding en of dit iets voor jou is."
+description: "Een goede inkijk van wat we doen in Multimedia & creatieve technologie krijg je tijdens één van onze infodagen. Ontdek via docenten en studenten wat je mag verwachten van onze opleiding en of dit iets voor jou is."
 cover: "howest-infodagen-2025.jpeg"
 ---
 
