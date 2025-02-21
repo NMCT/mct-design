@@ -22,7 +22,7 @@
 {{end}}
 
 {{/* Conditional Google Analytics & web font */}}
-{{ if not hugo.IsServer }}
+{{ if not .Site.IsServer }}
 	<script>
 		WebFontConfig = {
 			google: { families: ['Roboto+Mono&display=swap'] }
