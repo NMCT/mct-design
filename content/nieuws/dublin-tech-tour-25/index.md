@@ -31,7 +31,7 @@ Bij MongoDB kregen we een diepgaande uitleg over een van de favoriete databases 
 
 Op donderdag bezochten we IBM, een bedrijf dat al tientallen jaren een sleutelspeler is in de IT-sector. Hoewel IBM misschien minder zichtbaar is in het dagelijks leven van studenten, heeft het een enorme invloed op ons dagelijks leven: zoals betalingsverkeer, de luchtvaart, de infopanelen aan een bushalte,… Al deze data moet op een veilige manier verwerkt worden. Hier zit heel vaak IBM technologie achter!
 
-{{< figure-custom src="pics/C353D995-8841-469F-A2CA-89758BEA8BB1.JPG" alt="Studenten Multimedia & creatieve technologie bij Google" class="u-mt-alpha u-2-of-6 u-rounded-md u-float-left u-pr-iota u-mr-iota-neg" >}}
+{{< figure-custom src="pics/C353D995-8841-469F-A2CA-89758BEA8BB1.JPG" alt="Studenten Multimedia & creatieve technologie bij Google" class="u-mt-alpha u-2-of-6 u-rounded-md u-float-left u-pr-iota" >}}
 
 We keken ook naar IBM vanuit een bedrijfseconomisch perspectief en zagen hoe strategische beslissingen, zoals het verkopen van divisies, een impact hadden op de beurs – maar IBM telkens sterker maakten. Vervolgens kregen we een introductie tot WatsonX, hun AI-platform, en sloten we af met een uitgebreid panelgesprek. Bijna elke divisie van IBM wereldwijd was aanwezig in de zaal. Het ideale moment om te zien dat er voor elk IT-profiel verschillende carrièremogelijkheden zijn.
 Ook tijd voor fun
