@@ -27,9 +27,34 @@
         @include padding-bottom($value);
     }
 
+    // Increment utility class (e.g. .u-pl-alpha)
+    .u-pl-#{$increment} {
+        @include padding-left($value);
+    }
+
+    // Increment utility class (e.g. .u-pr-alpha)
+    .u-pr-#{$increment} {
+        @include padding-right($value);
+    }
+
     // Negative Increment utility class (e.g. .u-mb-alpha-neg)
     .u-mb-#{$increment}-neg {
         @include margin-bottom($value * -1);
+    }
+
+    // Negative Increment utility class (e.g. .u-mt-alpha-neg)
+    .u-mt-#{$increment}-neg {
+        @include margin-top($value * -1);
+    }
+
+    // Negative Increment utility class (e.g. .u-ml-alpha-neg)
+    .u-ml-#{$increment}-neg {
+        @include margin-left($value * -1);
+    }
+
+    // Negative Increment utility class (e.g. .u-mr-alpha-neg)
+    .u-mr-#{$increment}-neg {
+        @include margin-right($value * -1);
     }
 
 }
@@ -45,4 +70,3 @@
 .u-pl-clear {
     padding-left: 0 !important;
 }
-
