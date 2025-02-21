@@ -54,11 +54,11 @@
                             </div>
 						</div>
                         <aside class="o-grid__item u-4-of-12-bp4">
-							{{ if isset .Params "students" }}
+							{{ if .Params.students }}
 								<div class="c-main-section">
 									<h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
 										{{if gt (len .Params.students) 1}}
-											Studenten
+											Studenten:
 										{{ else }}
 											Student:
 										{{ end }}
