@@ -1,6 +1,6 @@
 ---
 title: "Studenten volgen hands-on workshop bij Stäubli Robotics"
-date: 2024-02-21T08:30:40+01:00
+date: 2025-02-21T08:30:40+01:00
 description: "Onze studenten namen deel aan een praktijkgerichte workshop bij Stäubli Robotics, waar ze industriële robots leerden configureren, programmeren en testen, wat hen waardevolle inzichten en vaardigheden in industriële automatisering en robotica opleverde."
 cover: "54341454420_cd4f76f759_k.jpg"
 ---
