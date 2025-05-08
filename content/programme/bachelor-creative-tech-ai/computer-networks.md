@@ -2,7 +2,7 @@
 title: Computer Networks
 semester: 1
 studycredits: 3
-weight: 50
+weight: 40
 pillar: "ai-cloud"
 tracks:
 - bachelor-creative-tech-ai
