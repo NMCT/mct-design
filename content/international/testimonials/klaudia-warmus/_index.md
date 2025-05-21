@@ -6,7 +6,7 @@ weight: 200
 class: 3MCT - Next Web Developer
 country: Italy
 partner: Granstudio
-reason: Internship
+reason: Erasmus Internship
 year: 2023
 
 ---

@@ -19,7 +19,7 @@
     <meta name="author" content="mct">
     <meta name="description" content="{{ .Params.Description }}">
     {{ if getenv "HUGO_NO_FOLLOW" }}
-        <meta name="robots" content="noindex" /> 
+        <meta name="robots" content="noindex" />
     {{ end }}
 
     <title>{{ block "title" . }}{{ .Params.Title }} ∙ {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>

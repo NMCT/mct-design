@@ -2,7 +2,7 @@
 title: "Cloud Services"
 semester: 3
 studycredits: 6
-weight: 40
+weight: 50
 pillar: "ai-cloud"
 tracks:
 - bachelor-creative-tech-ai

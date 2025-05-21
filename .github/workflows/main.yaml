@@ -1,48 +1,47 @@
 name: Combell deployment
 
 on:
-  push:
-    branches:
-      - master
-      - develop
-      - staging
-  
-  workflow_dispatch:
+    push:
+        branches:
+            - master
+            - develop
+            - staging
+
+    workflow_dispatch:
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-          fetch-depth: 0
+    deploy:
+        runs-on: ubuntu-22.04
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  submodules: true
+                  fetch-depth: 0
 
-      - name: Extract branch name
-        shell: bash
-        run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
-        id: extract_branch
+            - name: Extract branch name
+              shell: bash
+              run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
+              id: extract_branch
 
-      # We don't need to build with Hugo in here, because this happens on the Autogit pipeline
-      # - name: Setup Hugo
-      #   uses: peaceiris/actions-hugo@v2
-      #   with:
-      #     hugo-version: '0.81.0'
-      #     extended: true
-      
-      # - name: Build
-      #   run: hugo --minify
+            # We don't need to build with Hugo in here, because this happens on the Autogit pipeline
+            # - name: Setup Hugo
+            #   uses: peaceiris/actions-hugo@v2
+            #   with:
+            #     hugo-version: '0.81.0'
+            #     extended: true
 
-      - uses: webfactory/ssh-agent@v0.5.4
-        with:
-            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+            # - name: Build
+            #   run: hugo --minify
 
-      - name: Configure Combell remote
-        run: |
-          ssh-keyscan -t rsa ${{ secrets.COMBELL_HOSTNAME }} >> ~/.ssh/known_hosts
-          git remote add combell ${{ secrets.REMOTE }}
+            - uses: webfactory/ssh-agent@v0.5.4
+              with:
+                  ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Push to Combell on branch ${{ steps.extract_branch.outputs.branch }}
-        run: |
-          git push combell ${{ steps.extract_branch.outputs.branch }}
+            - name: Configure Combell remote
+              run: |
+                  ssh-keyscan -t rsa ${{ secrets.COMBELL_HOSTNAME }} >> ~/.ssh/known_hosts
+                  git remote add combell ${{ secrets.REMOTE }}
 
+            - name: Push to Combell on branch ${{ steps.extract_branch.outputs.branch }}
+              run: |
+                  git push combell ${{ steps.extract_branch.outputs.branch }}
