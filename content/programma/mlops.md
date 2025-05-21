@@ -16,7 +16,7 @@ tracks:
 tools: "Azure ML, Vertex AI, GitHub Actions, Kubernetes, Kubeflow"
 ---
 
-In de module MLOps leren we AI modellen, ontwikkeld in [Deep Learning](/programma/deep-learning/) en [Advanced AI](/programma/advanced-ai/), in productie te brengen.
+In de module MLOps leren we AI modellen, ontwikkeld in [Deep Learning](/programma/deep-learning/) en [Generative AI](/programma/generative-ai/), in productie te brengen.
 Getrainde AI modellen moeten namelijk uit de ontwikkelingsfase richting een productie omgeving komen.
 Ze worden in een applicatie geintegreerd op allerlei manieren. Wij leren de best practices rond deployment.
 Hiervoor werken we met de laatste nieuwe technologieen op vlak van Web API's, Docker en Kubernetes, op cloud en lokale servers.
@@ -30,4 +30,6 @@ De automatisatie gebeurt d.m.v. Python en CLI tools binnen **Azure Machine Learn
 Met een diepgaand onderzoek naar **Kubeflow en MLflow**, twee bekende MLOps tools, wordt deze pipeline in een mum van tijd opgestart.
 Zo wordt een volledige data pipeline, AI pipeline en deployment pipeline opgezet, beheerd en onderhouden.
 
-Samenwerken in een team met een MLOps-Engineer was nog nooit zo eenvoudig!
+Ook Large Language Models (LLM's) en Retrieval Augmented Generation (RAG) komen aan bod, om te zorgen dat deze technieken ook in een productie omgeving kunnen worden gebruikt.
+De focus ligt op het maken van herbruikbare en reproduceerbare AI modellen, alsook verantwoordelijke en eerlijke AI.
+

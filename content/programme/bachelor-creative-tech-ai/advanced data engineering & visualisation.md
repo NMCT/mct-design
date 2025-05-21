@@ -1,5 +1,5 @@
 ---
-title: "Data Visualization"
+title: "Data Visualisation"
 semester: 2
 studycredits: 6
 weight: 30
@@ -10,7 +10,7 @@ bachelor-creative-tech-ai: true
 ---
 **Subject to change**
 
-The course of Advanced Data Engineering continues where Big Data has stopped.
-Learning to program on the big datasets, processing them in a matter of minutes or seconds, or even web scraping data, is all part of this course.
-
-A second part contains visualisation techniques and libraries in Python which will help in explaining and showing your data in readable and understandable structures.
+The Data Visualisation course focuses on the principles and techniques of data visualisation, including the design and implementation of effective visual representations of data.
+Students will learn how to create interactive and engaging visualisations that communicate complex information clearly and effectively.
+Working with state-of-the-art visualisation tools in Python, including Plotly and Gradio.
+Frontend webapplications will be created using Gradio, with a focus on data in databases and APIs.

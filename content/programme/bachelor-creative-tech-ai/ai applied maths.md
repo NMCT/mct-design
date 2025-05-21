@@ -10,4 +10,6 @@ bachelor-creative-tech-ai: true
 ---
 **Subject to change**
 
-In AI Applied Maths, you will learn concepts such as **Binary operations**, the famous **A* Algorithms**, Vectors, Matrices and more mathematical concepts.
+We begin with the basics — equations, powers, and computation rules — and move on to functions and how they behave.
+You'll learn how to interpret and apply derivatives, explore vectors and their operations, and dive into linear algebra with matrices, transformations, and eigenvalues.
+With AI examples and exercises, you'll gain the tools to understand and develop AI systems from the basics.
