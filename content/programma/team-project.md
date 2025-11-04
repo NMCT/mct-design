@@ -1,5 +1,5 @@
 ---
-title: Team Project is cool
+title: Team Project
 aliases:
     - project-2
 semester: 3
