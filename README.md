@@ -9,6 +9,7 @@
 ### Installatie
 - [Go Hugo](https://gohugo.io/getting-started/installing/) moet geïnstalleerd zijn.
 - Zorg ervoor dat je Git geïnstalleerd hebt.
+- Let op met nieuwere Hugo versie (`.Site.IsServer`)
 
 ### Start de development omgeving
 Start het project met ```hugo server```.
