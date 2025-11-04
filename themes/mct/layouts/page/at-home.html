@@ -73,14 +73,14 @@
             {{ with .Site.GetPage "/at-home/ai-at-home" }}
             <div class="u-max-width-optimal u-mx-auto">
                 {{ .Content }}
-                <div class="c-curriculum c-curriculum--single c-curriculum--at-home c-curriculum-divider--2 o-grid-cols--3 js-curriculum">
+                <div class="c-curriculum c-curriculum--single c-curriculum--at-home c-curriculum-divider--2 o-grid-cols--2 js-curriculum">
                     {{ range $i, $semester := seq 2 }}
                         {{ if eq $i 0 }}
                             <h3 class="c-curriculum__semester-title u-grid-column-start-1">
                                 Najaar
                             </h3>
                         {{ else }}
-                            <h3 class="c-curriculum__semester-title u-x-span-2 u-grid-column-start-3">
+                            <h3 class="c-curriculum__semester-title u-grid-column-start-2">
                                 Voorjaar
                             </h3>
                         {{ end }}

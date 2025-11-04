@@ -12,7 +12,7 @@ cta:
 cover: MCT_maart2022-024.jpg
 poster: MCT_maart2022-024.jpg
 # caption: "International students from Asia, Africa, North and South America as well as Europe have studied at MCT before!"
-caption: "Get to know our modern campus, we have robots!"
+caption: "Get to know our modern campus!"
 
 quote: "Broaden your horizon and study in English at the Bachelor of Creative Technologies & AI!"
 introtext:

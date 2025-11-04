@@ -13,6 +13,7 @@ tracks:
 - ai-at-home
 home: true
 tools: "Convolutional Neural Networks (CNN), Generative Adversarial Networks (GAN), Long-Short Term Memory (LSTM), Recurrent Neural Networks (RNN)" 
+hide: true
 ---
 
 Wanneer twee IT bachelors in Howest samenwerken om beide expertises te integreren, krijg je een module als AI For Healthcare die daar de vruchten van plukt: een samenwerking tussen de Advanced Bachelor Bioinformatica in combinatie met Multimedia en Creatieve Technologie.

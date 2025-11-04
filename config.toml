@@ -48,12 +48,12 @@ publishDir = "www"
 	url = "/at-home/"
 	identifier = "at-home"
 	weight = 50
-  
-  [[menu.main]]
-	name = "Onderzoek"
-	url = "/onderzoek/"
-	identifier = "onderzoek"
-	weight = 60
+
+#  [[menu.main]]
+#	name = "Onderzoek"
+#	url = "/onderzoek/"
+#	identifier = "onderzoek"
+#	weight = 60
 
   [[menu.main]]
 	name = "Creative Technologies & AI"

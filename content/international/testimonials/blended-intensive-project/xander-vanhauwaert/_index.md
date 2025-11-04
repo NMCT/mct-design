@@ -6,7 +6,7 @@ weight: 106
 class: 2MCT - IoT Engineer
 country: Austria
 partner: St. Pölten University of Applied Sciences
-reason: BIP
+reason: Erasmus BIP
 year: 2023
 ---
 

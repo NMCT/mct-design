@@ -3,7 +3,7 @@ title: Control room for the future
 date: 2018-03-09T21:40:40+01:00
 description: "Voor de biomassa centrales van Vyncke bouwden onze studenten een prototype met live data visualisatie vanuit Nederland in een Microsoft Hololens applicatie!"
 year: 2MCT
-project: 3
+project: Industry Project
 cover: control-room-for-the-future.jpg
 client: VYNCKE nv.
 ---

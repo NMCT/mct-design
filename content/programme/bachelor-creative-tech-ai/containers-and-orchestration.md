@@ -2,7 +2,7 @@
 title: "Containers and Orchestration"
 semester: 2
 studycredits: 6
-weight: 20
+weight: 30
 pillar: "ai-cloud"
 tracks:
 - bachelor-creative-tech-ai
