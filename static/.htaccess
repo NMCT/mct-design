@@ -9,6 +9,9 @@ RewriteRule (.*)$ https://mct.be/$1 [R=301,L]
 
 RewriteRule ^/?module/(.*)$ /programma/$1 [R,L]
 
+RewriteRule ^programme/.*$ https://www.howest.be/nl/opleidingen/bachelor/creative-technologies-and-artificial-intelligence/ [R=301,L]
+
+
 ErrorDocument 404 /404/index.html
 
 </IfModule>

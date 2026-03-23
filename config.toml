@@ -55,11 +55,11 @@ publishDir = "www"
 #	identifier = "onderzoek"
 #	weight = 60
 
-  [[menu.main]]
-	name = "Creative Technologies & AI"
-	url = "/programme/bachelor-creative-tech-ai/"
-	identifier = "creative-tech-ai"
-	weight = 70
+#  [[menu.main]]
+#	name = "Creative Technologies & AI"
+#	url = "/programme/bachelor-creative-tech-ai/"
+#	identifier = "creative-tech-ai"
+#	weight = 70
 
   [[menu.main]]
 	name = "Contact"
