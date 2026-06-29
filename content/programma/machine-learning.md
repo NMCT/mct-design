@@ -1,5 +1,5 @@
 ---
-title: Machine Learning
+title: Machine Learning & AI
 semester: 4
 studycredits: 6
 weight: 40
