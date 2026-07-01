@@ -1,5 +1,5 @@
 ---
-title: Advanced Software Engineering
+title: AI-Driven Software Engineering
 semester: 3
 studycredits: 6
 weight: 10
