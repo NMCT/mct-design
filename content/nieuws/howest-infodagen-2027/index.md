@@ -1,8 +1,8 @@
 ---
-title: "Howest Infodagen 2026"
-date: 2026-02-17T08:30:40+01:00
+title: "Howest Infodagen 2027"
+date: 2027-01-15T08:30:40+01:00
 description: "Een goede inkijk van wat we doen in Multimedia & creatieve technologie krijg je tijdens één van onze infodagen. Ontdek via docenten en studenten wat je mag verwachten van onze opleiding en of dit iets voor jou is."
-cover: "infodagen-2026.jpg"
+cover: "infodagen-2027.png"
 ---
 
 ## Tijdens de Howest-infodagen:
@@ -15,8 +15,7 @@ cover: "infodagen-2026.jpg"
 
 ## Zet alvast deze Howest infodagen in je agenda:
 
-- Infodag **zaterdag 29 augustus 2026** (van 10u tot 16u)
-- Infodag **vrijdag 11 september 2026** (van 17u tot 19u30)
+- Infodag **zaterdag 13 maart 2027** (van 10u tot 16u)
 
 ## Waar?
 
@@ -26,6 +25,4 @@ Sint-Martens-Latemlaan 2B
 
 ## Meer info
 
-Alle details over de infodagen vind je op de [website van Howest](https://www.howest.be/nl/infodagen).
-
-Op zoek naar de meest recente infodagen? Bekijk de [Howest Infodagen 2027](/nieuws/howest-infodagen-2027/).
+Alle details over de infodagen vind je op de [website van Howest](https://www.howest.be/nl/infodagen/infodag-zaterdag-13-maart-2027).
