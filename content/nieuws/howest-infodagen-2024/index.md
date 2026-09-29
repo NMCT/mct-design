@@ -5,6 +5,8 @@ description: "Een gerichte studiekeuze maken is niet eenvoudig. Kom daarom zeker
 cover: "howest-infodagen-2024.jpeg"
 ---
 
+> Op zoek naar de meest recente infodagen? Bekijk de [Howest Infodagen 2027](/nieuws/howest-infodagen-2027/).
+
 ## Tijdens de Howest-infodagen:
 
 - Ontdek je de opleidingen van Howest
@@ -31,5 +33,3 @@ Sint-Martens-Latemlaan 2B
 ## Meer info
 
 Alle details over de infodagen vind je op de [website van Howest](https://www.howest.be/nl/infodagen).
-
-Op zoek naar de meest recente infodagen? Bekijk de [Howest Infodagen 2027](/nieuws/howest-infodagen-2027/).

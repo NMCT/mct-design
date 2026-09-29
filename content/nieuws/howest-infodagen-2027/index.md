@@ -1,6 +1,6 @@
 ---
 title: "Howest Infodagen 2027"
-date: 2027-01-15T08:30:40+01:00
+date: 2026-09-29T08:30:40+01:00
 description: "Een goede inkijk van wat we doen in Multimedia & creatieve technologie krijg je tijdens één van onze infodagen. Ontdek via docenten en studenten wat je mag verwachten van onze opleiding en of dit iets voor jou is."
 cover: "infodagen-2027.png"
 ---
